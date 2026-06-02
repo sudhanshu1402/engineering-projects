@@ -1,9 +1,9 @@
 # Expense Tracker
 
-## 📖 Overview
+## Overview
 
-This is a **Medium**-level **Backend / CLI** application crafted using **CSharp**. It explores core concepts, architectural patterns, and practical execution within this technology stack. 
+This is a **Medium**-level **Backend / CLI** application crafted using **CSharp**. It explores core concepts, architectural patterns, and practical execution within this technology stack.
 
-## 🚀 Execution
+## Execution
 
 `dotnet run` to build and execute the C# application.

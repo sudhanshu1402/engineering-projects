@@ -3,7 +3,7 @@
 ## Overview
 **REST API** is a **Expert** difficulty project implemented in **PHP-Laravel**.
 
-## 📂 Project Structure
+## Project Structure
 The following directory structure visualizes the file organization of this project.
 
 ```text
@@ -12,7 +12,7 @@ REST-API
 
 ```
 
-## 📐 Components
+## Components
 Visual representation of the primary files in this project:
 
 ```mermaid

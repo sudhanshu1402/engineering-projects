@@ -172,7 +172,7 @@
 
     <div class="glass-panel">
         <h1>Atmosphere</h1>
-        
+
         <div class="search-container">
             <input type="text" id="city" placeholder="Enter coordinates or city...">
             <button onclick="getWeather()">Scan</button>
@@ -187,23 +187,23 @@
         async function getWeather() {
             const city = document.getElementById('city').value;
             const resultDiv = document.getElementById('result');
-            
+
             // Reset animation
             resultDiv.classList.remove('visible');
-            
+
             // Artificial delay to simulate scanning radar
             setTimeout(() => {
                 // Mock API call mapping to realistic UI
                 const mockData = { temp: 24, condition: 'Partly Cloudy' };
-                
+
                 resultDiv.innerHTML = `
                     <div class="city-name">${city || 'Unknown Sector'}</div>
                     <div class="temp">${mockData.temp}°</div>
                     <div class="condition">${mockData.condition}</div>
                 `;
-                
+
                 // Trigger reflow and animate in
-                void resultDiv.offsetWidth; 
+                void resultDiv.offsetWidth;
                 resultDiv.classList.add('visible');
             }, 600);
         }

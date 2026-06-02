@@ -3,7 +3,7 @@
 ## Overview
 **LoopBack4 Inventory** is a **Hard** difficulty project implemented in **Node.js**.
 
-## 📂 Project Structure
+## Project Structure
 The following directory structure visualizes the file organization of this project.
 
 ```text
@@ -13,7 +13,7 @@ LoopBack4-Inventory
 
 ```
 
-## 📐 Components
+## Components
 Visual representation of the primary files in this project:
 
 ```mermaid

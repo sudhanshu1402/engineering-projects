@@ -1,9 +1,9 @@
 # Fruit Ninja Game
 
-## 📖 Overview
+## Overview
 
-This is a **Hard**-level **Backend / CLI** application crafted using **Python**. It explores core concepts, architectural patterns, and practical execution within this technology stack. 
+This is a **Hard**-level **Backend / CLI** application crafted using **Python**. It explores core concepts, architectural patterns, and practical execution within this technology stack.
 
-## 🚀 Execution
+## Execution
 
 `python main.py` or execute the specific script.

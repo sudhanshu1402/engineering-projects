@@ -1,9 +1,9 @@
 # Number Guess
 
-## 📖 Overview
+## Overview
 
-This is a **Easy**-level **Backend / CLI** application crafted using **Go**. It explores core concepts, architectural patterns, and practical execution within this technology stack. 
+This is a **Easy**-level **Backend / CLI** application crafted using **Go**. It explores core concepts, architectural patterns, and practical execution within this technology stack.
 
-## 🚀 Execution
+## Execution
 
 `go run .` or `go build` to compile the binary.

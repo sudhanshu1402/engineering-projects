@@ -3,7 +3,7 @@
 ## Overview
 **EJS Express Auth** is a **Medium** difficulty project implemented in **Node.js**.
 
-## 📂 Project Structure
+## Project Structure
 The following directory structure visualizes the file organization of this project.
 
 ```text
@@ -12,7 +12,7 @@ EJS-Express-Auth
 
 ```
 
-## 📐 Components
+## Components
 Visual representation of the primary files in this project:
 
 ```mermaid

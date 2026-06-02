@@ -4,12 +4,12 @@ Production-ready Sim-to-Real framework for robot training using PyBullet simulat
 
 ## Features
 
-- 🧠 **Subconscious Training**: Train robot policies using PPO/SAC with parallelized environments
-- 🎲 **Domain Randomization**: Automatic physics parameter randomization (mass, friction, gravity) for sim-to-real transfer
-- 🎯 **Multi-Objective Rewards**: Configurable reward shaping with curriculum learning support
-- 🍎 **Apple Silicon Optimized**: Native MPS (Metal) acceleration detection
-- 📊 **TensorBoard Integration**: Real-time training visualization
-- 📦 **ONNX Export**: Deploy trained models to hardware
+- **Subconscious Training**: Train robot policies using PPO/SAC with parallelized environments
+- **Domain Randomization**: Automatic physics parameter randomization (mass, friction, gravity) for sim-to-real transfer
+- **Multi-Objective Rewards**: Configurable reward shaping with curriculum learning support
+- **Apple Silicon Optimized**: Native MPS (Metal) acceleration detection
+- **TensorBoard Integration**: Real-time training visualization
+- **ONNX Export**: Deploy trained models to hardware
 
 ## Quick Start (macOS)
 

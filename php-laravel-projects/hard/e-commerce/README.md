@@ -3,7 +3,7 @@
 ## Overview
 **E commerce** is a **Hard** difficulty project implemented in **PHP-Laravel**.
 
-## 📂 Project Structure
+## Project Structure
 The following directory structure visualizes the file organization of this project.
 
 ```text
@@ -12,7 +12,7 @@ E-commerce
 
 ```
 
-## 📐 Components
+## Components
 Visual representation of the primary files in this project:
 
 ```mermaid

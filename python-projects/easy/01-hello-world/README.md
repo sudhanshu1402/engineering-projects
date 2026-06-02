@@ -3,7 +3,7 @@
 ## Overview
 **01 Hello World** is a **Easy** difficulty project implemented in **Python**.
 
-## 📂 Project Structure
+## Project Structure
 The following directory structure visualizes the file organization of this project.
 
 ```text
@@ -11,7 +11,7 @@ The following directory structure visualizes the file organization of this proje
 
 ```
 
-## 📐 Components
+## Components
 Visual representation of the primary files in this project:
 
 ```mermaid

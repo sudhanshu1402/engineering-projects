@@ -1,9 +1,9 @@
 # Kanban Board
 
-## 📖 Overview
+## Overview
 
-This is a **Expert**-level **Frontend UI** application crafted using **Javascript**. It explores core concepts, architectural patterns, and practical execution within this technology stack. 
+This is a **Expert**-level **Frontend UI** application crafted using **Javascript**. It explores core concepts, architectural patterns, and practical execution within this technology stack.
 
-## 🚀 Execution
+## Execution
 
 Simply open `index.html` in your preferred web browser to run this frontend application locally.

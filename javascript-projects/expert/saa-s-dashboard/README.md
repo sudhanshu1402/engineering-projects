@@ -3,7 +3,7 @@
 ## Overview
 **SaaS Dashboard** is a **Expert** difficulty project implemented in **JavaScript**.
 
-## 📂 Project Structure
+## Project Structure
 The following directory structure visualizes the file organization of this project.
 
 ```text
@@ -11,7 +11,7 @@ SaaS-Dashboard
 
 ```
 
-## 📐 Components
+## Components
 Visual representation of the primary files in this project:
 
 ```mermaid

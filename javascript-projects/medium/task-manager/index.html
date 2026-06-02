@@ -165,7 +165,7 @@
             font-size: 0.8rem;
             color: #888;
         }
-        
+
         .action-btn.delete:hover {
             color: var(--accent);
         }
@@ -213,21 +213,21 @@
                         <button class="action-btn delete" onclick="this.closest('li').remove()">Remove</button>
                     </div>
                 `;
-                
+
                 // Add with a subtle insertion animation
                 li.style.opacity = '0';
                 li.style.transform = 'translateY(-10px)';
                 document.getElementById('taskList').prepend(li);
-                
+
                 // Trigger reflow
                 void li.offsetWidth;
                 li.style.opacity = '1';
                 li.style.transform = 'translateY(0)';
-                
+
                 input.value = '';
             }
         }
-        
+
         function toggleDone(btn) {
             const li = btn.closest('li');
             li.classList.toggle('done');
