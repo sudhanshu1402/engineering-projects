@@ -10,7 +10,7 @@ graph LR
     Client -->|HTTP| Gateway[API Gateway :8080]
     Gateway -->|Route| Order[Order Service]
     Gateway -->|Route| Product[Product Service]
-    
+
     subgraph Infrastructure
         Gateway -.->|Register| Eureka[Eureka Discovery Server]
         Order -.->|Register| Eureka

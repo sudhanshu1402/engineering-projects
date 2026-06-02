@@ -1,6 +1,6 @@
 # Hospital Management System
 
-The purpose of this project is to computerize the Front Office Management of Hospital by developing a software which is user friendly, simple, fast, and cost– effective. It deals with the collection of patient’s information, diagnosis details, etc.
+The purpose of this project is to computerize the Front Office Management of Hospital by developing a software which is user friendly, simple, fast, and cost- effective. It deals with the collection of patient's information, diagnosis details, etc.
 
 The Hospital Management System can be entered using a username and password. It is accessible either by an administrator or receptionist. Only they can add data into the database. The data can be retrieved easily. The data are well protected for personal use and makes the data processing very fast.
 

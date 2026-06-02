@@ -134,14 +134,14 @@
                 <div class="card" draggable="true" ondragstart="drag(event)" id="card2">Migrate to Next.js 15</div>
             </div>
         </div>
-        
+
         <div class="column" id="doing" ondrop="drop(event)" ondragover="allowDrop(event)">
             <h2>Doing <span>02</span></h2>
             <div class="column-dropzone">
                 <div class="card" draggable="true" ondragstart="drag(event)" id="card3">Implement Zero-Trust Auth</div>
             </div>
         </div>
-        
+
         <div class="column" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
             <h2>Done <span>03</span></h2>
             <div class="column-dropzone">
@@ -151,11 +151,11 @@
     </div>
 
     <script>
-        function allowDrop(ev) { 
-            ev.preventDefault(); 
+        function allowDrop(ev) {
+            ev.preventDefault();
         }
-        function drag(ev) { 
-            ev.dataTransfer.setData("text", ev.target.id); 
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
         }
         function drop(ev) {
             ev.preventDefault();

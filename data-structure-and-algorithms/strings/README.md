@@ -4,9 +4,9 @@
 
 The naive approach for solving the string searching problem is accomplished by performing a Brute-Force comparison of each character in the pattern at each possible placement of the pattern in the string. This algorithm is O(mn) in the worst case.
 
-- **2. Rabin – Karp algorithm:**
+- **2. Rabin - Karp algorithm:**
 
-String matching algorithm that compares string’s hash values, rather than string themselves. Performs well in practice, and generalized to other algorithm for related problems, such as two dimensional pattern matching.
+String matching algorithm that compares string's hash values, rather than string themselves. Performs well in practice, and generalized to other algorithm for related problems, such as two dimensional pattern matching.
 
 - **3. Knuth-Morris-Pratt algorithm:**
 
@@ -19,7 +19,7 @@ It performs the string searching task in sub linear time in the average case, wh
 
 ## ASCll values
 
-` 
+`
  NUMBER : 48-57  ||   CAPITAL : 65-90  ||   SMALLER : 97-122      `
 
 ![image](https://user-images.githubusercontent.com/67835881/129482849-2e0f3e75-3350-4f96-9443-3068f0828d10.png)

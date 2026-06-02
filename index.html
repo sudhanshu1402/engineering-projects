@@ -26,12 +26,12 @@
             --text-muted: #b2bec3;
             --border: rgba(255, 255, 255, 0.3);
             --glass: rgba(255, 255, 255, 0.4);
-            
+
             /* --- Typography --- */
             --font-display: 'Syne', sans-serif;
             --font-body: 'Outfit', sans-serif;
             --font-mono: 'Space Grotesk', monospace;
-            
+
             /* --- Animation --- */
             --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
@@ -40,12 +40,12 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            cursor: none; 
+            cursor: none;
         }
 
         body {
             background-color: var(--bg-physical);
-            background-image: 
+            background-image:
                 url("https://www.transparenttextures.com/patterns/brushed-alum.png"),
                 radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.5) 0%, rgba(163, 177, 198, 0.1) 100%);
             color: var(--text-primary);
@@ -554,7 +554,7 @@
             <div class="log-line">> RESTORING PASCAL_CASE (JAVA)... OK</div>
             <div class="log-line">> ANALYZING RUST_EXECUTOR... 100%</div>
             <div class="log-line">> SYNCING GLOBAL_DATA... DONE</div>
-            <div class="log-line">> LINKING_ELITE_PRODUCTION_ENGINES... 100%</div>
+            <div class="log-line">> LINKING_PRODUCTION_ENGINES... 100%</div>
             <div class="log-line">> ALL SYSTEMS OPTIMAL.</div>
         </div>
     </div>
@@ -570,7 +570,7 @@
     <header class="hero">
         <h1>VAULT ENGR.</h1>
         <div class="hero-footer">
-            <p class="hero-desc">An elite collection of active production engines and historical artifacts. 89 projects decoded across 10 programming languages. Performance-driven, architecturally sound.</p>
+            <p class="hero-desc">A collection of active production engines and historical artifacts. 89 projects decoded across 10 programming languages. Performance-driven, architecturally sound.</p>
             <div class="stat-badge">SYSTEM STATUS: OPTIMAL // ARCHIVE_89</div>
         </div>
     </header>
@@ -618,14 +618,14 @@
                 card.href = proj.actionUrl;
                 card.target = "_blank";
                 card.className = `project-card ${proj.tier === 'showcase' ? 'showcase-card' : ''}`;
-                
+
                 let diffColor = '#636e72';
                 if(proj.difficulty === 'Expert') diffColor = '#ef4444';
                 if(proj.difficulty === 'Hard') diffColor = '#f59e0b';
                 if(proj.difficulty === 'Medium') diffColor = '#3b82f6';
 
                 card.innerHTML = `
-                    ${proj.isHero ? '<div class="hero-badge">★ ELITE</div>' : ''}
+                    ${proj.isHero ? '<div class="hero-badge">FEATURED</div>' : ''}
                     <div class="card-top">
                         <span class="project-id">ID_${(index + 1).toString().padStart(3, '0')}</span>
                         <span class="difficulty-tag" style="border-color: ${diffColor}; color: ${diffColor}">${proj.difficulty}</span>
@@ -634,7 +634,7 @@
                         <h2 class="project-name">${proj.name}</h2>
                         <span class="project-category">
                             ${proj.tier === 'showcase' ? '<span class="status-led"></span>' : ''}
-                            ${proj.category} — ${proj.type}
+                            ${proj.category} - ${proj.type}
                         </span>
                     </div>
                     <div class="card-footer">

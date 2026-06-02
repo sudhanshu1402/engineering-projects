@@ -3,7 +3,7 @@
 ## Overview
 **Library Management System** is a **Medium** difficulty project implemented in **Python**.
 
-## 📂 Project Structure
+## Project Structure
 The following directory structure visualizes the file organization of this project.
 
 ```text
@@ -40,7 +40,7 @@ Library Management System
 
 ```
 
-## 📐 Components
+## Components
 Visual representation of the primary files in this project:
 
 ```mermaid

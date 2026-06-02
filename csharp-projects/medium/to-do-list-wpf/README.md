@@ -3,7 +3,7 @@
 ## Overview
 **ToDo List WPF** is a **Medium** difficulty project implemented in **C#**.
 
-## 📂 Project Structure
+## Project Structure
 The following directory structure visualizes the file organization of this project.
 
 ```text
@@ -12,7 +12,7 @@ ToDo-List-WPF
 
 ```
 
-## 📐 Components
+## Components
 Visual representation of the primary files in this project:
 
 ```mermaid

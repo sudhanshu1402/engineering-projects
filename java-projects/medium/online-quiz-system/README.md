@@ -3,7 +3,7 @@
 ## Overview
 **Online Quiz System** is a **Medium** difficulty project implemented in **Java**.
 
-## 📂 Project Structure
+## Project Structure
 The following directory structure visualizes the file organization of this project.
 
 ```text
@@ -29,7 +29,7 @@ Online Quiz System
 
 ```
 
-## 📐 Components
+## Components
 Visual representation of the primary files in this project:
 
 ```mermaid

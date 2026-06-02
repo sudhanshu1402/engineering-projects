@@ -5,6 +5,6 @@
 This repository contains code written during my college studies and self-study focused on **Data Structures and Algorithms**. I keep this public for complete transparency, documenting my technical progression from early implementations to my current architectural work in distributed systems.
 
 ## Overview
-- **Core Technology:** Algorithms and Data Structures 
+- **Core Technology:** Algorithms and Data Structures
 - **Timeframe:** College / Early Self-Study
 - **Primary Focus:** Foundational concepts, problem-solving, and complexity analysis

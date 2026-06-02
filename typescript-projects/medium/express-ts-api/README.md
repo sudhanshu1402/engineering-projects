@@ -1,9 +1,9 @@
 # Express TS API
 
-## 📖 Overview
+## Overview
 
-This is a **Medium**-level **Backend / CLI** application crafted using **Typescript**. It explores core concepts, architectural patterns, and practical execution within this technology stack. 
+This is a **Medium**-level **Backend / CLI** application crafted using **Typescript**. It explores core concepts, architectural patterns, and practical execution within this technology stack.
 
-## 🚀 Execution
+## Execution
 
 `npm install` then `npm run dev` or compile using `tsc`.

@@ -3,7 +3,7 @@
 <div align="center">
 
   <!-- Tactical Header -->
-  <img src="https://readme-typing-svg.demolab.com?font=Syne&weight=800&size=36&duration=3000&pause=1000&color=2D3436&center=true&vCenter=true&multiline=true&width=1000&height=100&lines=THE+VAULT+%E2%80%94+ENGINEERING+ARCHIVE;89+DECODED+ARTIFACTS+%7C+10+LANGUAGES" alt="The Vault — Engineering Archive" />
+  <img src="https://readme-typing-svg.demolab.com?font=Syne&weight=800&size=36&duration=3000&pause=1000&color=2D3436&center=true&vCenter=true&multiline=true&width=1000&height=100&lines=THE+VAULT+%E2%80%94+ENGINEERING+ARCHIVE;89+DECODED+ARTIFACTS+%7C+10+LANGUAGES" alt="The Vault - Engineering Archive" />
 
   <br>
 
@@ -14,16 +14,16 @@
 
   <br>
 
-  ### 🏛️ [LAUNCH INTERACTIVE PORTFOLIO ➔](https://sudhanshu1402.github.io)
+  ### [LAUNCH INTERACTIVE PORTFOLIO](https://sudhanshu1402.github.io)
   **A high-performance archive of 89 historical artifacts decoded across 10 programming languages.**
 
 </div>
 
 ---
 
-## ⚡ High-Impact Artifacts
+## High-Impact Artifacts
 
-These projects demonstrate production-grade system design, concurrency patterns, and architectural depth. They have been tagged as **★ ELITE** in the live portfolio.
+These projects demonstrate production-grade system design, concurrency patterns, and architectural depth. They have been tagged as **featured** in the live portfolio.
 
 | Artifact | Language | Tier | Core Architecture |
 | :--- | :--- | :--- | :--- |
@@ -35,7 +35,7 @@ These projects demonstrate production-grade system design, concurrency patterns,
 
 ---
 
-## 🏛 The Archive Structure
+## The Archive Structure
 
 The vault is organized by language and technical complexity, ensuring a clean separation of concerns.
 
@@ -50,20 +50,20 @@ The vault is organized by language and technical complexity, ensuring a clean se
 
 ---
 
-## 🚀 Instant Deployment
+## Instant Deployment
 
 Every artifact in this archive is designed for instant exploration. Frontend projects feature **Live Previews** running via GitHub Pages, while backend and CLI systems link directly to their **Source Directories** for clean code review.
 
-**[Visit the Master Site ➔](https://sudhanshu1402.github.io)**
+**[Visit the Master Site](https://sudhanshu1402.github.io)**
 
 ---
 
-## 🛠 Engineering Quality & QA
+## Engineering Quality & QA
 
 This repository has undergone a **comprehensive 100-hour engineering audit** to ensure:
-- ✅ **100% Documentation Coverage**: All 89 projects feature standardized READMEs.
-- ✅ **Reliable CI/CD**: Fully automated builds and deployment pipelines.
-- ✅ **Standardized Naming**: Multi-language support for PascalCase, snake_case, and kebab-case conventions.
+- **100% Documentation Coverage**: All 89 projects feature standardized READMEs.
+- **Reliable CI/CD**: Fully automated builds and deployment pipelines.
+- **Standardized Naming**: Multi-language support for PascalCase, snake_case, and kebab-case conventions.
 
 ---
 

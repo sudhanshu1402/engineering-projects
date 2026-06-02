@@ -3,7 +3,7 @@
 ## Overview
 **Scientific Calculator** is a **Medium** difficulty project implemented in **Java**.
 
-## 📂 Project Structure
+## Project Structure
 The following directory structure visualizes the file organization of this project.
 
 ```text
@@ -78,7 +78,7 @@ Scientific Calculator
 
 ```
 
-## 📐 Components
+## Components
 Visual representation of the primary files in this project:
 
 ```mermaid
