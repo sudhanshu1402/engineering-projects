@@ -27,11 +27,11 @@ These projects demonstrate production-grade system design, concurrency patterns,
 
 | Artifact | Language | Tier | Core Architecture |
 | :--- | :--- | :--- | :--- |
-| **[Subconscious Robotics](./ml-projects/subconscious-robotics)** | `Python` | **Expert** | MPS-optimized self-training framework, Hydra-based configs. |
-| **[Layer 7 Load Balancer](./go-projects/hard/load-balancer)** | `Go` | **Hard** | Round-robin distribution, health-check polling, concurrency-pools. |
-| **[Async Executor](./rust-projects/expert/async-executor)** | `Rust` | **Expert** | Custom future polling, Waker-based scheduling, lock-free queues. |
-| **[Photo Manager](./java-projects/hard/photo-manager)** | `Java` | **Hard** | Android SQLite integration, custom Adapters, Fragment orchestration. |
-| **[Kanban Board](./javascript-projects/expert/kanban-board)** | `JS` | **Expert** | Drag-and-drop state machines, localized persistence, responsive UI. |
+| **[Subconscious Robotics](./machine-learning/subconscious-robotics)** | `Python` | **Expert** | MPS-optimized self-training framework, Hydra-based configs. |
+| **[Layer 7 Load Balancer](./go/hard/load-balancer)** | `Go` | **Hard** | Round-robin distribution, health-check polling, concurrency-pools. |
+| **[Async Executor](./rust/expert/async-executor)** | `Rust` | **Expert** | Custom future polling, Waker-based scheduling, lock-free queues. |
+| **[Photo Manager](./java/hard/photo-manager)** | `Java` | **Hard** | Android SQLite integration, custom Adapters, Fragment orchestration. |
+| **[Kanban Board](./javascript/expert/kanban-board)** | `JS` | **Expert** | Drag-and-drop state machines, localized persistence, responsive UI. |
 
 ---
 
@@ -41,12 +41,12 @@ The vault is organized by language and technical complexity, ensuring a clean se
 
 | Cluster | Focus Area | Artifact Count |
 | :--- | :--- | :--- |
-| **[go-projects](./go-projects)** | Distributed systems & CLI infrastructure | 12 |
-| **[rust-projects](./rust-projects)** | Memory-safe systems & async utilities | 8 |
-| **[cpp-projects](./cpp-projects)** | Low-level engines & performance logic | 5 |
-| **[java-projects](./java-projects)** | Enterprise patterns & Android SDKs | 15 |
-| **[js-projects](./javascript-projects)** | Rich UIs & GraphQL ecosystems | 25 |
-| **[python-projects](./python-projects)** | ML Research & Automation | 24 |
+| **[go](./go)** | Distributed systems & CLI infrastructure | 12 |
+| **[rust](./rust)** | Memory-safe systems & async utilities | 8 |
+| **[cpp](./cpp)** | Low-level engines & performance logic | 5 |
+| **[java](./java)** | Enterprise patterns & Android SDKs | 15 |
+| **[javascript](./javascript)** | Rich UIs & GraphQL ecosystems | 25 |
+| **[python](./python)** | ML Research & Automation | 24 |
 
 ---
 

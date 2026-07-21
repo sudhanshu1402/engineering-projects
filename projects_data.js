@@ -71,8 +71,8 @@ const PROJECT_DATA = [
         "isHero": true,
         "difficulty": "Expert",
         "type": "Backend / CLI",
-        "path": "ml-projects/subconscious-robotics",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/ml-projects/subconscious-robotics",
+        "path": "machine-learning/subconscious-robotics",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/machine-learning/subconscious-robotics",
         "actionText": "View Source Code"
     },
     {
@@ -80,8 +80,8 @@ const PROJECT_DATA = [
         "category": "Python",
         "difficulty": "Easy",
         "type": "Backend / CLI",
-        "path": "python-projects/easy/bmi-calculator",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/python-projects/easy/bmi-calculator",
+        "path": "python/easy/bmi-calculator",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/python/easy/bmi-calculator",
         "actionText": "View Source Code"
     },
     {
@@ -89,8 +89,8 @@ const PROJECT_DATA = [
         "category": "Python",
         "difficulty": "Easy",
         "type": "Backend / CLI",
-        "path": "python-projects/easy/count-down-timer",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/python-projects/easy/count-down-timer",
+        "path": "python/easy/count-down-timer",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/python/easy/count-down-timer",
         "actionText": "View Source Code"
     },
     {
@@ -98,8 +98,8 @@ const PROJECT_DATA = [
         "category": "Python",
         "difficulty": "Easy",
         "type": "Backend / CLI",
-        "path": "python-projects/easy/currency",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/python-projects/easy/currency",
+        "path": "python/easy/currency",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/python/easy/currency",
         "actionText": "View Source Code"
     },
     {
@@ -107,8 +107,8 @@ const PROJECT_DATA = [
         "category": "Python",
         "difficulty": "Easy",
         "type": "Backend / CLI",
-        "path": "python-projects/easy/tic-tac-toe",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/python-projects/easy/tic-tac-toe",
+        "path": "python/easy/tic-tac-toe",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/python/easy/tic-tac-toe",
         "actionText": "View Source Code"
     },
     {
@@ -116,8 +116,8 @@ const PROJECT_DATA = [
         "category": "Python",
         "difficulty": "Expert",
         "type": "Backend / CLI",
-        "path": "python-projects/expert/color-detection",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/python-projects/expert/color-detection",
+        "path": "python/expert/color-detection",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/python/expert/color-detection",
         "actionText": "View Source Code"
     },
     {
@@ -125,8 +125,8 @@ const PROJECT_DATA = [
         "category": "Python",
         "difficulty": "Expert",
         "type": "Backend / CLI",
-        "path": "python-projects/expert/gender-&-age-detection",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/python-projects/expert/gender-&-age-detection",
+        "path": "python/expert/gender-&-age-detection",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/python/expert/gender-&-age-detection",
         "actionText": "View Source Code"
     },
     {
@@ -134,8 +134,8 @@ const PROJECT_DATA = [
         "category": "Python",
         "difficulty": "Expert",
         "type": "Backend / CLI",
-        "path": "python-projects/expert/keyboard-jump-game",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/python-projects/expert/keyboard-jump-game",
+        "path": "python/expert/keyboard-jump-game",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/python/expert/keyboard-jump-game",
         "actionText": "View Source Code"
     },
     {
@@ -143,8 +143,8 @@ const PROJECT_DATA = [
         "category": "Python",
         "difficulty": "Hard",
         "type": "Backend / CLI",
-        "path": "python-projects/hard/fruit-ninja-game",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/python-projects/hard/fruit-ninja-game",
+        "path": "python/hard/fruit-ninja-game",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/python/hard/fruit-ninja-game",
         "actionText": "View Source Code"
     },
     {
@@ -152,8 +152,8 @@ const PROJECT_DATA = [
         "category": "Python",
         "difficulty": "Hard",
         "type": "Backend / CLI",
-        "path": "python-projects/hard/uno",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/python-projects/hard/uno",
+        "path": "python/hard/uno",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/python/hard/uno",
         "actionText": "View Source Code"
     },
     {
@@ -161,8 +161,8 @@ const PROJECT_DATA = [
         "category": "Python",
         "difficulty": "Medium",
         "type": "Backend / CLI",
-        "path": "python-projects/medium/2048",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/python-projects/medium/2048",
+        "path": "python/medium/2048",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/python/medium/2048",
         "actionText": "View Source Code"
     },
     {
@@ -170,8 +170,8 @@ const PROJECT_DATA = [
         "category": "Python",
         "difficulty": "Medium",
         "type": "Backend / CLI",
-        "path": "python-projects/medium/circo",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/python-projects/medium/circo",
+        "path": "python/medium/circo",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/python/medium/circo",
         "actionText": "View Source Code"
     },
     {
@@ -179,8 +179,8 @@ const PROJECT_DATA = [
         "category": "Python",
         "difficulty": "Medium",
         "type": "Backend / CLI",
-        "path": "python-projects/medium/library-management-system/dev-hiring-test",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/python-projects/medium/library-management-system/dev-hiring-test",
+        "path": "python/medium/library-management-system/dev-hiring-test",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/python/medium/library-management-system/dev-hiring-test",
         "actionText": "View Source Code"
     },
     {
@@ -188,8 +188,8 @@ const PROJECT_DATA = [
         "category": "Python",
         "difficulty": "Medium",
         "type": "Backend / CLI",
-        "path": "python-projects/medium/ping-pong-game",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/python-projects/medium/ping-pong-game",
+        "path": "python/medium/ping-pong-game",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/python/medium/ping-pong-game",
         "actionText": "View Source Code"
     },
     {
@@ -197,8 +197,8 @@ const PROJECT_DATA = [
         "category": "Python",
         "difficulty": "Medium",
         "type": "Backend / CLI",
-        "path": "python-projects/medium/speed-typing-test",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/python-projects/medium/speed-typing-test",
+        "path": "python/medium/speed-typing-test",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/python/medium/speed-typing-test",
         "actionText": "View Source Code"
     },
     {
@@ -206,8 +206,8 @@ const PROJECT_DATA = [
         "category": "Python",
         "difficulty": "Medium",
         "type": "Backend / CLI",
-        "path": "python-projects/medium/sudoku",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/python-projects/medium/sudoku",
+        "path": "python/medium/sudoku",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/python/medium/sudoku",
         "actionText": "View Source Code"
     },
     {
@@ -215,8 +215,8 @@ const PROJECT_DATA = [
         "category": "Java",
         "difficulty": "Easy",
         "type": "Backend / CLI",
-        "path": "java-projects/easy/temperature-converter",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/java-projects/easy/temperature-converter",
+        "path": "java/easy/temperature-converter",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/java/easy/temperature-converter",
         "actionText": "View Source Code"
     },
     {
@@ -224,8 +224,8 @@ const PROJECT_DATA = [
         "category": "Java",
         "difficulty": "Expert",
         "type": "Backend / CLI",
-        "path": "java-projects/expert/stock-trading-engine",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/java-projects/expert/stock-trading-engine",
+        "path": "java/expert/stock-trading-engine",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/java/expert/stock-trading-engine",
         "actionText": "View Source Code"
     },
     {
@@ -233,8 +233,8 @@ const PROJECT_DATA = [
         "category": "Java",
         "difficulty": "Hard",
         "type": "Backend / CLI",
-        "path": "java-projects/hard/mall-management-system",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/java-projects/hard/mall-management-system",
+        "path": "java/hard/mall-management-system",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/java/hard/mall-management-system",
         "actionText": "View Source Code"
     },
     {
@@ -242,8 +242,8 @@ const PROJECT_DATA = [
         "category": "Java",
         "difficulty": "Hard",
         "type": "Backend / CLI",
-        "path": "java-projects/hard/photo-manager/app/src/android-test/java/com/example/sudhanshusingh/manageit",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/java-projects/hard/photo-manager/app/src/android-test/java/com/example/sudhanshusingh/manageit",
+        "path": "java/hard/photo-manager/app/src/android-test/java/com/example/sudhanshusingh/manageit",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/java/hard/photo-manager/app/src/android-test/java/com/example/sudhanshusingh/manageit",
         "actionText": "View Source Code"
     },
     {
@@ -252,8 +252,8 @@ const PROJECT_DATA = [
         "isHero": true,
         "difficulty": "Hard",
         "type": "Android App",
-        "path": "java-projects/hard/photo-manager/app/src/main/java/com/example/sudhanshusingh/manageit",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/java-projects/hard/photo-manager/app/src/main/java/com/example/sudhanshusingh/manageit",
+        "path": "java/hard/photo-manager/app/src/main/java/com/example/sudhanshusingh/manageit",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/java/hard/photo-manager/app/src/main/java/com/example/sudhanshusingh/manageit",
         "actionText": "View Source Code"
     },
     {
@@ -261,8 +261,8 @@ const PROJECT_DATA = [
         "category": "Java",
         "difficulty": "Hard",
         "type": "Backend / CLI",
-        "path": "java-projects/hard/photo-manager/app/src/test/java/com/example/sudhanshusingh/manageit",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/java-projects/hard/photo-manager/app/src/test/java/com/example/sudhanshusingh/manageit",
+        "path": "java/hard/photo-manager/app/src/test/java/com/example/sudhanshusingh/manageit",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/java/hard/photo-manager/app/src/test/java/com/example/sudhanshusingh/manageit",
         "actionText": "View Source Code"
     },
     {
@@ -270,8 +270,8 @@ const PROJECT_DATA = [
         "category": "Java",
         "difficulty": "Medium",
         "type": "Backend / CLI",
-        "path": "java-projects/medium/scientific-calculator/app/src/android-test/java/com/sudhanshusingh/scientificcalc",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/java-projects/medium/scientific-calculator/app/src/android-test/java/com/sudhanshusingh/scientificcalc",
+        "path": "java/medium/scientific-calculator/app/src/android-test/java/com/sudhanshusingh/scientificcalc",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/java/medium/scientific-calculator/app/src/android-test/java/com/sudhanshusingh/scientificcalc",
         "actionText": "View Source Code"
     },
     {
@@ -279,8 +279,8 @@ const PROJECT_DATA = [
         "category": "Java",
         "difficulty": "Medium",
         "type": "Backend / CLI",
-        "path": "java-projects/medium/scientific-calculator/app/src/main/java/com/sudhanshusingh/sudhanshusingh-calculator",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/java-projects/medium/scientific-calculator/app/src/main/java/com/sudhanshusingh/sudhanshusingh-calculator",
+        "path": "java/medium/scientific-calculator/app/src/main/java/com/sudhanshusingh/sudhanshusingh-calculator",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/java/medium/scientific-calculator/app/src/main/java/com/sudhanshusingh/sudhanshusingh-calculator",
         "actionText": "View Source Code"
     },
     {
@@ -288,8 +288,8 @@ const PROJECT_DATA = [
         "category": "Java",
         "difficulty": "Medium",
         "type": "Backend / CLI",
-        "path": "java-projects/medium/scientific-calculator/app/src/test/java/com/dataflair/scientificcalc",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/java-projects/medium/scientific-calculator/app/src/test/java/com/dataflair/scientificcalc",
+        "path": "java/medium/scientific-calculator/app/src/test/java/com/dataflair/scientificcalc",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/java/medium/scientific-calculator/app/src/test/java/com/dataflair/scientificcalc",
         "actionText": "View Source Code"
     },
     {
@@ -297,8 +297,8 @@ const PROJECT_DATA = [
         "category": "C",
         "difficulty": "Easy",
         "type": "Backend / CLI",
-        "path": "c-projects/easy/calendar",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/c-projects/easy/calendar",
+        "path": "c/easy/calendar",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/c/easy/calendar",
         "actionText": "View Source Code"
     },
     {
@@ -306,8 +306,8 @@ const PROJECT_DATA = [
         "category": "C",
         "difficulty": "Easy",
         "type": "Backend / CLI",
-        "path": "c-projects/easy/number-guessing-game",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/c-projects/easy/number-guessing-game",
+        "path": "c/easy/number-guessing-game",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/c/easy/number-guessing-game",
         "actionText": "View Source Code"
     },
     {
@@ -315,8 +315,8 @@ const PROJECT_DATA = [
         "category": "C",
         "difficulty": "Expert",
         "type": "Backend / CLI",
-        "path": "c-projects/expert/simple-shell",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/c-projects/expert/simple-shell",
+        "path": "c/expert/simple-shell",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/c/expert/simple-shell",
         "actionText": "View Source Code"
     },
     {
@@ -324,8 +324,8 @@ const PROJECT_DATA = [
         "category": "C",
         "difficulty": "Expert",
         "type": "Backend / CLI",
-        "path": "c-projects/expert/web-server",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/c-projects/expert/web-server",
+        "path": "c/expert/web-server",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/c/expert/web-server",
         "actionText": "View Source Code"
     },
     {
@@ -333,8 +333,8 @@ const PROJECT_DATA = [
         "category": "C",
         "difficulty": "Hard",
         "type": "Backend / CLI",
-        "path": "c-projects/hard/bank-system",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/c-projects/hard/bank-system",
+        "path": "c/hard/bank-system",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/c/hard/bank-system",
         "actionText": "View Source Code"
     },
     {
@@ -342,8 +342,8 @@ const PROJECT_DATA = [
         "category": "C",
         "difficulty": "Hard",
         "type": "Backend / CLI",
-        "path": "c-projects/hard/hospital-management",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/c-projects/hard/hospital-management",
+        "path": "c/hard/hospital-management",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/c/hard/hospital-management",
         "actionText": "View Source Code"
     },
     {
@@ -351,8 +351,8 @@ const PROJECT_DATA = [
         "category": "C",
         "difficulty": "Medium",
         "type": "Backend / CLI",
-        "path": "c-projects/medium/phonebook-system",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/c-projects/medium/phonebook-system",
+        "path": "c/medium/phonebook-system",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/c/medium/phonebook-system",
         "actionText": "View Source Code"
     },
     {
@@ -360,8 +360,8 @@ const PROJECT_DATA = [
         "category": "C",
         "difficulty": "Medium",
         "type": "Backend / CLI",
-        "path": "c-projects/medium/voting-system",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/c-projects/medium/voting-system",
+        "path": "c/medium/voting-system",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/c/medium/voting-system",
         "actionText": "View Source Code"
     },
     {
@@ -369,8 +369,8 @@ const PROJECT_DATA = [
         "category": "Cpp",
         "difficulty": "Easy",
         "type": "Backend / CLI",
-        "path": "cpp-projects/easy/simple-calculator",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/cpp-projects/easy/simple-calculator",
+        "path": "cpp/easy/simple-calculator",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/cpp/easy/simple-calculator",
         "actionText": "View Source Code"
     },
     {
@@ -378,8 +378,8 @@ const PROJECT_DATA = [
         "category": "Cpp",
         "difficulty": "Easy",
         "type": "Backend / CLI",
-        "path": "cpp-projects/easy/stopwatch",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/cpp-projects/easy/stopwatch",
+        "path": "cpp/easy/stopwatch",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/cpp/easy/stopwatch",
         "actionText": "View Source Code"
     },
     {
@@ -387,8 +387,8 @@ const PROJECT_DATA = [
         "category": "Cpp",
         "difficulty": "Easy",
         "type": "Backend / CLI",
-        "path": "cpp-projects/easy/unit-converter",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/cpp-projects/easy/unit-converter",
+        "path": "cpp/easy/unit-converter",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/cpp/easy/unit-converter",
         "actionText": "View Source Code"
     },
     {
@@ -396,8 +396,8 @@ const PROJECT_DATA = [
         "category": "Cpp",
         "difficulty": "Expert",
         "type": "Backend / CLI",
-        "path": "cpp-projects/expert/memory-allocator",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/cpp-projects/expert/memory-allocator",
+        "path": "cpp/expert/memory-allocator",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/cpp/expert/memory-allocator",
         "actionText": "View Source Code"
     },
     {
@@ -405,8 +405,8 @@ const PROJECT_DATA = [
         "category": "Cpp",
         "difficulty": "Expert",
         "type": "Backend / CLI",
-        "path": "cpp-projects/expert/trading-simulator",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/cpp-projects/expert/trading-simulator",
+        "path": "cpp/expert/trading-simulator",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/cpp/expert/trading-simulator",
         "actionText": "View Source Code"
     },
     {
@@ -414,8 +414,8 @@ const PROJECT_DATA = [
         "category": "Cpp",
         "difficulty": "Hard",
         "type": "Backend / CLI",
-        "path": "cpp-projects/hard/bank-management",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/cpp-projects/hard/bank-management",
+        "path": "cpp/hard/bank-management",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/cpp/hard/bank-management",
         "actionText": "View Source Code"
     },
     {
@@ -423,8 +423,8 @@ const PROJECT_DATA = [
         "category": "Cpp",
         "difficulty": "Hard",
         "type": "Backend / CLI",
-        "path": "cpp-projects/hard/college-management-system",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/cpp-projects/hard/college-management-system",
+        "path": "cpp/hard/college-management-system",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/cpp/hard/college-management-system",
         "actionText": "View Source Code"
     },
     {
@@ -432,8 +432,8 @@ const PROJECT_DATA = [
         "category": "Cpp",
         "difficulty": "Medium",
         "type": "Backend / CLI",
-        "path": "cpp-projects/medium/scientific-calculator",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/cpp-projects/medium/scientific-calculator",
+        "path": "cpp/medium/scientific-calculator",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/cpp/medium/scientific-calculator",
         "actionText": "View Source Code"
     },
     {
@@ -441,8 +441,8 @@ const PROJECT_DATA = [
         "category": "Cpp",
         "difficulty": "Medium",
         "type": "Backend / CLI",
-        "path": "cpp-projects/medium/student-grade-system",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/cpp-projects/medium/student-grade-system",
+        "path": "cpp/medium/student-grade-system",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/cpp/medium/student-grade-system",
         "actionText": "View Source Code"
     },
     {
@@ -450,8 +450,8 @@ const PROJECT_DATA = [
         "category": "Rust",
         "difficulty": "Easy",
         "type": "Backend / CLI",
-        "path": "rust-projects/easy/celsius-fahrenheit",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/rust-projects/easy/celsius-fahrenheit",
+        "path": "rust/easy/celsius-fahrenheit",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/rust/easy/celsius-fahrenheit",
         "actionText": "View Source Code"
     },
     {
@@ -459,8 +459,8 @@ const PROJECT_DATA = [
         "category": "Rust",
         "difficulty": "Easy",
         "type": "Backend / CLI",
-        "path": "rust-projects/easy/guessing-game",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/rust-projects/easy/guessing-game",
+        "path": "rust/easy/guessing-game",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/rust/easy/guessing-game",
         "actionText": "View Source Code"
     },
     {
@@ -468,8 +468,8 @@ const PROJECT_DATA = [
         "category": "Rust",
         "difficulty": "Expert",
         "type": "Backend / CLI",
-        "path": "rust-projects/expert/async-executor",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/rust-projects/expert/async-executor",
+        "path": "rust/expert/async-executor",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/rust/expert/async-executor",
         "actionText": "View Source Code"
     },
     {
@@ -477,8 +477,8 @@ const PROJECT_DATA = [
         "category": "Rust",
         "difficulty": "Expert",
         "type": "Backend / CLI",
-        "path": "rust-projects/expert/blockchain-rust",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/rust-projects/expert/blockchain-rust",
+        "path": "rust/expert/blockchain-rust",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/rust/expert/blockchain-rust",
         "actionText": "View Source Code"
     },
     {
@@ -486,8 +486,8 @@ const PROJECT_DATA = [
         "category": "Rust",
         "difficulty": "Hard",
         "type": "Backend / CLI",
-        "path": "rust-projects/hard/chat-server",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/rust-projects/hard/chat-server",
+        "path": "rust/hard/chat-server",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/rust/hard/chat-server",
         "actionText": "View Source Code"
     },
     {
@@ -495,8 +495,8 @@ const PROJECT_DATA = [
         "category": "Rust",
         "difficulty": "Hard",
         "type": "Backend / CLI",
-        "path": "rust-projects/hard/file-compressor",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/rust-projects/hard/file-compressor",
+        "path": "rust/hard/file-compressor",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/rust/hard/file-compressor",
         "actionText": "View Source Code"
     },
     {
@@ -504,8 +504,8 @@ const PROJECT_DATA = [
         "category": "Rust",
         "difficulty": "Medium",
         "type": "Backend / CLI",
-        "path": "rust-projects/medium/calculator",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/rust-projects/medium/calculator",
+        "path": "rust/medium/calculator",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/rust/medium/calculator",
         "actionText": "View Source Code"
     },
     {
@@ -513,8 +513,8 @@ const PROJECT_DATA = [
         "category": "Rust",
         "difficulty": "Medium",
         "type": "Backend / CLI",
-        "path": "rust-projects/medium/to-do-cli",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/rust-projects/medium/to-do-cli",
+        "path": "rust/medium/to-do-cli",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/rust/medium/to-do-cli",
         "actionText": "View Source Code"
     },
     {
@@ -522,8 +522,8 @@ const PROJECT_DATA = [
         "category": "Go",
         "difficulty": "Easy",
         "type": "Backend / CLI",
-        "path": "go-projects/easy/hello-server",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/go-projects/easy/hello-server",
+        "path": "go/easy/hello-server",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/go/easy/hello-server",
         "actionText": "View Source Code"
     },
     {
@@ -531,8 +531,8 @@ const PROJECT_DATA = [
         "category": "Go",
         "difficulty": "Easy",
         "type": "Backend / CLI",
-        "path": "go-projects/easy/number-guess",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/go-projects/easy/number-guess",
+        "path": "go/easy/number-guess",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/go/easy/number-guess",
         "actionText": "View Source Code"
     },
     {
@@ -540,8 +540,8 @@ const PROJECT_DATA = [
         "category": "Go",
         "difficulty": "Expert",
         "type": "Backend / CLI",
-        "path": "go-projects/expert/k8s-controller",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/go-projects/expert/k8s-controller",
+        "path": "go/expert/k8s-controller",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/go/expert/k8s-controller",
         "actionText": "View Source Code"
     },
     {
@@ -549,8 +549,8 @@ const PROJECT_DATA = [
         "category": "Go",
         "difficulty": "Expert",
         "type": "Backend / CLI",
-        "path": "go-projects/expert/microservice-mesh",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/go-projects/expert/microservice-mesh",
+        "path": "go/expert/microservice-mesh",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/go/expert/microservice-mesh",
         "actionText": "View Source Code"
     },
     {
@@ -558,8 +558,8 @@ const PROJECT_DATA = [
         "category": "Go",
         "difficulty": "Hard",
         "type": "Backend / CLI",
-        "path": "go-projects/hard/distributed-cache",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/go-projects/hard/distributed-cache",
+        "path": "go/hard/distributed-cache",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/go/hard/distributed-cache",
         "actionText": "View Source Code"
     },
     {
@@ -567,8 +567,8 @@ const PROJECT_DATA = [
         "category": "Go",
         "difficulty": "Hard",
         "type": "Backend / CLI",
-        "path": "go-projects/hard/load-balancer",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/go-projects/hard/load-balancer",
+        "path": "go/hard/load-balancer",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/go/hard/load-balancer",
         "actionText": "View Source Code"
     },
     {
@@ -576,8 +576,8 @@ const PROJECT_DATA = [
         "category": "Go",
         "difficulty": "Medium",
         "type": "Backend / CLI",
-        "path": "go-projects/medium/crud-api",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/go-projects/medium/crud-api",
+        "path": "go/medium/crud-api",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/go/medium/crud-api",
         "actionText": "View Source Code"
     },
     {
@@ -585,8 +585,8 @@ const PROJECT_DATA = [
         "category": "Go",
         "difficulty": "Medium",
         "type": "Backend / CLI",
-        "path": "go-projects/medium/slack-bot",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/go-projects/medium/slack-bot",
+        "path": "go/medium/slack-bot",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/go/medium/slack-bot",
         "actionText": "View Source Code"
     },
     {
@@ -594,8 +594,8 @@ const PROJECT_DATA = [
         "category": "CSharp",
         "difficulty": "Easy",
         "type": "Backend / CLI",
-        "path": "csharp-projects/easy/console-calculator",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/csharp-projects/easy/console-calculator",
+        "path": "csharp/easy/console-calculator",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/csharp/easy/console-calculator",
         "actionText": "View Source Code"
     },
     {
@@ -603,8 +603,8 @@ const PROJECT_DATA = [
         "category": "CSharp",
         "difficulty": "Easy",
         "type": "Backend / CLI",
-        "path": "csharp-projects/easy/number-guess",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/csharp-projects/easy/number-guess",
+        "path": "csharp/easy/number-guess",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/csharp/easy/number-guess",
         "actionText": "View Source Code"
     },
     {
@@ -612,8 +612,8 @@ const PROJECT_DATA = [
         "category": "CSharp",
         "difficulty": "Expert",
         "type": "Backend / CLI",
-        "path": "csharp-projects/expert/ecommerce-backend",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/csharp-projects/expert/ecommerce-backend",
+        "path": "csharp/expert/ecommerce-backend",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/csharp/expert/ecommerce-backend",
         "actionText": "View Source Code"
     },
     {
@@ -621,8 +621,8 @@ const PROJECT_DATA = [
         "category": "CSharp",
         "difficulty": "Expert",
         "type": "Backend / CLI",
-        "path": "csharp-projects/expert/stock-simulator",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/csharp-projects/expert/stock-simulator",
+        "path": "csharp/expert/stock-simulator",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/csharp/expert/stock-simulator",
         "actionText": "View Source Code"
     },
     {
@@ -630,8 +630,8 @@ const PROJECT_DATA = [
         "category": "CSharp",
         "difficulty": "Hard",
         "type": "Backend / CLI",
-        "path": "csharp-projects/hard/chat-app",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/csharp-projects/hard/chat-app",
+        "path": "csharp/hard/chat-app",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/csharp/hard/chat-app",
         "actionText": "View Source Code"
     },
     {
@@ -639,8 +639,8 @@ const PROJECT_DATA = [
         "category": "CSharp",
         "difficulty": "Hard",
         "type": "Backend / CLI",
-        "path": "csharp-projects/hard/inventory-system",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/csharp-projects/hard/inventory-system",
+        "path": "csharp/hard/inventory-system",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/csharp/hard/inventory-system",
         "actionText": "View Source Code"
     },
     {
@@ -648,8 +648,8 @@ const PROJECT_DATA = [
         "category": "CSharp",
         "difficulty": "Medium",
         "type": "Backend / CLI",
-        "path": "csharp-projects/medium/expense-tracker",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/csharp-projects/medium/expense-tracker",
+        "path": "csharp/medium/expense-tracker",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/csharp/medium/expense-tracker",
         "actionText": "View Source Code"
     },
     {
@@ -657,8 +657,8 @@ const PROJECT_DATA = [
         "category": "Typescript",
         "difficulty": "Easy",
         "type": "Backend / CLI",
-        "path": "typescript-projects/easy/ts-calculator",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/typescript-projects/easy/ts-calculator",
+        "path": "typescript/easy/ts-calculator",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/typescript/easy/ts-calculator",
         "actionText": "View Source Code"
     },
     {
@@ -666,8 +666,8 @@ const PROJECT_DATA = [
         "category": "Typescript",
         "difficulty": "Easy",
         "type": "Backend / CLI",
-        "path": "typescript-projects/easy/ts-to-do-cli",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/typescript-projects/easy/ts-to-do-cli",
+        "path": "typescript/easy/ts-to-do-cli",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/typescript/easy/ts-to-do-cli",
         "actionText": "View Source Code"
     },
     {
@@ -675,8 +675,8 @@ const PROJECT_DATA = [
         "category": "Typescript",
         "difficulty": "Expert",
         "type": "Backend / CLI",
-        "path": "typescript-projects/expert/compiler-transpiler",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/typescript-projects/expert/compiler-transpiler",
+        "path": "typescript/expert/compiler-transpiler",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/typescript/expert/compiler-transpiler",
         "actionText": "View Source Code"
     },
     {
@@ -684,8 +684,8 @@ const PROJECT_DATA = [
         "category": "Typescript",
         "difficulty": "Expert",
         "type": "Backend / CLI",
-        "path": "typescript-projects/expert/graph-ql-federation",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/typescript-projects/expert/graph-ql-federation",
+        "path": "typescript/expert/graph-ql-federation",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/typescript/expert/graph-ql-federation",
         "actionText": "View Source Code"
     },
     {
@@ -693,8 +693,8 @@ const PROJECT_DATA = [
         "category": "Typescript",
         "difficulty": "Hard",
         "type": "Backend / CLI",
-        "path": "typescript-projects/hard/nest-js-blog",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/typescript-projects/hard/nest-js-blog",
+        "path": "typescript/hard/nest-js-blog",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/typescript/hard/nest-js-blog",
         "actionText": "View Source Code"
     },
     {
@@ -702,8 +702,8 @@ const PROJECT_DATA = [
         "category": "Typescript",
         "difficulty": "Medium",
         "type": "Backend / CLI",
-        "path": "typescript-projects/medium/express-ts-api",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/typescript-projects/medium/express-ts-api",
+        "path": "typescript/medium/express-ts-api",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/typescript/medium/express-ts-api",
         "actionText": "View Source Code"
     },
     {
@@ -711,8 +711,8 @@ const PROJECT_DATA = [
         "category": "Nodejs",
         "difficulty": "Easy",
         "type": "Backend / CLI",
-        "path": "nodejs-projects/easy/file-metadata",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/nodejs-projects/easy/file-metadata",
+        "path": "nodejs/easy/file-metadata",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/nodejs/easy/file-metadata",
         "actionText": "View Source Code"
     },
     {
@@ -720,8 +720,8 @@ const PROJECT_DATA = [
         "category": "Nodejs",
         "difficulty": "Easy",
         "type": "Backend / CLI",
-        "path": "nodejs-projects/easy/timestamp-api",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/nodejs-projects/easy/timestamp-api",
+        "path": "nodejs/easy/timestamp-api",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/nodejs/easy/timestamp-api",
         "actionText": "View Source Code"
     },
     {
@@ -729,8 +729,8 @@ const PROJECT_DATA = [
         "category": "Nodejs",
         "difficulty": "Expert",
         "type": "Backend / CLI",
-        "path": "nodejs-projects/expert/real-time-chat",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/nodejs-projects/expert/real-time-chat",
+        "path": "nodejs/expert/real-time-chat",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/nodejs/expert/real-time-chat",
         "actionText": "View Source Code"
     },
     {
@@ -738,8 +738,8 @@ const PROJECT_DATA = [
         "category": "Nodejs",
         "difficulty": "Expert",
         "type": "Backend / CLI",
-        "path": "nodejs-projects/expert/video-streaming-server",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/nodejs-projects/expert/video-streaming-server",
+        "path": "nodejs/expert/video-streaming-server",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/nodejs/expert/video-streaming-server",
         "actionText": "View Source Code"
     },
     {
@@ -747,8 +747,8 @@ const PROJECT_DATA = [
         "category": "Nodejs",
         "difficulty": "Hard",
         "type": "Backend / CLI",
-        "path": "nodejs-projects/hard/blog-api",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/nodejs-projects/hard/blog-api",
+        "path": "nodejs/hard/blog-api",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/nodejs/hard/blog-api",
         "actionText": "View Source Code"
     },
     {
@@ -756,8 +756,8 @@ const PROJECT_DATA = [
         "category": "Nodejs",
         "difficulty": "Medium",
         "type": "Backend / CLI",
-        "path": "nodejs-projects/medium/url-shortener",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/nodejs-projects/medium/url-shortener",
+        "path": "nodejs/medium/url-shortener",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/nodejs/medium/url-shortener",
         "actionText": "View Source Code"
     },
     {
@@ -766,8 +766,8 @@ const PROJECT_DATA = [
         "isHero": true,
         "difficulty": "Easy",
         "type": "Frontend UI",
-        "path": "javascript-projects/easy/personal-portfolio",
-        "actionUrl": "https://sudhanshu1402.github.io/personal-projects/javascript-projects/easy/personal-portfolio/index.html",
+        "path": "javascript/easy/personal-portfolio",
+        "actionUrl": "https://sudhanshu1402.github.io/personal-projects/javascript/easy/personal-portfolio/index.html",
         "actionText": "Open Live Preview"
     },
     {
@@ -775,8 +775,8 @@ const PROJECT_DATA = [
         "category": "Javascript",
         "difficulty": "Easy",
         "type": "Frontend UI",
-        "path": "javascript-projects/easy/quiz-page",
-        "actionUrl": "https://sudhanshu1402.github.io/personal-projects/javascript-projects/easy/quiz-page/index.html",
+        "path": "javascript/easy/quiz-page",
+        "actionUrl": "https://sudhanshu1402.github.io/personal-projects/javascript/easy/quiz-page/index.html",
         "actionText": "Open Live Preview"
     },
     {
@@ -785,8 +785,8 @@ const PROJECT_DATA = [
         "isHero": true,
         "difficulty": "Expert",
         "type": "Frontend UI",
-        "path": "javascript-projects/expert/kanban-board",
-        "actionUrl": "https://sudhanshu1402.github.io/personal-projects/javascript-projects/expert/kanban-board/index.html",
+        "path": "javascript/expert/kanban-board",
+        "actionUrl": "https://sudhanshu1402.github.io/personal-projects/javascript/expert/kanban-board/index.html",
         "actionText": "Open Live Preview"
     },
     {
@@ -794,8 +794,8 @@ const PROJECT_DATA = [
         "category": "Javascript",
         "difficulty": "Hard",
         "type": "Frontend UI",
-        "path": "javascript-projects/hard/furnicto",
-        "actionUrl": "https://sudhanshu1402.github.io/personal-projects/javascript-projects/hard/furnicto/index.html",
+        "path": "javascript/hard/furnicto",
+        "actionUrl": "https://sudhanshu1402.github.io/personal-projects/javascript/hard/furnicto/index.html",
         "actionText": "Open Live Preview"
     },
     {
@@ -803,8 +803,8 @@ const PROJECT_DATA = [
         "category": "Javascript",
         "difficulty": "Hard",
         "type": "Frontend UI",
-        "path": "javascript-projects/hard/weather-dashboard",
-        "actionUrl": "https://sudhanshu1402.github.io/personal-projects/javascript-projects/hard/weather-dashboard/index.html",
+        "path": "javascript/hard/weather-dashboard",
+        "actionUrl": "https://sudhanshu1402.github.io/personal-projects/javascript/hard/weather-dashboard/index.html",
         "actionText": "Open Live Preview"
     },
     {
@@ -812,8 +812,8 @@ const PROJECT_DATA = [
         "category": "Javascript",
         "difficulty": "Medium",
         "type": "Frontend UI",
-        "path": "javascript-projects/medium/decibell",
-        "actionUrl": "https://github.com/sudhanshu1402/personal-projects/tree/main/javascript-projects/medium/decibell",
+        "path": "javascript/medium/decibell",
+        "actionUrl": "https://github.com/sudhanshu1402/engineering-projects/tree/main/javascript/medium/decibell",
         "actionText": "View Source Code"
     },
     {
@@ -821,8 +821,8 @@ const PROJECT_DATA = [
         "category": "Javascript",
         "difficulty": "Medium",
         "type": "Frontend UI",
-        "path": "javascript-projects/medium/task-manager",
-        "actionUrl": "https://sudhanshu1402.github.io/personal-projects/javascript-projects/medium/task-manager/index.html",
+        "path": "javascript/medium/task-manager",
+        "actionUrl": "https://sudhanshu1402.github.io/personal-projects/javascript/medium/task-manager/index.html",
         "actionText": "Open Live Preview"
     }
 ];
