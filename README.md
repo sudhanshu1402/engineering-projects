@@ -3,19 +3,19 @@
 <div align="center">
 
   <!-- Tactical Header -->
-  <img src="https://readme-typing-svg.demolab.com?font=Syne&weight=800&size=36&duration=3000&pause=1000&color=2D3436&center=true&vCenter=true&multiline=true&width=1000&height=100&lines=THE+VAULT+%E2%80%94+ENGINEERING+ARCHIVE;89+DECODED+ARTIFACTS+%7C+10+LANGUAGES" alt="The Vault - Engineering Archive" />
+  <img src="https://readme-typing-svg.demolab.com?font=Syne&weight=800&size=36&duration=3000&pause=1000&color=2D3436&center=true&vCenter=true&multiline=true&width=1000&height=100&lines=THE+VAULT+%E2%80%94+ENGINEERING+ARCHIVE;90+DECODED+ARTIFACTS+%7C+10+LANGUAGES" alt="The Vault - Engineering Archive" />
 
   <br>
 
   [![CI Status](https://github.com/sudhanshu1402/personal-projects/actions/workflows/ci.yml/badge.svg)](https://github.com/sudhanshu1402/personal-projects/actions)
   [![License: MIT](https://img.shields.io/badge/License-MIT-blueviolet.svg)](https://opensource.org/licenses/MIT)
-  [![Projects](https://img.shields.io/badge/Projects-89-success?style=flat-square&logo=target&logoColor=white)](#)
+  [![Projects](https://img.shields.io/badge/Projects-90-success?style=flat-square&logo=target&logoColor=white)](#)
   [![Quality](https://img.shields.io/badge/System_Status-OPTIMAL-3b82f6?style=flat-square&logo=icloud&logoColor=white)](#)
 
   <br>
 
   ### [LAUNCH INTERACTIVE PORTFOLIO](https://sudhanshu1402.github.io)
-  **A high-performance archive of 89 historical artifacts decoded across 10 programming languages.**
+  **A high-performance archive of 90 historical artifacts decoded across 10 programming languages.**
 
 </div>
 
@@ -60,9 +60,9 @@ Every artifact in this archive is designed for instant exploration. Frontend pro
 
 ## Engineering Quality & QA
 
-This repository has undergone a **comprehensive 100-hour engineering audit** to ensure:
-- **100% Documentation Coverage**: All 89 projects feature standardized READMEs.
-- **Reliable CI/CD**: Fully automated builds and deployment pipelines.
+This repository has undergone a structured cleanup pass to ensure:
+- **Documentation**: Projects carry standardized READMEs across the archive.
+- **CI**: A GitHub Actions workflow builds the Go projects on every push; JavaScript validation is a placeholder pending real test wiring.
 - **Standardized Naming**: Multi-language support for PascalCase, snake_case, and kebab-case conventions.
 
 ---
