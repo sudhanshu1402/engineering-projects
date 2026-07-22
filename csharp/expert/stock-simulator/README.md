@@ -1,9 +1,38 @@
 # Stock Simulator
 
-## Overview
+A C# console project scaffold for a stock market simulator. Currently a stub.
 
-This is a **Expert**-level **Backend / CLI** application crafted using **CSharp**. It explores core concepts, architectural patterns, and practical execution within this technology stack.
+## Status
 
-## Execution
+Honest heads-up: this isn't implemented yet. `program.cs` is a single `Main` that prints a placeholder line and holds a comment marking where the simulation logic will go. There's no market model, no pricing engine, no portfolio, no tests.
 
-`dotnet run` to build and execute the C# application.
+```csharp
+static void Main(string[] args)
+{
+    Console.WriteLine("Stock Market Simulator logic here...");
+    // Complex simulation logic stub
+}
+```
+
+## Run it
+
+```
+dotnet run
+```
+
+Prints:
+
+```
+Stock Market Simulator logic here...
+```
+
+The `.replit` file (`run = "dotnet run"`) wires the same command up on Replit.
+
+## Stack
+
+- C# (.NET, run via `dotnet`)
+- No external dependencies — no `.csproj` committed here, just the source file and the Replit runner config.
+
+## Scope
+
+Placeholder for a learning exercise. Filed under `csharp/expert` in the engineering-projects collection, but the code doesn't reflect that difficulty yet — it's a starting point, not a finished simulator.

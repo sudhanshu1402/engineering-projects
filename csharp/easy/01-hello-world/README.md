@@ -1,32 +1,55 @@
-# 01 Hello World
+# Hello World (C#)
 
-## Overview
-**01 Hello World** is a **Easy** difficulty project implemented in **C#**.
+The classic first program: print a line of text to the console. First entry in the C# easy track.
 
-## Project Structure
-The following directory structure visualizes the file organization of this project.
+## Status
 
-```text
-01-Hello-World
+Placeholder. There's no source code in this folder yet — just this README. The sibling folders (`console-calculator`, `number-guess`) each hold a `program.cs`; this one is still to be added.
 
+## What it will be
+
+A minimal C# console app that writes `Hello, World!` to standard output. The point is to get a toolchain working end to end: write a file, compile it, run it, see output.
+
+## Expected shape
+
+Once added, the program is one statement:
+
+```csharp
+Console.WriteLine("Hello, World!");
 ```
 
-## Components
-Visual representation of the primary files in this project:
+With top-level statements (C# 9+) that's the whole file. The older form wraps it in a class and `Main`:
 
-```mermaid
-graph TD
-    01-Hello-World[01-Hello-World]
+```csharp
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello, World!");
+    }
+}
 ```
 
-## Features
-- Implements core logic for 01 Hello World.
-- Structured for scalability and readability.
-- Demonstrates **C#** best practices for **Easy** complexity.
+## Build & run
 
-## How to Run
-1. Navigate to the project directory:
-   ```bash
-   cd 01-Hello-World
-   ```
-2. Check the source code for entry points (e.g., `main` run command).
+With the .NET SDK installed:
+
+```bash
+dotnet run
+```
+
+Or compile a single file directly:
+
+```bash
+dotnet run program.cs   # .NET 10+ file-based apps
+```
+
+Expected output:
+
+```
+Hello, World!
+```
+
+## Scope
+
+Learning exercise. Nothing to it beyond confirming the environment works.

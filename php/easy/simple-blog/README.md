@@ -1,34 +1,48 @@
 # Simple Blog
 
-## Overview
-**Simple Blog** is a **Easy** difficulty project implemented in **PHP-Laravel**.
+A single-file PHP page that loops over a hardcoded array of posts and prints them as HTML. A beginner exercise in mixing PHP with HTML markup.
 
-## Project Structure
-The following directory structure visualizes the file organization of this project.
+## What it does
 
-```text
-Simple-Blog
-└── index.php
+`index.php` defines two blog posts in a PHP array, then uses a `foreach` loop with alternative syntax (`foreach ... endforeach`) to render each one's title and content inside the page. That's the whole thing — no database, no routing, no framework.
 
+It's here to practice two basics:
+- Embedding PHP inside HTML and escaping in/out of `<?php ?>` tags.
+- The short echo tag `<?= ... ?>` for printing values.
+
+## Stack
+
+Plain PHP. No dependencies, no build step, no framework. (Despite the folder path, there's no Laravel here.)
+
+## Run it
+
+You need PHP installed. From this directory:
+
+```bash
+php -S localhost:8000
 ```
 
-## Components
-Visual representation of the primary files in this project:
+Then open http://localhost:8000 in a browser.
 
-```mermaid
-graph TD
-    Simple-Blog[Simple-Blog]
-    Simple_Blog --> index_php(index.php)
+Or run it straight through the CLI to see the raw HTML output:
+
+```bash
+php index.php
 ```
 
-## Features
-- Implements core logic for Simple Blog.
-- Structured for scalability and readability.
-- Demonstrates **PHP-Laravel** best practices for **Easy** complexity.
+## The data
 
-## How to Run
-1. Navigate to the project directory:
-   ```bash
-   cd Simple-Blog
-   ```
-2. Check the source code for entry points (e.g., `main` run command).
+Posts are hardcoded near the top of the file:
+
+```php
+$posts = [
+    ["title" => "First Post", "content" => "Hello World!"],
+    ["title" => "PHP is cool", "content" => "It is widely used."]
+];
+```
+
+To change what shows up, edit that array. Each entry needs a `title` and a `content` key.
+
+## Scope
+
+Learning toy, not a real blog. Posts are static, there's no way to add or edit them at runtime, and output isn't HTML-escaped (fine for this fixed data, not fine for user input). Next steps if you wanted to grow it: read posts from a file or database, add a form to create them, and escape output with `htmlspecialchars`.

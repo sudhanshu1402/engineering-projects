@@ -1,35 +1,44 @@
-# Microservices Demo with Spring Boot
+# microservices-demo
 
-## Overview
-A comprehensive microservices architecture designed to demonstrate scalable backend systems. This project serves as a reference implementation for **Service Discovery**, **API Gateway pattern**, and **Distributed Tracing**.
+A Maven multi-module skeleton for a Spring Boot microservices setup. Right now it's just the parent POM — the module sources aren't here yet.
 
-## Architecture
+## What's actually in this directory
 
-```mermaid
-graph LR
-    Client -->|HTTP| Gateway[API Gateway :8080]
-    Gateway -->|Route| Order[Order Service]
-    Gateway -->|Route| Product[Product Service]
+One file: `pom.xml`. It's a parent aggregator POM (`packaging=pom`) that inherits from `spring-boot-starter-parent` 3.1.2 and declares three child modules:
 
-    subgraph Infrastructure
-        Gateway -.->|Register| Eureka[Eureka Discovery Server]
-        Order -.->|Register| Eureka
-        Product -.->|Register| Eureka
-    end
+- `discovery-service` — intended as a Eureka service registry
+- `api-gateway` — intended as a Spring Cloud Gateway entry point
+- `order-service` — intended as a domain service
+
+None of those module directories exist in this folder. The POM points at them, but the code hasn't been written.
+
+## Build status
+
+`mvn clean install` will **fail** as-is. Maven tries to resolve the three declared modules and can't find them:
+
+```
+Child module .../discovery-service of .../pom.xml does not exist
 ```
 
-## Components
-- **Discovery Service (Eureka)**: Registry for all microservices.
-- **API Gateway (Spring Cloud Gateway)**: Unified entry point for external traffic.
-- **Order Service**: Functional domain service for order processing.
+To get a green build you'd need to either create the module directories (each with its own `pom.xml` and `src/`) or remove the `<modules>` block.
 
-## Tech Stack
-- **Languages**: Java 17
-- **Framework**: Spring Boot 3, Spring Cloud
-- **Build Tool**: Maven
-- **Infrastructure**: Docker
+## Intended architecture
 
-## Getting Started
-1. Run `mvn clean install`
-2. Start the Discovery Service first.
-3. Start the API Gateway and Order Service.
+The plan the POM implies:
+
+```
+Client ── HTTP ──> API Gateway ──> Order Service
+                        │
+                        └── all services register with Eureka
+```
+
+Standard three-piece pattern: a discovery server, a gateway that routes to services, and at least one business service behind it.
+
+## Scope note
+
+This is a scaffold, not a working app. It's the parent POM stage of a microservices exercise — the module implementations are still to be built. Don't expect it to run.
+
+## Stack (declared)
+
+- Java / Spring Boot 3.1.2, Spring Cloud (implied by Eureka + Gateway)
+- Maven multi-module build

@@ -1,34 +1,31 @@
 # Forum
 
-## Overview
-**Forum** is a **Hard** difficulty project implemented in **PHP-Laravel**.
+A stub. Prints a hardcoded list of two forum topics as HTML links.
 
-## Project Structure
-The following directory structure visualizes the file organization of this project.
+## What it actually is
 
-```text
-Forum
-└── index.php
+`index.php` is 8 lines. It defines an array of two topic names (`General Discussion`, `Help & Support`) and echoes each one inside a `<div>` with a dead `#` link. That's the whole program. No routing, no database, no posts, no users.
 
+Despite living under `hard/`, this is a placeholder, not a working forum.
+
+## Run it
+
+Needs PHP. From this directory:
+
+```bash
+php -S localhost:8000
 ```
 
-## Components
-Visual representation of the primary files in this project:
+Then open http://localhost:8000 in a browser. Or just run `php index.php` to dump the raw HTML to your terminal.
 
-```mermaid
-graph TD
-    Forum[Forum]
-    Forum --> index_php(index.php)
+## Output
+
+```html
+<h1>Forum Stub</h1>
+<div><a href='#'>General Discussion</a></div>
+<div><a href='#'>Help & Support</a></div>
 ```
 
-## Features
-- Implements core logic for Forum.
-- Structured for scalability and readability.
-- Demonstrates **PHP-Laravel** best practices for **Hard** complexity.
+## Scope
 
-## How to Run
-1. Navigate to the project directory:
-   ```bash
-   cd Forum
-   ```
-2. Check the source code for entry points (e.g., `main` run command).
+Placeholder only. To become a real forum it would need at minimum: persistent storage for topics and posts, a way to create threads and replies, and real links instead of `#`.

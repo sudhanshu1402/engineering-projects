@@ -1,10 +1,13 @@
-# Learning-Practice-
+# learning-practice
 
-> **Note:** This repository is part of my public learning archive. For my active, production-grade work, please see my pinned repositories on my [GitHub Profile](https://github.com/sudhanshu1402).
+Scratch space for miscellaneous coding practice — the odds and ends that don't fit the language folders.
 
-This repository contains code written during my college studies and self-study focused on **Miscellaneous Learning and Practice**. I keep this public for complete transparency, documenting my technical progression from early implementations to my current architectural work in distributed systems.
+## Status
 
-## Overview
-- **Core Technology:** Various Programming Languages & Tools
-- **Timeframe:** College / Early Self-Study
-- **Primary Focus:** Miscellaneous scripting, coding challenges, and daily practice
+Empty for now. This folder is reserved for one-off experiments, quick scripts, and coding-challenge attempts that aren't tied to a specific language track. Nothing has landed here yet, so there's no code to build or run.
+
+For the projects that do exist, see the language folders in the [parent repo](../) (each split into `easy` / `medium` / `hard` / `expert`), or the [portfolio site](https://sudhanshu1402.github.io).
+
+## Scope
+
+Part of a personal learning archive, kept public for transparency. When throwaway practice code shows up here, it stays throwaway — small, unpolished, and mostly for my own reference.

@@ -1,160 +1,173 @@
 # Subconscious Robotics
 
-Production-ready Sim-to-Real framework for robot training using PyBullet simulation with domain randomization for sim-to-real transfer.
+Reinforcement learning setup for teaching an 8-DoF quadruped to walk in PyBullet, with domain randomization aimed at sim-to-real transfer. Built and run on Apple Silicon (MPS).
 
-## Features
+This is a personal RL/robotics project. The pipeline works end to end — simulate, train with PPO or SAC, evaluate, export to ONNX — but the checkpoints in `outputs/` are from short, interrupted runs, so the robot hasn't learned a clean gait yet. Treat it as a working learning harness, not a solved locomotion task.
 
-- **Subconscious Training**: Train robot policies using PPO/SAC with parallelized environments
-- **Domain Randomization**: Automatic physics parameter randomization (mass, friction, gravity) for sim-to-real transfer
-- **Multi-Objective Rewards**: Configurable reward shaping with curriculum learning support
-- **Apple Silicon Optimized**: Native MPS (Metal) acceleration detection
-- **TensorBoard Integration**: Real-time training visualization
-- **ONNX Export**: Deploy trained models to hardware
+## What's in here
 
-## Quick Start (macOS)
+A Gymnasium environment wrapping a PyBullet simulation of a four-legged robot (torso + hip/knee joint per leg = 8 actuated joints). The agent outputs target joint positions; the environment steps the physics, computes a shaped reward, and returns a 25-dimensional observation. Training is done with Stable Baselines3 (PPO or SAC), configured through Hydra, with a CLI wrapper on top.
 
-### 1. Install Dependencies (Recommended: Conda/Miniforge)
-Due to PyBullet compilation issues on macOS Apple Silicon, we strongly recommend using Conda:
+The parts that actually run:
+
+- **`QuadrupedEnv`** (`src/env/base_env.py`) — the environment. 25-dim observation (base orientation, angular/linear velocity, 8 joint positions, 8 joint velocities), 8-dim continuous action, position control with fixed PD gains, termination on falling over or excessive tilt.
+- **Domain randomization** (`src/env/domain_randomization.py`) — per-reset randomization of link mass, contact friction, gravity, joint damping, plus Gaussian observation noise. Ranges live in `configs/physics.yaml`.
+- **Training** (`src/train.py`) — SB3 PPO/SAC with a `[256, 256, 128]` MLP policy, vectorized envs, TensorBoard logging, periodic checkpoints, and a couple of custom callbacks (a rich-terminal status printer and a headless video recorder that dumps MP4 clips every 50k steps).
+- **Evaluation** (`src/eval.py`) — runs episodes with a trained model, prints per-episode reward/length/distance and summary stats.
+- **ONNX export** (`export/onnx_export.py`) — wraps the SB3 policy's deterministic action path, exports to ONNX, and verifies with onnxruntime.
+- **CLI** (`src/cli.py`) — `robot-train` with `train`, `eval`, `export`, `info`, and `inspect-robot` (an interactive PyBullet GUI with per-joint sliders and keyboard force controls).
+
+## Stack
+
+From `pyproject.toml` / `requirements.txt`:
+
+- Python 3.10+
+- PyBullet (physics)
+- Gymnasium (env interface)
+- Stable Baselines3 (PPO / SAC)
+- PyTorch (with MPS support)
+- Hydra + OmegaConf (config)
+- Click (CLI), Rich (terminal output)
+- ONNX + onnxruntime (export)
+- imageio / moviepy (video recording)
+
+## Setup
+
+PyBullet is a pain to compile on Apple Silicon, so a conda env with a prebuilt wheel is the path of least resistance:
 
 ```bash
-# 1. Install Miniforge (if not installed)
+# Miniforge if you don't have it
 brew install miniforge
 conda init zsh && source ~/.zshrc
 
-# 2. Create environment with pre-compiled PyBullet
 conda create -n robotics python=3.11 pybullet -c conda-forge -y
 conda activate robotics
 
-# 3. Install remaining dependencies
 pip install -r requirements.txt
 pip install -e .
 ```
 
-### 2. Verify Setup
-Run the included verification script to check PyBullet, MPS acceleration, and environment:
+Then check everything loads (device detection, PyBullet connect, URDF, one env step):
+
 ```bash
 python verify_setup.py
 ```
 
-### 3. Training
+## Running it
+
+Training (defaults come from `configs/`: PPO, 1M timesteps, 4 parallel envs):
+
 ```bash
-# Fast headless training
-robot-train train
-
-# Live visualization (Watch Mode)
-robot-train train --watch
-
-# Custom parameters
-robot-train train --algorithm sac --timesteps 1000000 --envs 8
+robot-train train                        # headless
+robot-train train --watch                # live GUI at 1x, single env
+robot-train train -a sac -t 500000       # SAC, 500k steps
+robot-train train -n 8                    # 8 parallel envs
 ```
 
-### 4. Evaluation
+You can also run the Hydra entry point directly with dotted overrides:
+
 ```bash
-# Evaluate trained model
-robot-train eval --model outputs/checkpoints/latest/model.zip
-
-# Visual evaluation
-robot-train eval -m outputs/checkpoints/latest/model.zip --render
+python src/train.py training.algorithm=sac training.n_envs=8
 ```
 
-### 5. Export
+Evaluate a checkpoint (rendering is on by default):
+
 ```bash
-# Export to ONNX for deployment
-robot-train export --model outputs/checkpoints/latest/model.zip --optimize
+robot-train eval -m outputs/checkpoints/latest/model.zip
+robot-train eval -m outputs/checkpoints/latest/model.zip -n 20 --no-render
 ```
 
-## Project Structure
-```
-subconscious-robotics/
-├── pyproject.toml          # Dependencies
-├── configs/
-│   ├── config.yaml         # Main Hydra config
-│   ├── physics.yaml        # Domain randomization
-│   ├── reward.yaml         # Reward shaping
-│   └── agent.yaml          # PPO/SAC hyperparams
-├── src/
-│   ├── env/
-│   │   ├── base_env.py            # Gymnasium environment
-│   │   ├── domain_randomization.py # Physics randomization
-│   │   ├── reward_shaper.py       # Multi-objective rewards
-│   │   └── urdf_loader.py         # Robot loading utility
-│   ├── models/
-│   │   ├── device_utils.py        # MPS/CUDA detection
-│   │   └── policy_networks.py     # MLP/CNN architectures
-│   ├── train.py            # Training script
-│   ├── eval.py             # Evaluation script
-│   └── cli.py              # CLI interface
-├── export/
-│   └── onnx_export.py      # ONNX conversion
-├── assets/
-│   └── quadruped.urdf      # 8-DoF quadruped robot
-└── outputs/                # Training artifacts
+Export to ONNX for deployment:
+
+```bash
+robot-train export -m outputs/checkpoints/latest/model.zip --optimize
 ```
 
-## Swapping Robot Designs
+Inspect a robot interactively (sliders per joint, arrow keys push it, space applies an upward impulse):
 
-1. Place your URDF file in `assets/`
-
-2. Update `configs/config.yaml`:
-   ```yaml
-   env:
-     urdf_path: assets/your_robot.urdf
-   ```
-
-3. Or via CLI:
-   ```bash
-   robot-train train env.urdf_path=assets/your_robot.urdf
-   ```
-
-## Configuration Reference
-
-### Domain Randomization (`configs/physics.yaml`)
-
-```yaml
-domain_randomization:
-  mass:
-    range: [0.85, 1.15]  # ±15% mass variation
-  friction:
-    lateral_range: [0.5, 1.5]
-  gravity:
-    range: [-10.5, -9.0]  # Gravity variation
+```bash
+robot-train inspect-robot -u assets/quadruped.urdf
 ```
 
-### Reward Shaping (`configs/reward.yaml`)
-
-```yaml
-reward:
-  weights:
-    forward_velocity: 2.0
-    stability: -1.0
-    energy: -0.005
-    survival: 0.1
-```
-
-### Agent Hyperparameters (`configs/agent.yaml`)
-
-```yaml
-ppo:
-  learning_rate: 0.0003
-  n_steps: 2048
-  batch_size: 64
-  gamma: 0.99
-```
-
-## TensorBoard
+TensorBoard:
 
 ```bash
 tensorboard --logdir outputs/logs
 ```
 
-## Requirements
+## Layout
 
-- Python 3.10+
-- macOS (Apple Silicon recommended) / Linux / Windows
-- PyBullet 3.2.5+
-- Stable Baselines3 2.2.1+
-- PyTorch 2.1+ (with MPS support)
+```
+subconscious-robotics/
+├── configs/              # Hydra configs
+│   ├── config.yaml       # main: env, training, eval
+│   ├── physics.yaml      # domain randomization + physics params
+│   ├── reward.yaml       # reward weights (see note below)
+│   └── agent.yaml        # PPO/SAC hyperparams, net arch
+├── src/
+│   ├── env/
+│   │   ├── base_env.py            # QuadrupedEnv (Gymnasium)
+│   │   ├── domain_randomization.py
+│   │   ├── reward_shaper.py       # standalone reward/curriculum utils
+│   │   └── urdf_loader.py         # URDF inspection helper
+│   ├── models/
+│   │   ├── device_utils.py        # MPS/CUDA/CPU selection
+│   │   └── policy_networks.py     # custom MLP/CNN extractors
+│   ├── train.py
+│   ├── eval.py
+│   └── cli.py
+├── export/onnx_export.py
+├── assets/
+│   ├── quadruped.urdf    # 8-DoF quadruped (main robot)
+│   └── simple-robot.urdf # 2-link arm (for inspect-robot)
+├── verify_setup.py
+└── outputs/              # logs, checkpoints, videos, tensorboard
+```
 
-## License
+## Reward
 
-MIT
+The quadruped's reward is a weighted sum computed inside `QuadrupedEnv._compute_reward`. Components and their (hardcoded) weights:
+
+| Component | Weight | What it rewards |
+|---|---|---|
+| forward_velocity | +2.0 | moving in +x |
+| stability | −1.0 | penalizes roll/pitch tilt |
+| energy | −0.005 | penalizes joint torque |
+| survival | +0.1 | staying above the height threshold |
+| smoothness | −0.1 | penalizes jerky action changes |
+| foot_contact | +0.05 | feet touching ground |
+| height_bonus | +0.2 | keeping torso near target height |
+
+Worth knowing: these weights live in code, not in `configs/reward.yaml`. That YAML file (and `src/env/reward_shaper.py`, with its `RewardShaper` and `CurriculumScheduler`) is a separate, goal-reaching reward implementation that isn't wired into the quadruped env. It's scaffolding for a manipulation/goal task, not what drives the walker.
+
+## Domain randomization
+
+Configured in `configs/physics.yaml`, applied on every `reset()`:
+
+```yaml
+domain_randomization:
+  mass:     { range: [0.85, 1.15] }        # ±15% mass scale
+  friction: { lateral_range: [0.5, 1.5] }
+  gravity:  { range: [-10.5, -9.0] }        # z-component
+  joint_damping: { range: [0.8, 1.2] }
+  observation_noise: { position_std: 0.001, velocity_std: 0.01 }
+```
+
+The randomizer caches original link dynamics on first use so scales are applied to the true baseline each episode.
+
+## Swapping robots
+
+Drop a URDF in `assets/`, then point the env at it via config or CLI override:
+
+```bash
+robot-train train env.urdf_path=assets/your_robot.urdf
+```
+
+The catch: `QuadrupedEnv` expects specific joint names (`fl_hip_joint`, `fl_knee_joint`, …) and 8 actuated joints. A different morphology needs the joint-name list and the observation/action dimensions updated in `base_env.py`. Use `inspect-robot` to read out a URDF's joints first.
+
+## Notes / honest scope
+
+- Apple Silicon first. `device_utils.py` prefers MPS, falls back to CUDA then CPU, with a working-allocation check.
+- `policy_networks.py` defines custom MLP/CNN feature extractors, but `train.py` uses SB3's default `MlpPolicy` with an inline `net_arch`, so those extractors aren't currently on the training path.
+- Observation space is 25-dim in code (some docstrings mention 26/34 for an earlier variant that included previous actions — ignore those, the space is 25).
+- The checkpoints under `outputs/` are from runs of tens of thousands of steps that were stopped early; monitor logs show the policy still falling quickly. The config targets 1M steps — expect to actually run that (or longer) before evaluating a real gait.

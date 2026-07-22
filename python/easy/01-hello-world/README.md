@@ -1,32 +1,35 @@
-# 01 Hello World
+# Hello World (Python)
 
-## Overview
-**01 Hello World** is a **Easy** difficulty project implemented in **Python**.
+First slot in the Python / easy track. The classic starting exercise.
 
-## Project Structure
-The following directory structure visualizes the file organization of this project.
+## Status
+
+Placeholder. This directory has no source file yet — just this README. The write-up below is what the exercise is meant to hold once the script lands.
+
+## What it is
+
+A minimal Python program that prints `Hello, World!` to standard output. It exists to confirm the toolchain works: you can write a `.py` file, run it, and see output. Nothing more.
+
+## Run it
+
+Once a script (e.g. `hello.py`) is added:
+
+```bash
+python3 hello.py
+```
+
+Expected output:
 
 ```text
-01-Hello-World
-
+Hello, World!
 ```
 
-## Components
-Visual representation of the primary files in this project:
+The one-liner itself:
 
-```mermaid
-graph TD
-    01-Hello-World[01-Hello-World]
+```python
+print("Hello, World!")
 ```
 
-## Features
-- Implements core logic for 01 Hello World.
-- Structured for scalability and readability.
-- Demonstrates **Python** best practices for **Easy** complexity.
+## Scope
 
-## How to Run
-1. Navigate to the project directory:
-   ```bash
-   cd 01-Hello-World
-   ```
-2. Check the source code for entry points (e.g., `main` run command).
+Learning exercise, deliberately trivial. No dependencies, no build step, no tests.

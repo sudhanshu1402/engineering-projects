@@ -1,34 +1,33 @@
 # Task List
 
-## Overview
-**Task List** is a **Medium** difficulty project implemented in **PHP-Laravel**.
+A one-file PHP script that adds tasks to a list and shows them. Practice exercise for PHP sessions and form handling.
 
-## Project Structure
-The following directory structure visualizes the file organization of this project.
+## What it does
 
-```text
-Task-List
-└── index.php
+Type a task, hit Add, and it appends to a list rendered below the form. The list lives in `$_SESSION`, so it survives page reloads for as long as your session cookie lasts. There's no database and no file storage — restart the session (or clear cookies) and the list is gone.
 
+## Stack
+
+Plain PHP. No framework, no dependencies, no Composer. Runs on any PHP interpreter with sessions enabled.
+
+## Run it
+
+From this directory:
+
+```bash
+php -S localhost:8000
 ```
 
-## Components
-Visual representation of the primary files in this project:
+Then open http://localhost:8000/index.php and add tasks.
 
-```mermaid
-graph TD
-    Task-List[Task-List]
-    Task_List --> index_php(index.php)
-```
+## How it works
 
-## Features
-- Implements core logic for Task List.
-- Structured for scalability and readability.
-- Demonstrates **PHP-Laravel** best practices for **Medium** complexity.
+The whole thing is `index.php` (19 lines):
 
-## How to Run
-1. Navigate to the project directory:
-   ```bash
-   cd Task-List
-   ```
-2. Check the source code for entry points (e.g., `main` run command).
+- `session_start()` on every request, initializing `$_SESSION['tasks']` to an empty array the first time.
+- A POST with a `task` field gets appended to that array.
+- The array is looped and each item printed inside `<li>` tags, escaped with `htmlspecialchars()` so task text can't inject HTML.
+
+## Scope
+
+Toy project. No editing or deleting tasks, no persistence beyond the session, no validation (an empty submit adds a blank entry). It's here to demonstrate the session + POST loop, not to be a real app.

@@ -1,25 +1,62 @@
-# String Searching Method
+# Strings (C++ practice)
 
-- **1. Naïve algorithm:**
+Small, single-file C++ programs I wrote while learning how strings work in DSA. Each file solves one classic string problem, usually with a naive version and a faster version side by side so the difference is easy to see. Inputs are hard-coded in `main()`, so you compile a file and run it.
 
-The naive approach for solving the string searching problem is accomplished by performing a Brute-Force comparison of each character in the pattern at each possible placement of the pattern in the string. This algorithm is O(mn) in the worst case.
+## Tech
 
-- **2. Rabin - Karp algorithm:**
+- C++ (STL: `std::string`, `sort`, `reverse`, `substr`, `find`)
+- Some files include `<bits/stdc++.h>` (works with g++; not portable to all compilers)
+- No build system, no deps. One file = one program.
 
-String matching algorithm that compares string's hash values, rather than string themselves. Performs well in practice, and generalized to other algorithm for related problems, such as two dimensional pattern matching.
+## Build & run
 
-- **3. Knuth-Morris-Pratt algorithm:**
+```sh
+g++ anagram.cpp -o anagram
+./anagram
+```
 
-It is improved on the Brute-force algorithm and the new algorithm is capable of running O(m+n) in the worst case. This algorithm improves the running time by taking advantage of tagged borders.
+Swap in any filename. To change the input, edit the strings in that file's `main()` and recompile.
 
-- **4. Boyer-Moore algorithm:**
+## What's in here
 
-The idea behind the Boyer-Moore algorithm is information gain. Here information is gained by beginning the comparison from the end of the pattern instead of the beginning.
-It performs the string searching task in sub linear time in the average case, which even KMP algorithm could not accomplish at that time.
+| File | Problem | Approaches |
+|------|---------|-----------|
+| `input-output.cpp` | Read/print a string | `cin.get`, plus commented `cin>>` and `getline` |
+| `string-intro.cpp` | STL basics | `length`, concat, `substr`, `find`, compare, iterate |
+| `string-functions.cpp` | Length via a helper fn | `str.length()`; notes on `strlen`/`strcmp`/`strcpy` |
+| `length-string.cpp` | Count spaces | single loop |
+| `count-words.cpp` | Count words | count spaces + 1 |
+| `count-char.cpp` | Classify chars | ASCII ranges → upper / lower / digit / special |
+| `remove-spaces.cpp` | Strip spaces in place | two-pointer over a C string |
+| `palindrone.cpp` | Palindrome check | reverse-and-compare, and two-pointer |
+| `anagram.cpp` | Anagram check | sort-and-compare O(n log n), count array O(n) |
+| `anagram-string.cpp` | Anagram check (variant) | same two methods, `count[256]` |
+| `left-most-repetion.cpp` | Leftmost repeating char | O(n²) brute force, and count-array pass |
+| `sub-sequence.cpp` | Is one string a subsequence of another | two-pointer scan |
+| `word-occurrences.cpp` | Count occurrences of a word | scan + `substr` compare |
+| `pattern-searching.cpp` | Find all positions of a pattern | naive brute force + a sliding variant |
 
-## ASCll values
+## Notes on the approaches
 
-`
- NUMBER : 48-57  ||   CAPITAL : 65-90  ||   SMALLER : 97-122      `
+- The **count-array** trick (anagram, leftmost-repeating) uses a fixed `int count[256]` indexed by the character's ASCII value. It turns an O(n²) scan into O(n) with O(1) extra space, at the cost of assuming 8-bit chars.
+- **Palindrome** and **subsequence** both use the two-pointer pattern — the workhorse move for these problems.
+- `README`'s notes on Rabin-Karp, KMP, and Boyer-Moore describe faster pattern-matching algorithms; the code here only implements the naive O(mn) search.
 
-![image](https://user-images.githubusercontent.com/67835881/129482849-2e0f3e75-3350-4f96-9443-3068f0828d10.png)
+## Known rough edges
+
+These are learning drafts, not polished code. A few real bugs to be aware of:
+
+- **`anagram.cpp` / `anagram-string.cpp`**: the count-array method increments on `str1`/`str2` in the same loop without first checking equal length, so it can read out of bounds when lengths differ. `anagram.cpp` guards length before that method; `anagram-string.cpp`'s `str1[i] || str2[i]` length check is not a valid one.
+- **`left-most-repetion.cpp`**: `leftMostRepeated` indexes `count[str[i]]` in the second loop (should iterate the string and return the first char with count > 1), and falls off the end with no `return`.
+- **`pattern-searching.cpp`**: both loops use `i < n - m` (misses a match at the last valid position) and `naiveSearching`'s inner loop runs to `n` instead of `m`. Treat the output as illustrative, not correct.
+- Several helpers declared `int` return nothing (they `cout` instead) — fine for a scratch file, not for reuse.
+
+## Scope
+
+Practice exercises. The point was to get reps on string manipulation and to compare naive vs. optimized thinking, not to ship a library. Read them as worked examples.
+
+## ASCII quick reference
+
+```
+digits 48–57   |   A–Z 65–90   |   a–z 97–122
+```
