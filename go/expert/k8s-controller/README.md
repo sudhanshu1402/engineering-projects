@@ -1,9 +1,32 @@
-# K8s Controller
+# k8s-controller
 
-## Overview
+Stub for a Kubernetes controller in Go. Not implemented yet.
 
-This is a **Expert**-level **Backend / CLI** application crafted using **Go**. It explores core concepts, architectural patterns, and practical execution within this technology stack.
+## What this is
 
-## Execution
+Right now `main.go` prints one line and exits:
 
-`go run .` or `go build` to compile the binary.
+```go
+func main() {
+    fmt.Println("Kubernetes Controller Stub")
+    // Use k8s.io/client-go
+}
+```
+
+That's the whole program. It's a placeholder for a real controller — the kind of process that watches Kubernetes resources and reconciles actual state toward desired state. The comment points at the intended dependency, `k8s.io/client-go`, but nothing uses it yet. There's no `go.mod`, no client, no reconcile loop.
+
+## Run it
+
+```bash
+go run .
+```
+
+Prints:
+
+```
+Kubernetes Controller Stub
+```
+
+## Scope
+
+Placeholder only. If you're looking for a working controller, this isn't one — it marks the spot where one would go.

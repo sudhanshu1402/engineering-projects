@@ -1,44 +1,75 @@
-## Sorting
+# Sorting
 
 ![](http://www.equestionanswers.com/c/images/sorting-objects.png)
 
-## Sorting algorithms
+Practice implementations of classic sorting algorithms in C++. These are learning
+exercises: single-file programs, each with its own `main()` and a hardcoded test
+array. Nothing here is a library — the point was to write the algorithms by hand
+and see them run.
 
-- Bubble Sort- A sorting algorithm which compares one element to its next element and if requires it swaps n take the largest end at the end.
-- Selection Sort - A sorting algorithm which selects a min element n place it at position 0 and cotinue toll array is sorted .
-- Insertion Sort - A sorting algorithm which selects one element from the array and is compared to the one side of the array. Element is inserted to the proper position while shifting others.
-- Quick Sort - A sorting algorithm which divides the elements into two subsets and again sorts recursively.
-- Heap Sort - A sorting algorithm which is a comparison based sorting technique based on Binary Heap data structure. ,
-- Merge sort - A sorting algorithm which divides the elements to subgroups and then merges back to make a sorted.
-- Radix Sort - A sorting algorithm used for numbers. It sorts the elements by rank of the individual digits.
+## What's in here
 
-## use of Different sorting Method
+| File | Algorithm | Notes |
+|------|-----------|-------|
+| `bubble-sort.cpp` | Bubble sort | Standard two-loop version, swaps adjacent out-of-order pairs. |
+| `selection-sort.cpp` | Selection sort | Swap-heavy variant — swaps on every smaller element found instead of tracking a min index and swapping once (the `min_idx` logic is commented out). Still sorts correctly, just does extra swaps. |
+| `insertion-sort.cpp` | Insertion sort | Shifts elements down via swaps until each value lands in place. |
+| `merge-function.cpp` | Merge step | Two ways to merge two arrays: a naive one (concatenate then `std::sort`) and a proper two-pointer merge. Prints the result, doesn't return it. |
+| `merge-divide.cpp` | Split + merge | Splits one array into left/right halves and merges them with the two-pointer method. Demonstrates the divide step, not a full recursive merge sort. |
 
-- Quick sort: When you don't need a stable sort and average case performance matters more than worst case performance. A quick sort is O(N log N) on average, O(N^2) in the worst case. A good implementation uses O(log N) auxiliary storage in the form of stack space for recursion.
+## Build & run
 
-- Merge sort: When you need a stable, O(N log N) sort, this is about your only option. The only downsides to it are that it uses O(N) auxiliary space and has a slightly larger constant than a quick sort. There are some in-place merge sorts, but AFAIK they are all either not stable or worse than O(N log N). Even the O(N log N) in place sorts have so much larger a constant than the plain old merge sort that they're more theoretical curiosities than useful algorithms.
+Each file is standalone. Compile with any C++ compiler:
 
-- Heap sort: When you don't need a stable sort and you care more about worst case performance than average case performance. It's guaranteed to be O(N log N), and uses O(1) auxiliary space, meaning that you won't unexpectedly run out of heap or stack space on very large inputs.
+```sh
+g++ bubble-sort.cpp -o bubble-sort
+./bubble-sort
+```
 
-- Introsort: This is a quick sort that switches to a heap sort after a certain recursion depth to get around quick sort's O(N^2) worst case. It's almost always better than a plain old quick sort, since you get the average case of a quick sort, with guaranteed O(N log N) performance. Probably the only reason to use a heap sort instead of this is in severely memory constrained systems where O(log N) stack space is practically significant.
+The files use `#include <bits/stdc++.h>`, which is a GCC extension — build with
+`g++`/`clang` on Linux or macOS. It won't compile with MSVC as-is.
 
-- Insertion sort: When N is guaranteed to be small, including as the base case of a quick sort or merge sort. While this is O(N^2), it has a very small constant and is a stable sort.
+## Example
 
-- Bubble sort, selection sort: When you're doing something quick and dirty and for some reason you can't just use the standard library's sorting algorithm. The only advantage these have over insertion sort is being slightly easier to implement.
+`bubble-sort.cpp` sorts a fixed array:
 
-- Non-comparison sorts: Under some fairly limited conditions it's possible to break the O(N log N) barrier and sort in O(N). Here are some cases where that's worth a try:
+```cpp
+int arr[] = {64, 34, 25, 12, 22, 11, 90};
+```
 
-- Counting sort: When you are sorting integers with a limited range.
+Output:
 
-- Radix sort: When log(N) is significantly larger than K, where K is the number of radix digits.
+```
+Sorted array:
+11 12 22 25 34 64 90
+```
 
-- Bucket sort: When you can guarantee that your input is approximately uniformly distributed.
+To sort your own data, edit the array in `main()` and recompile.
 
-## Real World Applications of Sorting
+## Rough edges
 
-- Merge Sort: Databases use an external merge sort to sort sets of data that are too large to be loaded entirely into memory. The driving factor in this sort is the reduction in the number of disk I/Os.
-- Bubble Sort: Bubble sort is used in programming TV remote to sort channels on the basis of longer viewing time.
-- Heap Sort: Heap sort is used in reading barcodes on plastic cards. The service allows to communicate with the database to constantly run checks to ensure that they were all still online and had to constantly report statistics on which readers were performing the worst, which ones got the most/least user activity, etc.
-- Quick Sort: Sports scores are organised by quick sort on the basis of win-loss ratio.
-- Radix Sort: eBay allows you to sort listings by the current Bid amount using radix sort.
-- Selection Sort: K12 education portal allows sorting list of pupils alphabetically through selection sort.
+Honest notes, since these are practice files:
+
+- The merge programs **print** the merged output rather than writing it back to an
+  array, so they can't be composed into a real recursive merge sort as written.
+- `merge-function.cpp`'s two-pointer `mergeFunction` uses `while (i < m || j < n)`
+  and then reads `a[i]`/`b[j]` unconditionally — once one side is exhausted it can
+  read out of bounds before the cleanup loops run. It happens to work on the sample
+  inputs but the loop condition should be `&&`.
+- Selection sort does more swaps than necessary (see table above).
+
+## Reference notes
+
+Quick notes on when each algorithm is worth using (broader than what's coded here):
+
+- **Quick sort** — no stability needed, average case matters more than worst case.
+  O(N log N) average, O(N²) worst, O(log N) stack space.
+- **Merge sort** — when you need a stable O(N log N) sort. Costs O(N) extra space.
+  Databases use external merge sort for data too large to fit in memory (fewer disk I/Os).
+- **Heap sort** — no stability needed, worst-case guarantee matters. O(N log N)
+  guaranteed, O(1) extra space.
+- **Insertion sort** — small N, or as the base case inside quick/merge sort. O(N²)
+  but tiny constant and stable.
+- **Bubble / selection sort** — quick-and-dirty only; easiest to hand-write.
+- **Counting / radix / bucket sort** — non-comparison sorts that beat O(N log N)
+  under specific constraints (limited integer range, few digits, uniform distribution).

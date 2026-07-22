@@ -1,32 +1,42 @@
-# 01 Hello World
+# Hello World (C++)
 
-## Overview
-**01 Hello World** is a **Easy** difficulty project implemented in **C++**.
+The first slot in the C++ practice track. A place to write the canonical
+`std::cout << "Hello, World!"` program and confirm the toolchain compiles and runs.
 
-## Project Structure
-The following directory structure visualizes the file organization of this project.
+## Status
 
-```text
-01-Hello-World
+No source file yet — this directory currently holds only this README. The code
+below is the intended starting point.
 
+## The program
+
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, World!\n";
+    return 0;
+}
 ```
 
-## Components
-Visual representation of the primary files in this project:
+Save it as `hello.cpp` in this directory.
 
-```mermaid
-graph TD
-    01-Hello-World[01-Hello-World]
+## Build & run
+
+Any C++ compiler works. With g++ or clang++:
+
+```bash
+g++ hello.cpp -o hello
+./hello
 ```
 
-## Features
-- Implements core logic for 01 Hello World.
-- Structured for scalability and readability.
-- Demonstrates **C++** best practices for **Easy** complexity.
+Expected output:
 
-## How to Run
-1. Navigate to the project directory:
-   ```bash
-   cd 01-Hello-World
-   ```
-2. Check the source code for entry points (e.g., `main` run command).
+```
+Hello, World!
+```
+
+## Scope
+
+A learning exercise, nothing more — the smallest program that proves the compiler,
+linker, and standard library are wired up correctly before moving on to real work.

@@ -1,34 +1,30 @@
-# LoopBack4 Inventory
+# LoopBack 4 Inventory
 
-## Overview
-**LoopBack4 Inventory** is a **Hard** difficulty project implemented in **Node.js**.
+Planned inventory service built on the LoopBack 4 framework. Not yet implemented — this directory is currently a placeholder.
 
-## Project Structure
-The following directory structure visualizes the file organization of this project.
+## Status
 
-```text
-LoopBack4-Inventory
-└── src
-    └── models
+There is no code here yet. The only file is this README. Nothing to build or run.
 
+The name points at the intended shape of the project: a REST API for tracking inventory (items, stock levels, maybe suppliers/orders) using [LoopBack 4](https://loopback.io/), IBM's TypeScript/Node.js API framework. LoopBack 4 leans on decorators for models, repositories, and controllers, and generates an OpenAPI spec and Swagger UI out of the box.
+
+## What it would take to start
+
+LoopBack 4 projects are scaffolded with the official CLI, not by hand:
+
+```bash
+npm install -g @loopback/cli
+lb4 app loop-back4-inventory
+cd loop-back4-inventory
+lb4 model Item
+lb4 datasource db
+lb4 repository
+lb4 controller Item
+npm start
 ```
 
-## Components
-Visual representation of the primary files in this project:
+That gives you the standard layout (`src/models`, `src/repositories`, `src/controllers`, `src/datasources`) and a running server with Swagger UI at `http://localhost:3000/explorer`.
 
-```mermaid
-graph TD
-    LoopBack4-Inventory[LoopBack4-Inventory]
-```
+## Scope
 
-## Features
-- Implements core logic for LoopBack4 Inventory.
-- Structured for scalability and readability.
-- Demonstrates **Node.js** best practices for **Hard** complexity.
-
-## How to Run
-1. Navigate to the project directory:
-   ```bash
-   cd LoopBack4-Inventory
-   ```
-2. Check the source code for entry points (e.g., `main` run command).
+Filed under `nodejs/hard` as a learning exercise. Treat this README as a stub until real source lands — none of the above has been written yet.

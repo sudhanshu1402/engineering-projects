@@ -1,33 +1,29 @@
 # EJS Express Auth
 
-## Overview
-**EJS Express Auth** is a **Medium** difficulty project implemented in **Node.js**.
+Placeholder for a server-rendered authentication app built with Express and EJS templates. **Not implemented yet** — this directory currently holds only this README.
 
-## Project Structure
-The following directory structure visualizes the file organization of this project.
+## Status
 
-```text
-EJS-Express-Auth
-└── views
+Empty scaffold. There is no `package.json`, no source files, and no `views/` directory despite what an earlier auto-generated README claimed. Nothing here runs.
 
+## Intended scope
+
+The name points at a classic learning exercise: username/password auth with server-side rendered pages.
+
+- Express as the web server
+- EJS for server-rendered login / signup / dashboard pages
+- Session or JWT-based login state
+- Password hashing (e.g. bcrypt)
+
+None of that exists in code yet. Treat the list above as the plan, not a feature set.
+
+## If you're picking this up
+
+Start from scratch:
+
+```bash
+npm init -y
+npm install express ejs express-session bcrypt
 ```
 
-## Components
-Visual representation of the primary files in this project:
-
-```mermaid
-graph TD
-    EJS-Express-Auth[EJS-Express-Auth]
-```
-
-## Features
-- Implements core logic for EJS Express Auth.
-- Structured for scalability and readability.
-- Demonstrates **Node.js** best practices for **Medium** complexity.
-
-## How to Run
-1. Navigate to the project directory:
-   ```bash
-   cd EJS-Express-Auth
-   ```
-2. Check the source code for entry points (e.g., `main` run command).
+Then add an `app.js` entry point and a `views/` folder for the EJS templates.

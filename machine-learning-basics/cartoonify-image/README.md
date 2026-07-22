@@ -1,16 +1,61 @@
 # Cartoonify Image
 
-The project cartoonify image is a simple machine learing project that turns any image into a cartoon view image.
-To convert an image to a cartoon, multiple transformations are done. Firstly, an image is converted to a Grayscale image. Yes, similar to the old day's pictures.! Then, the Grayscale image is smoothened, and we try to extract the edges in the image. Finally, we form a color image and mask it with edges. This creates a beautiful cartoon image with edges and lightened color of the original image.
+A small Python script that turns a photo into a cartoon-style image using classic OpenCV image filters. There's no machine learning model here despite the folder name — it's a hand-built image-processing pipeline with a tiny Tkinter GUI.
 
-## Libraries Used
+## What it does
 
-- CV2: Imported to use OpenCV for image processing
-- easygui: Imported to open a file box. It allows us to select any file from our system.
-- Numpy: Images are stored and processed as numbers. These are taken as arrays. We use NumPy to deal with arrays.
-- Imageio: Used to read the file which is chosen by file box using a path.
-- Matplotlib: This library is used for visualization and plotting. Thus, it is imported to form the plot of images.
-- OS: For OS interaction. Here, to read the path and save images to that path.
+The cartoon look comes from combining two things: bold black outlines and flat, smoothed color regions. The script builds both separately, then overlays them:
+
+1. Read the image and convert it from OpenCV's BGR to RGB.
+2. Make a grayscale copy.
+3. Median-blur the grayscale to remove speckle.
+4. Run adaptive thresholding on the blurred grayscale to pull out edges as a black-and-white mask.
+5. Bilateral-filter the original color image — this smooths flat areas while keeping edges crisp.
+6. Combine the smoothed color image with the edge mask (`bitwise_and`) to get the cartoon.
+
+It then plots all six stages side by side in a matplotlib grid so you can see the transformation, and gives you a button to save the result.
+
+## Stack
+
+- **Python 3**
+- **OpenCV (`cv2`)** — all the actual image processing
+- **matplotlib** — the 6-panel before/after plot
+- **Tkinter** — the small window with the two buttons
+- **Pillow, numpy** — pulled in as dependencies of the above
+
+Note: the script also imports `easygui` and `imageio`, but they aren't actually used — leftovers from the tutorial this was built from.
+
+## Run it
+
+Install the libraries:
+
+```bash
+pip install opencv-python matplotlib pillow numpy
+```
+
+Run:
+
+```bash
+python cartoonify_image.py
+```
+
+A 400x400 window opens with a **Cartoonify an Image** button. Click it to process the image and see the six-stage plot; a **Save cartoon image** button then writes the result next to the source file as `cartoonified_Image.jpg`.
+
+## Heads up: the input path is hardcoded
+
+The `upload()` function does **not** open a file picker. It points at a fixed Windows path:
+
+```python
+ImagePath = "C:/Users/admin/PycharmProjects/Cartoonify Image with Machine Learning/bros.jpg"
+```
+
+To run this on your own machine, edit that line to point at a real image — for example the bundled `bros.jpg`:
+
+```python
+ImagePath = "bros.jpg"
+```
+
+A sample image (`bros.jpg`) is included in this folder to test with.
 
 ## Input
 
@@ -19,3 +64,7 @@ To convert an image to a cartoon, multiple transformations are done. Firstly, an
 ## Output
 
 ![image](https://user-images.githubusercontent.com/99204211/183352754-79aab67b-5873-4ec9-a407-e5ad5a66f6c8.png)
+
+## Scope
+
+This is a learning exercise, not a polished tool. The input path is fixed in code, unused imports are left in, and there's no error handling beyond a check for a missing file. It's a good, readable example of building a cartoon effect from OpenCV primitives.
