@@ -5,7 +5,7 @@ The first slot in the C++ practice track. A place to write the canonical
 
 ## Status
 
-No source file yet — this directory currently holds only this README. The code
+No source file yet - this directory currently holds only this README. The code
 below is the intended starting point.
 
 ## The program
@@ -38,5 +38,5 @@ Hello, World!
 
 ## Scope
 
-A learning exercise, nothing more — the smallest program that proves the compiler,
+A learning exercise, nothing more - the smallest program that proves the compiler,
 linker, and standard library are wired up correctly before moving on to real work.

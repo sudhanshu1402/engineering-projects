@@ -12,14 +12,14 @@ Takes the body text of a news article and predicts whether it's fake (`0`) or re
 4. Train four scikit-learn classifiers and compare them.
 5. Feed in your own text for a manual prediction from all four models.
 
-Only the article `text` column is used — `title`, `subject`, and `date` are dropped, so the model learns from article body alone.
+Only the article `text` column is used - `title`, `subject`, and `date` are dropped, so the model learns from article body alone.
 
 ## Data
 
 Two CSVs from the Kaggle "Fake and real news" dataset, expected at `../input/fake-news-detection/`:
 
-- `Fake.csv` — ~23,481 fake articles
-- `True.csv` — ~21,417 real articles
+- `Fake.csv` - ~23,481 fake articles
+- `True.csv` - ~21,417 real articles
 
 The last 10 rows of each are pulled aside before training and saved to `manual_testing.csv` for out-of-sample sanity checks. The rest is merged, shuffled, and split 75/25 into train/test (~11,220 test rows).
 
@@ -34,7 +34,7 @@ TF-IDF features, default scikit-learn hyperparameters (except `random_state`). A
 | Gradient Boosting | 99.50% |
 | Random Forest | 99.13% |
 
-These numbers are high because this dataset is known to be easy — fake and real articles come from different sources with distinct stylistic tells, so the models pick up on source signal, not just "truthfulness." Treat the accuracy as a property of the dataset, not proof of a general fake-news detector.
+These numbers are high because this dataset is known to be easy - fake and real articles come from different sources with distinct stylistic tells, so the models pick up on source signal, not just "truthfulness." Treat the accuracy as a property of the dataset, not proof of a general fake-news detector.
 
 ## Stack
 
@@ -59,7 +59,7 @@ Then:
 jupyter notebook fake-news-detection.ipynb
 ```
 
-Run the cells top to bottom. Gradient Boosting is the slow one — training takes a while on the full set.
+Run the cells top to bottom. Gradient Boosting is the slow one - training takes a while on the full set.
 
 ## Manual testing
 
@@ -83,8 +83,8 @@ RFC Prediction: Not A Fake News
 
 ## Files
 
-- `fake-news-detection.ipynb` — the notebook (code only)
-- `fake-news-detection-with-output.ipynb` — same notebook with cell outputs saved
+- `fake-news-detection.ipynb` - the notebook (code only)
+- `fake-news-detection-with-output.ipynb` - same notebook with cell outputs saved
 
 ## Scope
 

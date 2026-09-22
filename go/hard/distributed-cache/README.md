@@ -1,6 +1,6 @@
 # Distributed Cache
 
-A Go scaffold for a distributed cache node. Not implemented yet — right now it's a stub.
+A Go scaffold for a distributed cache node. Not implemented yet - right now it's a stub.
 
 ## Status
 
@@ -15,7 +15,7 @@ func main() {
 
 ## Intended direction
 
-The placeholder points at consistent hashing — the usual approach for a distributed cache: hash keys and nodes onto a ring so keys map to nodes, and adding or removing a node only reshuffles a small slice of keys instead of everything. None of that exists in the code today; it's the plan the comment hints at.
+The placeholder points at consistent hashing - the usual approach for a distributed cache: hash keys and nodes onto a ring so keys map to nodes, and adding or removing a node only reshuffles a small slice of keys instead of everything. None of that exists in the code today; it's the plan the comment hints at.
 
 ## Run
 
@@ -29,7 +29,7 @@ Prints:
 Distributed Cache Node Started
 ```
 
-`go build` compiles a binary. No dependencies — standard library only, no `go.mod` in the directory.
+`go build` compiles a binary. No dependencies - standard library only, no `go.mod` in the directory.
 
 ## Scope
 

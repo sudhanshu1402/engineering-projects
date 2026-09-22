@@ -11,7 +11,7 @@ Runs a text menu loop. You can:
 3. Show your portfolio (cash left plus share counts per symbol)
 4. Exit
 
-The market is hardcoded to three symbols at fixed opening prices: AAPL ($150), GOOGL ($2800), TSLA ($700). You start with $10,000. There's no sell option — this is a learning exercise in classes, `std::map`, and a menu-driven loop, not a real trading engine.
+The market is hardcoded to three symbols at fixed opening prices: AAPL ($150), GOOGL ($2800), TSLA ($700). You start with $10,000. There's no sell option - this is a learning exercise in classes, `std::map`, and a menu-driven loop, not a real trading engine.
 
 ## Stack
 

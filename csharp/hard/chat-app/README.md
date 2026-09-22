@@ -10,7 +10,7 @@ Opens a `TcpListener` bound to `0.0.0.0:8888`, starts listening, and prints a st
 Chat Server Started...
 ```
 
-That's the whole program. It does not accept connections, read messages, or relay anything between clients yet — despite the name. The listener is started and the process then exits. Treat this as the first few lines of a chat server, not a working one.
+That's the whole program. It does not accept connections, read messages, or relay anything between clients yet - despite the name. The listener is started and the process then exits. Treat this as the first few lines of a chat server, not a working one.
 
 ## Stack
 

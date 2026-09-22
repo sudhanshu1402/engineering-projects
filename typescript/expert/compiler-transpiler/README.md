@@ -6,8 +6,8 @@ A skeleton showing the two front-end stages of a compiler in TypeScript: a token
 
 `compiler.ts` sketches the classic pipeline shape:
 
-- `tokenize(input)` — turns source text into `Token[]` (`{ type, value }`).
-- `parse(tokens)` — turns tokens into an AST node (`{ type: 'Program', body: [] }`).
+- `tokenize(input)` - turns source text into `Token[]` (`{ type, value }`).
+- `parse(tokens)` - turns tokens into an AST node (`{ type: 'Program', body: [] }`).
 
 Both are stubbed. `tokenize` ignores its input and always returns a single `let` keyword token; `parse` always returns an empty program. The file ends by running the pipeline on `"let x = 10;"` and printing the result.
 
@@ -27,7 +27,7 @@ Output:
 { type: 'Program', body: [] }
 ```
 
-The `.replit` file runs `npm install && npm start`, which won't work without a `package.json` — use the commands above instead.
+The `.replit` file runs `npm install && npm start`, which won't work without a `package.json` - use the commands above instead.
 
 ## Scope
 

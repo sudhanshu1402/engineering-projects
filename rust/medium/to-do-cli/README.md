@@ -16,12 +16,12 @@ Runs a loop with a three-option menu:
 - **List** prints every stored task with its numeric id.
 - **Exit** breaks the loop and quits.
 
-Tasks live in a `HashMap<usize, String>` in memory. There's no persistence — close the program and everything is gone. Ids are assigned as `map.len() + 1`, so they're stable only if you never delete anything (there's no delete).
+Tasks live in a `HashMap<usize, String>` in memory. There's no persistence - close the program and everything is gone. Ids are assigned as `map.len() + 1`, so they're stable only if you never delete anything (there's no delete).
 
 ## Stack
 
 - Rust (edition 2021)
-- `serde` and `serde_json` are listed in `cargo.toml` but not actually used in the code yet — presumably left in for a future "save to JSON file" step.
+- `serde` and `serde_json` are listed in `cargo.toml` but not actually used in the code yet - presumably left in for a future "save to JSON file" step.
 
 ## Build & run
 

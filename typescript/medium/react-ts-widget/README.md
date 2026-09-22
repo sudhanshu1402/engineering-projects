@@ -1,6 +1,6 @@
 # React TS Widget
 
-A single-file React counter component written in TypeScript. It's a stub — a starting point, not a finished app.
+A single-file React counter component written in TypeScript. It's a stub - a starting point, not a finished app.
 
 ## What's here
 
@@ -38,7 +38,7 @@ The `.replit` file says:
 run = "npm install && npm start"
 ```
 
-That command won't work as-is — there's no `package.json` for npm to install from, and nothing renders `Widget`. To actually run it you'd need to scaffold a project around this file. For example, with Vite:
+That command won't work as-is - there's no `package.json` for npm to install from, and nothing renders `Widget`. To actually run it you'd need to scaffold a project around this file. For example, with Vite:
 
 ```bash
 npm create vite@latest my-app -- --template react-ts

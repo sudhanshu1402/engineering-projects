@@ -10,9 +10,9 @@ It's a learning project built around Qt threading and plotting, not a production
 
 ## Stack
 
-- **PyQt5** — GUI, threads (`QThreadPool` / `QRunnable`), table model.
-- **pyqtgraph** — the plot widget.
-- **requests** + **requests-cache** — fetching rates, with an on-disk SQLite HTTP cache (`http_cache`) so repeat requests don't re-hit the network.
+- **PyQt5** - GUI, threads (`QThreadPool` / `QRunnable`), table model.
+- **pyqtgraph** - the plot widget.
+- **requests** + **requests-cache** - fetching rates, with an on-disk SQLite HTTP cache (`http_cache`) so repeat requests don't re-hit the network.
 - Data source: the old keyless `fixer.io` historic endpoint (`http://api.fixer.io/<date>`).
 
 ## Run

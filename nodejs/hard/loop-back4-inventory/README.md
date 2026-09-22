@@ -1,6 +1,6 @@
 # LoopBack 4 Inventory
 
-Planned inventory service built on the LoopBack 4 framework. Not yet implemented — this directory is currently a placeholder.
+Planned inventory service built on the LoopBack 4 framework. Not yet implemented - this directory is currently a placeholder.
 
 ## Status
 
@@ -27,4 +27,4 @@ That gives you the standard layout (`src/models`, `src/repositories`, `src/contr
 
 ## Scope
 
-Filed under `nodejs/hard` as a learning exercise. Treat this README as a stub until real source lands — none of the above has been written yet.
+Filed under `nodejs/hard` as a learning exercise. Treat this README as a stub until real source lands - none of the above has been written yet.

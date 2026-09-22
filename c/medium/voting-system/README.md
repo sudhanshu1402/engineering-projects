@@ -6,14 +6,14 @@ A small command-line voting program in C. Cast votes for one of four candidates,
 
 A menu-driven console app with three actions:
 
-1. **Cast the Vote** — pick a candidate (A, B, C, D) or "None of These" (counted as a spoiled vote).
-2. **Find Vote Count** — print the running tally for every candidate plus spoiled votes.
-3. **Find leading Candidate** — print whoever currently has the most votes.
+1. **Cast the Vote** - pick a candidate (A, B, C, D) or "None of These" (counted as a spoiled vote).
+2. **Find Vote Count** - print the running tally for every candidate plus spoiled votes.
+3. **Find leading Candidate** - print whoever currently has the most votes.
 4. **Exit** (choice `0`).
 
 Votes live in global counters (`votesCount1`–`votesCount4`, `spoiledtvotes`). Nothing is persisted; the tallies reset every run.
 
-This is a practice project — a single-file exercise in menus, `switch`, and a `do/while` loop. No files, no database, no real ballots.
+This is a practice project - a single-file exercise in menus, `switch`, and a `do/while` loop. No files, no database, no real ballots.
 
 ## Build & run
 

@@ -8,7 +8,7 @@ Picks a random number from 1 to 100 and asks you to guess it. After each guess i
 
 ## Stack
 
-Go standard library only — no dependencies, no `go.mod`. Uses `bufio` for reading input, `math/rand` for the target, and `strconv` to parse guesses.
+Go standard library only - no dependencies, no `go.mod`. Uses `bufio` for reading input, `math/rand` for the target, and `strconv` to parse guesses.
 
 ## Run
 

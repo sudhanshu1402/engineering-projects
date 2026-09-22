@@ -12,7 +12,7 @@ Projects are grouped into folders by rough difficulty. Each project is its own d
 
 | Project | What it does |
 |---|---|
-| [`01-hello-world`](easy/01-hello-world) | Placeholder starter entry — README only, no source. |
+| [`01-hello-world`](easy/01-hello-world) | Placeholder starter entry - README only, no source. |
 | [`number-guessing-game`](easy/number-guessing-game) | Picks a random 1–100 number; loops on `scanf` guesses with higher/lower hints and an attempt count. |
 | [`calendar`](easy/calendar) | C++ program that prints a formatted month calendar, with leap-year handling and day-of-week alignment. |
 

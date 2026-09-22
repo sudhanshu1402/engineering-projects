@@ -4,8 +4,8 @@ The Gradle wrapper directory for the [scientific-calculator](../) Android app. N
 
 ## What's in here
 
-- `wrapper/gradle-wrapper.jar` — the small bootstrap jar the `gradlew` scripts run.
-- `wrapper/gradle-wrapper.properties` — pins the Gradle version to download and use.
+- `wrapper/gradle-wrapper.jar` - the small bootstrap jar the `gradlew` scripts run.
+- `wrapper/gradle-wrapper.properties` - pins the Gradle version to download and use.
 
 The wrapper lets anyone build the app with the exact Gradle version it was written against, without installing Gradle by hand. Running `./gradlew` (or `gradlew.bat` on Windows) from the project root reads these files, downloads that Gradle version on first run, caches it, and runs the build.
 
@@ -21,9 +21,9 @@ Set in `wrapper/gradle-wrapper.properties` via `distributionUrl`. It also stores
 
 The calculator code, build config, and run instructions are one level up:
 
-- `../build.gradle`, `../settings.gradle` — build setup
-- `../app/` — the Android module (`MainActivity.java`, layouts, resources)
-- `../README.md` — project overview
+- `../build.gradle`, `../settings.gradle` - build setup
+- `../app/` - the Android module (`MainActivity.java`, layouts, resources)
+- `../README.md` - project overview
 
 To build from the project root:
 

@@ -6,7 +6,7 @@ A minimal TCP server in C that answers every request with the same `Hello world!
 
 About 40 lines using the POSIX sockets API. It opens a `SOCK_STREAM` socket, binds to port 8080, listens, then loops forever accepting connections. For each connection it writes one hardcoded HTTP/1.1 response and closes the socket.
 
-It does not parse the incoming request. It doesn't look at the method, path, or headers — anything you send gets the same reply. So it's not really a web server; it's a socket-programming exercise that happens to speak just enough HTTP for a browser to render one line.
+It does not parse the incoming request. It doesn't look at the method, path, or headers - anything you send gets the same reply. So it's not really a web server; it's a socket-programming exercise that happens to speak just enough HTTP for a browser to render one line.
 
 ## Build & run
 
@@ -38,7 +38,7 @@ Or open `http://localhost:8080` in a browser.
 
 - The response uses `\n` line endings; HTTP wants `\r\n`. Most clients tolerate it, but it's technically malformed.
 - `Content-Length: 12` is hardcoded and matches the 12-byte body ("Hello world!").
-- Single-threaded and blocking — one connection is fully handled before the next is accepted. `listen(server_fd, 3)` sets a backlog of 3.
+- Single-threaded and blocking - one connection is fully handled before the next is accepted. `listen(server_fd, 3)` sets a backlog of 3.
 - No graceful shutdown; kill it with Ctrl-C.
 - POSIX sockets, so Linux/macOS only.
 

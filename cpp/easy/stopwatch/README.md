@@ -31,5 +31,5 @@ Enter command: q
 ## Notes
 
 - `start()` and `stop()` guard on the `running` flag, so a second `s` while already running (or `e` while stopped) is ignored.
-- `running` is a `std::atomic<bool>`, though the program is single-threaded — `<thread>` and `<atomic>` are included but not actually used for concurrency here.
+- `running` is a `std::atomic<bool>`, though the program is single-threaded - `<thread>` and `<atomic>` are included but not actually used for concurrency here.
 - Duration is measured with `high_resolution_clock` and truncated to whole milliseconds via `duration_cast`.

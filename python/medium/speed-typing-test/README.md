@@ -12,7 +12,7 @@ Shows a splash screen, then a window with a random sentence pulled from `sentenc
 
 Click the reset area at the bottom to start over with a new random sentence.
 
-This is a learning project — a single-file pygame exercise, not a polished product.
+This is a learning project - a single-file pygame exercise, not a polished product.
 
 ## Stack
 
@@ -49,10 +49,10 @@ Everything lives in one `Game` class in `speed_typing_test.py`:
 
 ## Assets
 
-- `sentences.txt` — the sentence pool (6 lines). Add your own, one per line.
-- `type-speed-open.png` — splash screen
-- `background.jpg` — window background
-- `icon.png` — shown with the results
+- `sentences.txt` - the sentence pool (6 lines). Add your own, one per line.
+- `type-speed-open.png` - splash screen
+- `background.jpg` - window background
+- `icon.png` - shown with the results
 
 ## Editing the sentences
 
@@ -66,6 +66,6 @@ Each line is one possible prompt.
 
 ## Known rough edges
 
-- Accuracy is strict positional matching — no alignment, so deletions/insertions cascade.
+- Accuracy is strict positional matching - no alignment, so deletions/insertions cascade.
 - Asset paths are relative, so the app only runs from its own directory.
 - Prints results to stdout as well as the window (leftover debug output).

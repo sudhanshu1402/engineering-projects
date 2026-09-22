@@ -13,7 +13,7 @@ returns `0`. The file runs two example calls and logs them:
 10 / 2 = 5
 ```
 
-That's the whole thing — a learning snippet for TypeScript basics (typed
+That's the whole thing - a learning snippet for TypeScript basics (typed
 params, `switch`, return types).
 
 ## Run it
@@ -36,7 +36,7 @@ npx tsc index.ts && node index.js
 
 - `default` case returns `0`, so an unknown operator silently gives `0`
   rather than erroring.
-- Division by zero returns `Infinity` (or `NaN` for `0/0`) — standard JS
+- Division by zero returns `Infinity` (or `NaN` for `0/0`) - standard JS
   number behavior, not handled specially.
 - The `.replit` file runs `npm install && npm start`, which won't work as-is
   without a `package.json`; use the commands above instead.

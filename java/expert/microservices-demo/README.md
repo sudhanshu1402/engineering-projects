@@ -1,14 +1,14 @@
 # microservices-demo
 
-A Maven multi-module skeleton for a Spring Boot microservices setup. Right now it's just the parent POM — the module sources aren't here yet.
+A Maven multi-module skeleton for a Spring Boot microservices setup. Right now it's just the parent POM - the module sources aren't here yet.
 
 ## What's actually in this directory
 
 One file: `pom.xml`. It's a parent aggregator POM (`packaging=pom`) that inherits from `spring-boot-starter-parent` 3.1.2 and declares three child modules:
 
-- `discovery-service` — intended as a Eureka service registry
-- `api-gateway` — intended as a Spring Cloud Gateway entry point
-- `order-service` — intended as a domain service
+- `discovery-service` - intended as a Eureka service registry
+- `api-gateway` - intended as a Spring Cloud Gateway entry point
+- `order-service` - intended as a domain service
 
 None of those module directories exist in this folder. The POM points at them, but the code hasn't been written.
 
@@ -36,7 +36,7 @@ Standard three-piece pattern: a discovery server, a gateway that routes to servi
 
 ## Scope note
 
-This is a scaffold, not a working app. It's the parent POM stage of a microservices exercise — the module implementations are still to be built. Don't expect it to run.
+This is a scaffold, not a working app. It's the parent POM stage of a microservices exercise - the module implementations are still to be built. Don't expect it to run.
 
 ## Stack (declared)
 

@@ -11,7 +11,7 @@ Despite the name, this isn't a multi-client chat room. It's a per-connection ech
 - Spawns a Tokio task per connection.
 - Reads into a 1 KB buffer and writes the same bytes back, until the client disconnects (read returns 0) or an error occurs.
 
-It's a learning exercise for async networking — `TcpListener`, `tokio::spawn`, and the async read/write traits. There's no broadcast between clients, no message framing, no protocol. Each connection only talks to itself.
+It's a learning exercise for async networking - `TcpListener`, `tokio::spawn`, and the async read/write traits. There's no broadcast between clients, no message framing, no protocol. Each connection only talks to itself.
 
 ## Stack
 
@@ -42,12 +42,12 @@ hello
 hello        # echoed back
 ```
 
-Each line you type comes straight back. Open a second `nc` in another terminal and it gets its own independent echo session — the two connections don't see each other.
+Each line you type comes straight back. Open a second `nc` in another terminal and it gets its own independent echo session - the two connections don't see each other.
 
 ## Implementation notes
 
 - The whole server is ~20 lines in `src/main.rs`.
-- Concurrency comes from `tokio::spawn` — the accept loop never blocks on a slow client, since each connection runs on its own task.
+- Concurrency comes from `tokio::spawn` - the accept loop never blocks on a slow client, since each connection runs on its own task.
 - Reads use a fixed `[0; 1024]` stack buffer per task; anything larger than 1 KB is echoed in chunks across loop iterations.
 - Errors (read or write failure) just drop the connection by returning from the task.
 

@@ -2,7 +2,7 @@
 
 Reinforcement learning setup for teaching an 8-DoF quadruped to walk in PyBullet, with domain randomization aimed at sim-to-real transfer. Built and run on Apple Silicon (MPS).
 
-This is a personal RL/robotics project. The pipeline works end to end — simulate, train with PPO or SAC, evaluate, export to ONNX — but the checkpoints in `outputs/` are from short, interrupted runs, so the robot hasn't learned a clean gait yet. Treat it as a working learning harness, not a solved locomotion task.
+This is a personal RL/robotics project. The pipeline works end to end - simulate, train with PPO or SAC, evaluate, export to ONNX - but the checkpoints in `outputs/` are from short, interrupted runs, so the robot hasn't learned a clean gait yet. Treat it as a working learning harness, not a solved locomotion task.
 
 ## What's in here
 
@@ -10,12 +10,12 @@ A Gymnasium environment wrapping a PyBullet simulation of a four-legged robot (t
 
 The parts that actually run:
 
-- **`QuadrupedEnv`** (`src/env/base_env.py`) — the environment. 25-dim observation (base orientation, angular/linear velocity, 8 joint positions, 8 joint velocities), 8-dim continuous action, position control with fixed PD gains, termination on falling over or excessive tilt.
-- **Domain randomization** (`src/env/domain_randomization.py`) — per-reset randomization of link mass, contact friction, gravity, joint damping, plus Gaussian observation noise. Ranges live in `configs/physics.yaml`.
-- **Training** (`src/train.py`) — SB3 PPO/SAC with a `[256, 256, 128]` MLP policy, vectorized envs, TensorBoard logging, periodic checkpoints, and a couple of custom callbacks (a rich-terminal status printer and a headless video recorder that dumps MP4 clips every 50k steps).
-- **Evaluation** (`src/eval.py`) — runs episodes with a trained model, prints per-episode reward/length/distance and summary stats.
-- **ONNX export** (`export/onnx_export.py`) — wraps the SB3 policy's deterministic action path, exports to ONNX, and verifies with onnxruntime.
-- **CLI** (`src/cli.py`) — `robot-train` with `train`, `eval`, `export`, `info`, and `inspect-robot` (an interactive PyBullet GUI with per-joint sliders and keyboard force controls).
+- **`QuadrupedEnv`** (`src/env/base_env.py`) - the environment. 25-dim observation (base orientation, angular/linear velocity, 8 joint positions, 8 joint velocities), 8-dim continuous action, position control with fixed PD gains, termination on falling over or excessive tilt.
+- **Domain randomization** (`src/env/domain_randomization.py`) - per-reset randomization of link mass, contact friction, gravity, joint damping, plus Gaussian observation noise. Ranges live in `configs/physics.yaml`.
+- **Training** (`src/train.py`) - SB3 PPO/SAC with a `[256, 256, 128]` MLP policy, vectorized envs, TensorBoard logging, periodic checkpoints, and a couple of custom callbacks (a rich-terminal status printer and a headless video recorder that dumps MP4 clips every 50k steps).
+- **Evaluation** (`src/eval.py`) - runs episodes with a trained model, prints per-episode reward/length/distance and summary stats.
+- **ONNX export** (`export/onnx_export.py`) - wraps the SB3 policy's deterministic action path, exports to ONNX, and verifies with onnxruntime.
+- **CLI** (`src/cli.py`) - `robot-train` with `train`, `eval`, `export`, `info`, and `inspect-robot` (an interactive PyBullet GUI with per-joint sliders and keyboard force controls).
 
 ## Stack
 
@@ -169,5 +169,5 @@ The catch: `QuadrupedEnv` expects specific joint names (`fl_hip_joint`, `fl_knee
 
 - Apple Silicon first. `device_utils.py` prefers MPS, falls back to CUDA then CPU, with a working-allocation check.
 - `policy_networks.py` defines custom MLP/CNN feature extractors, but `train.py` uses SB3's default `MlpPolicy` with an inline `net_arch`, so those extractors aren't currently on the training path.
-- Observation space is 25-dim in code (some docstrings mention 26/34 for an earlier variant that included previous actions — ignore those, the space is 25).
-- The checkpoints under `outputs/` are from runs of tens of thousands of steps that were stopped early; monitor logs show the policy still falling quickly. The config targets 1M steps — expect to actually run that (or longer) before evaluating a real gait.
+- Observation space is 25-dim in code (some docstrings mention 26/34 for an earlier variant that included previous actions - ignore those, the space is 25).
+- The checkpoints under `outputs/` are from runs of tens of thousands of steps that were stopped early; monitor logs show the policy still falling quickly. The config targets 1M steps - expect to actually run that (or longer) before evaluating a real gait.

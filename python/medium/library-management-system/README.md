@@ -6,28 +6,28 @@ A Flask + MySQL web app for running a small lending library: catalog books, regi
 
 The app models the day-to-day of a paid lending library:
 
-- **Books** — full CRUD, plus fields for ISBN/ISBN13, rating, page count, publisher, publication date, and stock counts (`total_quantity`, `available_quantity`, `rented_count`).
-- **Members** — add, edit, delete, and view. Each member carries an `outstanding_debt` and `amount_spent`.
-- **Issue a book** — creates a transaction, decrements `available_quantity`, bumps `rented_count`. Refuses to issue if no copies are free.
-- **Return a book** — charges `per_day_fee × days held`, records how much the member actually paid, and rolls the shortfall into their outstanding debt. A member is blocked from returning if it would push their debt past Rs. 500.
-- **Import books** — pulls records from the public Frappe library API (`frappe.io/api/method/frappe-library`) by title/author/ISBN/publisher, skipping any book IDs already in the DB, and reports how many it actually imported.
-- **Search** — books by title or author (SQL `LIKE`).
-- **Reports** — top 5 members by spend, top 5 books by rental count.
+- **Books** - full CRUD, plus fields for ISBN/ISBN13, rating, page count, publisher, publication date, and stock counts (`total_quantity`, `available_quantity`, `rented_count`).
+- **Members** - add, edit, delete, and view. Each member carries an `outstanding_debt` and `amount_spent`.
+- **Issue a book** - creates a transaction, decrements `available_quantity`, bumps `rented_count`. Refuses to issue if no copies are free.
+- **Return a book** - charges `per_day_fee × days held`, records how much the member actually paid, and rolls the shortfall into their outstanding debt. A member is blocked from returning if it would push their debt past Rs. 500.
+- **Import books** - pulls records from the public Frappe library API (`frappe.io/api/method/frappe-library`) by title/author/ISBN/publisher, skipping any book IDs already in the DB, and reports how many it actually imported.
+- **Search** - books by title or author (SQL `LIKE`).
+- **Reports** - top 5 members by spend, top 5 books by rental count.
 
 ### Business rules worth noting
 
 - When a book is added, `available_quantity` is initialized to `total_quantity`.
 - Editing a book's total stock adjusts availability by the delta (`available += new_total − old_total`), so already-issued copies aren't lost.
 - Return charge is whole-days only (`(now − borrowed_on).days`), so a same-day return costs nothing.
-- Delete is wrapped in a try/except — deleting a book or member still referenced by a transaction hits a foreign-key constraint and flashes an error instead of crashing.
+- Delete is wrapped in a try/except - deleting a book or member still referenced by a transaction hits a foreign-key constraint and flashes an error instead of crashing.
 
 ## Stack
 
-- **Flask** — routing and templating (Jinja2)
-- **Flask-MySQLdb** (`MySQLdb`) — DB access from the app, with `DictCursor` so rows come back as dicts
-- **WTForms** — form definitions and validation
-- **mysql-connector-python** — used only by the DB setup script and test setup
-- **requests** — Frappe API import
+- **Flask** - routing and templating (Jinja2)
+- **Flask-MySQLdb** (`MySQLdb`) - DB access from the app, with `DictCursor` so rows come back as dicts
+- **WTForms** - form definitions and validation
+- **mysql-connector-python** - used only by the DB setup script and test setup
+- **requests** - Frappe API import
 
 Front end is server-rendered templates under `dev-hiring-test/templates/` extending a shared `layout.html`.
 
@@ -35,9 +35,9 @@ Front end is server-rendered templates under `dev-hiring-test/templates/` extend
 
 Three tables (`dev-hiring-test/library-db.sql`):
 
-- `books` — catalog + stock counts
-- `members` — profile + `outstanding_debt`, `amount_spent`
-- `transactions` — one row per issue/return, FK to `books` and `members`, with `borrowed_on`, `returned_on`, `total_charge`, `amount_paid`
+- `books` - catalog + stock counts
+- `members` - profile + `outstanding_debt`, `amount_spent`
+- `transactions` - one row per issue/return, FK to `books` and `members`, with `borrowed_on`, `returned_on`, `total_charge`, `amount_paid`
 
 A parallel `librarytestdb` schema (`library-test-db.sql`) exists for the test suite.
 

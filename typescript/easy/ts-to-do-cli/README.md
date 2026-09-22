@@ -2,15 +2,15 @@
 
 A tiny interactive to-do list that runs in the terminal. Type commands, it keeps a list in memory.
 
-This is a practice exercise for learning TypeScript and Node's `readline`. It's ~27 lines in a single file. Nothing is persisted — the list lives only for the session and is gone when you exit.
+This is a practice exercise for learning TypeScript and Node's `readline`. It's ~27 lines in a single file. Nothing is persisted - the list lives only for the session and is gone when you exit.
 
 ## What it does
 
 Starts a prompt loop and reads commands from stdin:
 
-- `add <text>` — add an item to the list
-- `list` — print the current list
-- `exit` — quit
+- `add <text>` - add an item to the list
+- `list` - print the current list
+- `exit` - quit
 
 Anything else prints `Unknown` and re-prompts.
 
@@ -51,7 +51,7 @@ Command (add/list/exit): exit
 ## Notes
 
 - `list` uses `console.log(todos)`, so it prints the raw array (with brackets and quotes) rather than a formatted list.
-- The `add ` check requires a trailing space — `add` alone falls through to `Unknown`.
+- The `add ` check requires a trailing space - `add` alone falls through to `Unknown`.
 - Storage is an in-memory `string[]`; there's no delete, edit, or save-to-disk.
 
 ## Scope

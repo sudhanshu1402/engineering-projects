@@ -4,7 +4,7 @@ Turns a list of map obstacles (lat/long + radius) into a KML file you can open i
 
 ## What it does
 
-`create.py` reads obstacle records from `input.txt`, generates a 500-point circle around each center point, and writes the circles as red line strings to `circle2.kml`. The input format looks like drone/UAS "stationary obstacle" data — cylinders defined by height, radius, latitude, and longitude.
+`create.py` reads obstacle records from `input.txt`, generates a 500-point circle around each center point, and writes the circles as red line strings to `circle2.kml`. The input format looks like drone/UAS "stationary obstacle" data - cylinders defined by height, radius, latitude, and longitude.
 
 The radius in the input is treated as feet and converted to meters (`* 0.3048`). Circle points are computed with a flat-earth approximation of degrees-per-meter, which is fine for the small radii here (the code notes it stays reasonably accurate under ~100 km).
 
@@ -26,7 +26,7 @@ Note: the included `.replit` config points at `Create.py` (capital C); the actua
 
 ## Input format
 
-`input.txt` holds JSON-ish records. The parser is line-based, not a real JSON parse — it scans for lines containing `latitude`, `longitude`, and `cylinder_radius` and pulls the value after the colon:
+`input.txt` holds JSON-ish records. The parser is line-based, not a real JSON parse - it scans for lines containing `latitude`, `longitude`, and `cylinder_radius` and pulls the value after the colon:
 
 ```
 "stationary_obstacles": [
@@ -56,5 +56,5 @@ point[0] = centerLon + (180 / math.pi) * (dx / 6378137) / math.cos(centerLat * m
 Practice script, not a library. A few rough edges worth knowing:
 
 - Values are pulled by string matching, so the input has to keep one field per line in the expected order.
-- `extract()` mixes `for i in file` with `file.readlines()` and returns inside the loop — it happens to work for this input but is fragile.
+- `extract()` mixes `for i in file` with `file.readlines()` and returns inside the loop - it happens to work for this input but is fragile.
 - Filenames, circle color, line width, and point count (500) are all hardcoded.

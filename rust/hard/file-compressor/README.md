@@ -4,14 +4,14 @@ Gzip-compresses a file and prints how long it took. A small Rust exercise in str
 
 ## What it does
 
-Reads `input.txt`, writes a gzip-compressed `output.gz`, and prints the elapsed time. That's the whole program — about 15 lines in `src/main.rs`.
+Reads `input.txt`, writes a gzip-compressed `output.gz`, and prints the elapsed time. That's the whole program - about 15 lines in `src/main.rs`.
 
 It streams the data instead of loading the whole file into memory: `std::io::copy` pumps bytes from a `BufReader` straight into a `GzEncoder`, so file size isn't bounded by RAM.
 
 ## Stack
 
 - Rust (edition 2021)
-- [`flate2`](https://crates.io/crates/flate2) 1.0 — DEFLATE/gzip encoding, at `Compression::default()`
+- [`flate2`](https://crates.io/crates/flate2) 1.0 - DEFLATE/gzip encoding, at `Compression::default()`
 
 ## Build & run
 
@@ -43,10 +43,10 @@ cargo build --release
 
 ## Notes
 
-- Paths (`input.txt`, `output.gz`) and the compression level are fixed in source. No CLI args yet — changing files means editing `main.rs`.
+- Paths (`input.txt`, `output.gz`) and the compression level are fixed in source. No CLI args yet - changing files means editing `main.rs`.
 - Errors are handled with `.unwrap()`, so a missing `input.txt` panics rather than printing a friendly message.
 - The build manifest is `cargo.toml` (lowercase). Cargo expects `Cargo.toml`, so rename it if `cargo run` can't find the package.
-- The `src/.replit` file compiles `main.rs` directly with `rustc`, bypassing Cargo — a leftover from a Replit setup.
+- The `src/.replit` file compiles `main.rs` directly with `rustc`, bypassing Cargo - a leftover from a Replit setup.
 
 ## Scope
 

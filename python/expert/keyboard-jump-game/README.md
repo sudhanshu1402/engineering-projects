@@ -16,16 +16,16 @@ The score is shown at the top. On game over you see the final score, and pressin
 ## Stack
 
 - Python
-- [pygame](https://www.pygame.org/) — window, image rendering, keyboard events, font drawing
+- [pygame](https://www.pygame.org/) - window, image rendering, keyboard events, font drawing
 
 Assets bundled in the folder:
 
-- `keyback.jpg` — front/game-over screen background
-- `teacher-background.jpg` — in-game background
-- `char.jpg` — the character sprite
-- `wood-.png` — the plank the word rides on
-- `comic.ttf` — font used for all text
-- `words.txt` — comma-separated word list the game draws from
+- `keyback.jpg` - front/game-over screen background
+- `teacher-background.jpg` - in-game background
+- `char.jpg` - the character sprite
+- `wood-.png` - the plank the word rides on
+- `comic.ttf` - font used for all text
+- `words.txt` - comma-separated word list the game draws from
 
 ## Run it
 
@@ -38,7 +38,7 @@ python keyboard_jump_game.py
 
 The script loads images and fonts by relative path, so run it from inside this directory.
 
-Note: the included `.replit` points at `Keyboard Jump Game.py`, but the actual file is `keyboard_jump_game.py` — use the real filename.
+Note: the included `.replit` points at `Keyboard Jump Game.py`, but the actual file is `keyboard_jump_game.py` - use the real filename.
 
 ## How the code works
 

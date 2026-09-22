@@ -15,7 +15,7 @@ func main() {
 
 ## The idea
 
-A service mesh moves cross-cutting network concerns (routing, retries, mTLS, observability) out of application code and into a sidecar proxy that sits next to each service and intercepts its traffic. This directory is the starting point for building that sidecar — currently just the entry point.
+A service mesh moves cross-cutting network concerns (routing, retries, mTLS, observability) out of application code and into a sidecar proxy that sits next to each service and intercepts its traffic. This directory is the starting point for building that sidecar - currently just the entry point.
 
 ## Run
 

@@ -15,7 +15,7 @@ Supported operations (from `MainActivity.java`):
 - Factorial: `!`
 - Utility: decimal point, backspace (`DEL`), clear (`C`)
 
-Each button is wired straight to a Java method via `android:onClick` in the layout — `btn_add`, `btn_sin`, `btn_equal`, and so on. There's no expression parser; state lives in a few fields (`sign`, `val_1`, `val_2`, `has_Dot`) and `btn_equal` runs a `switch` on the stored `sign`.
+Each button is wired straight to a Java method via `android:onClick` in the layout - `btn_add`, `btn_sin`, `btn_equal`, and so on. There's no expression parser; state lives in a few fields (`sign`, `val_1`, `val_2`, `has_Dot`) and `btn_equal` runs a `switch` on the stored `sign`.
 
 ## Stack
 
@@ -25,7 +25,7 @@ Each button is wired straight to a Java method via `android:onClick` in the layo
 - Gradle (Android Gradle Plugin 4.0.0)
 - Package: `com.dataflair.scientificcalc`
 
-No third-party math library — everything runs on `java.lang.Math`.
+No third-party math library - everything runs on `java.lang.Math`.
 
 ## Build & run
 
@@ -42,7 +42,7 @@ APK lands at `app/build/outputs/apk/debug/app-debug.apk`.
 
 ## How the math behaves (worth knowing)
 
-- **Trig is in radians.** `sin`/`cos`/`tan` pass the raw input straight to `Math.sin` etc., so `sin(90)` is *not* 1 — it's `sin(90 radians)`. No degree conversion.
+- **Trig is in radians.** `sin`/`cos`/`tan` pass the raw input straight to `Math.sin` etc., so `sin(90)` is *not* 1 - it's `sin(90 radians)`. No degree conversion.
 - **Only one operation at a time.** There's no chaining; `2 + 3 × 4` isn't a thing. You compute one binary (or unary) operation, then start over.
 - **Factorial truncates.** It does `Integer.parseInt(val_1)` and loops down, so a decimal input is cut to its integer part and large values overflow.
 - **Results are raw `Double.toString`.** So integer results show as `5.0`, and division can surface floating-point tails like `0.30000000000000004`.
@@ -70,7 +70,7 @@ app/
     └── android-test/  # ExampleInstrumentedTest (default template stub)
 ```
 
-The tests are the stock Android Studio placeholders (`assertEquals(4, 2 + 2)` and the instrumentation package-name check) — no real coverage of the calculator logic.
+The tests are the stock Android Studio placeholders (`assertEquals(4, 2 + 2)` and the instrumentation package-name check) - no real coverage of the calculator logic.
 
 ## Note on file names
 

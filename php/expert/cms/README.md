@@ -21,7 +21,7 @@ $cms = new CMS();
 $cms->renderPage(isset($_GET['page']) ? $_GET['page'] : 'home');
 ```
 
-No templates, routing, database, or storage. `htmlspecialchars` on the slug is the one real touch — it stops the echoed input from being an XSS vector.
+No templates, routing, database, or storage. `htmlspecialchars` on the slug is the one real touch - it stops the echoed input from being an XSS vector.
 
 ## Stack
 
@@ -51,4 +51,4 @@ php index.php
 
 ## Scope
 
-Practice stub. The `renderPage` method is the seed you'd build a real page loader around — swap the `echo` for template lookup and content fetching. As it stands it does exactly the two things above.
+Practice stub. The `renderPage` method is the seed you'd build a real page loader around - swap the `echo` for template lookup and content fetching. As it stands it does exactly the two things above.

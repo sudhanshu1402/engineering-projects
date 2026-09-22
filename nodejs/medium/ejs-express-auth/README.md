@@ -1,6 +1,6 @@
 # EJS Express Auth
 
-Placeholder for a server-rendered authentication app built with Express and EJS templates. **Not implemented yet** — this directory currently holds only this README.
+Placeholder for a server-rendered authentication app built with Express and EJS templates. **Not implemented yet** - this directory currently holds only this README.
 
 ## Status
 

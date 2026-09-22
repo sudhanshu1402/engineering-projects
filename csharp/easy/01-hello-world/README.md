@@ -4,7 +4,7 @@ The classic first program: print a line of text to the console. First entry in t
 
 ## Status
 
-Placeholder. There's no source code in this folder yet — just this README. The sibling folders (`console-calculator`, `number-guess`) each hold a `program.cs`; this one is still to be added.
+Placeholder. There's no source code in this folder yet - just this README. The sibling folders (`console-calculator`, `number-guess`) each hold a `program.cs`; this one is still to be added.
 
 ## What it will be
 

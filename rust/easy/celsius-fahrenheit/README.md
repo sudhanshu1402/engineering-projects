@@ -4,12 +4,12 @@ A command-line Rust program that reads a Celsius temperature and prints it in Fa
 
 ## What it does
 
-Prompts for a Celsius value on stdin, parses it as a floating-point number, applies `C * 1.8 + 32`, and prints the Fahrenheit result. That's the whole program — a beginner exercise for stdin input, string parsing, and basic arithmetic in Rust.
+Prompts for a Celsius value on stdin, parses it as a floating-point number, applies `C * 1.8 + 32`, and prints the Fahrenheit result. That's the whole program - a beginner exercise for stdin input, string parsing, and basic arithmetic in Rust.
 
 ## Stack
 
 - Rust (edition 2021)
-- Standard library only (`std::io`) — no external dependencies
+- Standard library only (`std::io`) - no external dependencies
 
 ## Build & run
 

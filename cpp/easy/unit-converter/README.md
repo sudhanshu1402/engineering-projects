@@ -4,7 +4,7 @@ A small C++ command-line program that converts a temperature between Celsius and
 
 ## What it does
 
-You type a number and a unit letter (`C` or `F`). It prints the value converted to the other scale. That's the whole program right now — a practice exercise in reading mixed input (`std::cin >> temp >> type`) and branching on the unit.
+You type a number and a unit letter (`C` or `F`). It prints the value converted to the other scale. That's the whole program right now - a practice exercise in reading mixed input (`std::cin >> temp >> type`) and branching on the unit.
 
 The name is aspirational: `main()` has a `// Add more conversions here` comment, so temperature is the one converter implemented so far.
 

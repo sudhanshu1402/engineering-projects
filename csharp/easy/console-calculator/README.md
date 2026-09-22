@@ -28,7 +28,7 @@ Diff: 8.5
 
 ## Notes
 
-- Input is parsed with `Convert.ToDouble`, which throws on non-numeric input — no validation or retry loop.
+- Input is parsed with `Convert.ToDouble`, which throws on non-numeric input - no validation or retry loop.
 - Only addition and subtraction are implemented; no multiplication, division, or operator selection.
 
 Scope: a learning exercise, not a general-purpose calculator.

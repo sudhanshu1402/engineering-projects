@@ -4,8 +4,8 @@ Array-backed stack implementation while learning the LIFO data structure.
 
 ## What's here
 
-- **`stack-array.cpp`** — a `Stack` class backed by a fixed-size `int` array (`MAX = 10`). Implements `push`, `pop`, `peek`, and `isEmpty`, with overflow/underflow guards. `main()` runs a small driver: pushes 10, 20, 30, peeks, checks empty, then pops.
-- **`stack.cpp`** — notes and loose snippets (the four core operations written out as bare statements). Not a compilable program; it's a scratch file for the concept, linked to a [Techie Delight article](https://medium.com/techie-delight/stack-data-structure-practice-problems-and-interview-questions-9f08a35a7f19).
+- **`stack-array.cpp`** - a `Stack` class backed by a fixed-size `int` array (`MAX = 10`). Implements `push`, `pop`, `peek`, and `isEmpty`, with overflow/underflow guards. `main()` runs a small driver: pushes 10, 20, 30, peeks, checks empty, then pops.
+- **`stack.cpp`** - notes and loose snippets (the four core operations written out as bare statements). Not a compilable program; it's a scratch file for the concept, linked to a [Techie Delight article](https://medium.com/techie-delight/stack-data-structure-practice-problems-and-interview-questions-9f08a35a7f19).
 
 ## Build & run
 
@@ -28,9 +28,9 @@ Element at top is : 30
 
 ## Notes
 
-- Uses `#include <bits/stdc++.h>`, a GCC-specific header — fine for practice, not portable to non-GCC compilers.
+- Uses `#include <bits/stdc++.h>`, a GCC-specific header - fine for practice, not portable to non-GCC compilers.
 - Fixed capacity of 10; `push` prints `Stack Overflow` past that. `pop`/`peek` on an empty stack print a message and return `0`.
-- `peek()` is declared to return `int` but doesn't return a value on the success path — a bug worth noting if you reuse this code.
+- `peek()` is declared to return `int` but doesn't return a value on the success path - a bug worth noting if you reuse this code.
 
 ## Scope
 

@@ -4,7 +4,7 @@ The classic first Java program: print a line of text to the console.
 
 ## Status
 
-Placeholder. This directory currently holds only this README — the source file (`HelloWorld.java`) hasn't been added yet. It's slot `01` in the `java/easy` track.
+Placeholder. This directory currently holds only this README - the source file (`HelloWorld.java`) hasn't been added yet. It's slot `01` in the `java/easy` track.
 
 ## What it will be
 

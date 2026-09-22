@@ -41,6 +41,6 @@ curl -F "upfile=@/path/to/some/file.pdf" http://localhost:3000/api/fileanalyse
 
 ## Notes
 
-- Size comes from `req.file.size` (actual bytes on disk), type from the browser-reported `mimetype` — so `type` reflects what the client claims, not content sniffing.
+- Size comes from `req.file.size` (actual bytes on disk), type from the browser-reported `mimetype` - so `type` reflects what the client claims, not content sniffing.
 - No validation, size limits, or upload cleanup. It's a learning exercise, not production code.
 - `.replit` runs `npm install && npm start`, but there's no `start` script defined here; run `node index.js` locally.

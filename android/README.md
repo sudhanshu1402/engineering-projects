@@ -23,7 +23,7 @@ Single-activity app. Each button on the layout wires to a public `btn_*` handler
 
 The more involved of the two. You create categories from a floating action button, then open a category to view/add images. Images are captured via the camera (declares `CAMERA` and `WRITE_EXTERNAL_STORAGE` permissions) and shared through a `FileProvider`.
 
-- Two SQLite tables via `MyDatabaseHelper` — one for images (`_id`, tag, category, name, file, created timestamp), one for categories (name, tag count, image count)
+- Two SQLite tables via `MyDatabaseHelper` - one for images (`_id`, tag, category, name, file, created timestamp), one for categories (name, tag count, image count)
 - Data access goes through a custom `ContentProvider` (`MyDataProvider`) loaded with a `CursorLoader`
 - UI: `RecyclerView` lists/grids with custom adapters, contextual action mode for multi-select delete, `SearchView` in the toolbar, Glide for image loading, random Material toolbar colors per launch
 - `compileSdkVersion 25`, `minSdkVersion 15` (pre-AndroidX, uses `com.android.support:*`)
@@ -38,7 +38,7 @@ Each project is a standalone Gradle build. From either project directory:
 ./gradlew assembleDebug        # build the debug APK
 ```
 
-Or open the project folder in Android Studio and run it on a device/emulator. Given the SDK versions (25 and 29), these need older build tools than a current Android Studio ships with — treat them as archived rather than something to build fresh today.
+Or open the project folder in Android Studio and run it on a device/emulator. Given the SDK versions (25 and 29), these need older build tools than a current Android Studio ships with - treat them as archived rather than something to build fresh today.
 
 ## Scope
 

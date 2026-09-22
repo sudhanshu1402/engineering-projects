@@ -14,7 +14,7 @@ http://localhost:8082
 http://localhost:8083
 ```
 
-A background goroutine loops every 10 seconds as a health-check slot. Right now it's a stub that marks every backend alive — the real probe isn't implemented.
+A background goroutine loops every 10 seconds as a health-check slot. Right now it's a stub that marks every backend alive - the real probe isn't implemented.
 
 This is a learning exercise, not a production proxy. See the scope notes below.
 
@@ -36,7 +36,7 @@ Then hit the balancer:
 curl http://localhost:8000/
 ```
 
-You'll get a `502 Backend Error` unless something is actually listening on 8081-8083 — the balancer only forwards, it doesn't start backends. To see it work, run throwaway servers on those ports first, e.g.:
+You'll get a `502 Backend Error` unless something is actually listening on 8081-8083 - the balancer only forwards, it doesn't start backends. To see it work, run throwaway servers on those ports first, e.g.:
 
 ```bash
 python3 -m http.server 8081 &
@@ -60,9 +60,9 @@ Covers three units: adding a backend to the pool, round-robin index advancing, a
 
 ## Scope / known gaps
 
-Honest about what this is — a practice implementation of the load-balancing loop, not a drop-in proxy:
+Honest about what this is - a practice implementation of the load-balancing loop, not a drop-in proxy:
 
-- **Not a real reverse proxy.** `lbHandler` uses `http.Get(peer.URL)`, which discards the request method, path, headers, and body — every request becomes a plain GET to the backend root. The code comments say to use `httputil.ReverseProxy` in production; it isn't wired up here.
+- **Not a real reverse proxy.** `lbHandler` uses `http.Get(peer.URL)`, which discards the request method, path, headers, and body - every request becomes a plain GET to the backend root. The code comments say to use `httputil.ReverseProxy` in production; it isn't wired up here.
 - **Health check is a stub.** The 10-second loop marks every backend alive unconditionally, so dead-backend skipping only triggers if you call `SetAlive(false)` yourself (as the test does).
 - **Backends are hardcoded** in `main.go`, no config file or flags.
 - **`ServerNode.ReverseProxy` field is declared but unused.**

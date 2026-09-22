@@ -4,7 +4,7 @@ First slot in the Python / easy track. The classic starting exercise.
 
 ## Status
 
-Placeholder. This directory has no source file yet — just this README. The write-up below is what the exercise is meant to hold once the script lands.
+Placeholder. This directory has no source file yet - just this README. The write-up below is what the exercise is meant to hold once the script lands.
 
 ## What it is
 

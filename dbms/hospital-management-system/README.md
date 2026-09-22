@@ -6,11 +6,11 @@ A desktop app for hospital front-office work: register patients, allocate rooms,
 
 The receptionist or admin logs in, then works from a main menu with five modules:
 
-- **Patient registration** — add, update, search, and delete patients (name, sex, DOB, blood group, address, consulting doctor, email, two contact numbers). Patient and contact details are stored in two linked tables.
-- **Room allocation** — assign a patient to a room (single / twin / triple sharing), set the rate and admit date, and look up who is in which room. Refuses a room number that is already occupied.
-- **Employee registration** — add and delete staff records (ID, name, sex, age, designation, salary, experience, phone, email).
-- **Appointments** — book a patient with a doctor at a given date and time, delete an appointment, or list all appointments on a chosen date.
-- **Billing** — record a patient's treatment and medicine charges, set the discharge date, and compute the total bill (treatment cost + medicine cost × quantity + room rate × days stayed).
+- **Patient registration** - add, update, search, and delete patients (name, sex, DOB, blood group, address, consulting doctor, email, two contact numbers). Patient and contact details are stored in two linked tables.
+- **Room allocation** - assign a patient to a room (single / twin / triple sharing), set the rate and admit date, and look up who is in which room. Refuses a room number that is already occupied.
+- **Employee registration** - add and delete staff records (ID, name, sex, age, designation, salary, experience, phone, email).
+- **Appointments** - book a patient with a doctor at a given date and time, delete an appointment, or list all appointments on a chosen date.
+- **Billing** - record a patient's treatment and medicine charges, set the discharge date, and compute the total bill (treatment cost + medicine cost × quantity + room rate × days stayed).
 
 Each record is validated against duplicates before insert (duplicate patient ID, room number, employee ID, or appointment number is rejected).
 
@@ -20,7 +20,7 @@ Each record is validated against duplicates before insert (duplicate patient ID,
 - **Tkinter** for the GUI
 - **SQLite** via the built-in `sqlite3` module
 
-No third-party packages, so there is no `requirements.txt` — everything ships with a normal Python install.
+No third-party packages, so there is no `requirements.txt` - everything ships with a normal Python install.
 
 ## Database schema
 
@@ -40,7 +40,7 @@ The `CREATE TABLE` statements all live in `database.py` (the ones for the older 
 
 ## Setup and run
 
-The app connects to a SQLite file named `HospitalDB.db` in the working directory. The repo already includes a database file named `hospital-db.db` — note the name differs, so on first run SQLite creates a fresh empty `HospitalDB.db` instead of using the committed one. To use the app you first need the tables.
+The app connects to a SQLite file named `HospitalDB.db` in the working directory. The repo already includes a database file named `hospital-db.db` - note the name differs, so on first run SQLite creates a fresh empty `HospitalDB.db` instead of using the committed one. To use the app you first need the tables.
 
 1. Create the database and tables. Open `database.py`, uncomment the `CREATE TABLE` blocks for the tables you need (only `APPOINTMENT` is active by default), then run it once:
 
@@ -80,7 +80,7 @@ Dates are typed as text in `YYYY-MM-DD` and times as `HH:MM:SS`.
 
 | File | Role |
 |------|------|
-| `login.py` | Entry point — login window; opens the menu on valid credentials |
+| `login.py` | Entry point - login window; opens the menu on valid credentials |
 | `menu.py` | Main menu with buttons that open each module in a new window |
 | `patient_form.py` | Patient insert / update / search / delete |
 | `room_form.py` | Room allocation and room lookup |
@@ -95,9 +95,9 @@ Each module is a class that builds its own Tkinter window and holds its own `sql
 
 This is a learning project, and it shows in a few places worth calling out honestly:
 
-- Login credentials are hard-coded and stored in plaintext — fine for a demo, not for anything real.
+- Login credentials are hard-coded and stored in plaintext - fine for a demo, not for anything real.
 - Phone and contact numbers use `IntVar`, so leading zeros and very long numbers won't survive.
 - The committed `hospital-db.db` doesn't match the `HospitalDB.db` name the code opens, so you have to build the schema yourself (see Setup).
-- The room "Update" flow has inverted logic — it reports "patient is not allocated a room" when the record actually exists — so updating a room record doesn't work as intended.
+- The room "Update" flow has inverted logic - it reports "patient is not allocated a room" when the record actually exists - so updating a room record doesn't work as intended.
 
 If you're reading this to learn: the useful parts are the Tkinter form structure, the multi-table SQLite schema with foreign keys, and the joins used for search and billing.

@@ -32,5 +32,5 @@ Slack Bot Stub - Use 'github.com/slack-go/slack'
 
 ## Files
 
-- `main.go` — the stub described above.
-- `.replit` — runs `go run .` on Replit.
+- `main.go` - the stub described above.
+- `.replit` - runs `go run .` on Replit.

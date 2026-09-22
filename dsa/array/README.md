@@ -4,14 +4,14 @@ Basic array problems in C++, solved while learning DSA. Each file is a standalon
 
 ## What's here
 
-Small, self-contained solutions to common array questions. Nothing is a library or shared between files — every `.cpp` has its own `main()`. Some read input from the keyboard (`cin`), others use a hardcoded array inside the file.
+Small, self-contained solutions to common array questions. Nothing is a library or shared between files - every `.cpp` has its own `main()`. Some read input from the keyboard (`cin`), others use a hardcoded array inside the file.
 
 | File | Problem | Input |
 |------|---------|-------|
 | `input-output.cpp` | Read 5 numbers into an array and print them back | stdin |
 | `find-min-max.cpp` | Find the min and max of `n` numbers | stdin |
 | `max-min.cpp` | Same min/max, tracking the index instead of the value | hardcoded |
-| `largest-element.cpp` | Largest and smallest element — both the O(n²) brute-force and the O(n) single-pass versions | hardcoded |
+| `largest-element.cpp` | Largest and smallest element - both the O(n²) brute-force and the O(n) single-pass versions | hardcoded |
 | `second-largest.cpp` | Second largest element in one pass | hardcoded |
 | `reverse-array.cpp` | Reverse an array in place with two pointers | hardcoded |
 | `duplicates.cpp` | Remove duplicates from a sorted array, return the count removed | hardcoded |
@@ -53,7 +53,7 @@ g++ reverse-array.cpp -o reverse-array && ./reverse-array
 
 ## Notes
 
-- `missing-element.cpp` reads `n` elements but uses `(n+1)(n+2)/2` for the expected sum, so it treats the range as `1..n+1` — read the code before feeding it input.
+- `missing-element.cpp` reads `n` elements but uses `(n+1)(n+2)/2` for the expected sum, so it treats the range as `1..n+1` - read the code before feeding it input.
 - `largest-element.cpp` keeps both a naive nested-loop approach and the efficient single-pass one side by side on purpose: it's a comparison of the two.
 - A few files call their functions with a size that doesn't match the array's real length (e.g. `getLargest(arr, 4)` on a 5-element array). These are practice snapshots, not polished code.
 

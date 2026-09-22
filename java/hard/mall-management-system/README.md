@@ -6,9 +6,9 @@ A console-based Java program that simulates managing a shopping mall ("Palladium
 
 You launch the program and pick who you are:
 
-1. **Admin** — logs in against `admin-up.txt`, then can view floor plans, shop details (`shop-details.txt`), and employee details (`emp-details.txt`).
-2. **Shop Owner** — logs in against `shop-owner-up.txt`. The login returns which shop index (0–9) matched the credentials, and every menu after that is scoped to that shop: its employees (`emp-detailss1.txt` … `emp-detailss10.txt`), a hardcoded shop description, and its inventory (`inv-detailss1.txt` … `inv-detailss10.txt`).
-3. **Customer** — no real login. Can list all shops (`shop-list.txt`), pick a floor plan, or read the mall description.
+1. **Admin** - logs in against `admin-up.txt`, then can view floor plans, shop details (`shop-details.txt`), and employee details (`emp-details.txt`).
+2. **Shop Owner** - logs in against `shop-owner-up.txt`. The login returns which shop index (0–9) matched the credentials, and every menu after that is scoped to that shop: its employees (`emp-detailss1.txt` … `emp-detailss10.txt`), a hardcoded shop description, and its inventory (`inv-detailss1.txt` … `inv-detailss10.txt`).
+3. **Customer** - no real login. Can list all shops (`shop-list.txt`), pick a floor plan, or read the mall description.
 
 Every role reads records line-by-line from text files and prints them to the console. The whole thing loops: after each action it asks "Press 1 to Retry" and starts over.
 
@@ -18,20 +18,20 @@ The 10 shops are Nike, Pantaloons, Max, Adidas, Puma, Hypercity, Shoppers Stop, 
 
 One source file, `final-test1.java`, with the `FinalTest1` main class plus a small class hierarchy:
 
-- `person` (abstract) → `p1` — collects name/email/etc. and handles the admin and shop-owner logins. Returns an `int`: `1` for admin success, a `0–9` shop index for shop owners, `-1` on failure.
-- `admin` (abstract) → `a11` — `floor_plan()`, `shop_mngmt()`, `emp_mngmt()`.
-- `shopowner` (abstract) → `s1` — `employee_mngmt()`, `shopdet()`, `inventory()`, each keyed by the shop index.
-- `customer` (abstract) → `c1` — `shop_list()`, `floor_plan()`, `mall_desc()`.
+- `person` (abstract) → `p1` - collects name/email/etc. and handles the admin and shop-owner logins. Returns an `int`: `1` for admin success, a `0–9` shop index for shop owners, `-1` on failure.
+- `admin` (abstract) → `a11` - `floor_plan()`, `shop_mngmt()`, `emp_mngmt()`.
+- `shopowner` (abstract) → `s1` - `employee_mngmt()`, `shopdet()`, `inventory()`, each keyed by the shop index.
+- `customer` (abstract) → `c1` - `shop_list()`, `floor_plan()`, `mall_desc()`.
 
 Login logic uses `String.compareTo` on lines pulled from the credential files. Shop-owner credentials are stored as alternating username/password lines (`shop1`, `pw1`, `shop2`, `pw2`, …).
 
 ## Data files
 
-- `admin-up.txt` — admin username then password (`admin` / `a1`).
-- `shop-owner-up.txt` — 10 username/password pairs.
-- `shop-list.txt`, `shop-details.txt` — mall-wide catalog.
-- `emp-detailss1..10.txt`, `inv-detailss1..10.txt` — per-shop employees and inventory, three fields per record (name/age/salary, or no/name/quantity).
-- `1st-floor`, `2nd-floor`, `3rd-floor` (`.txt` / `.jpg`) — floor plan images. The floor-plan code reads these with `ImageIO.read` into a `BufferedImage` but never displays them; it just prints a confirmation line.
+- `admin-up.txt` - admin username then password (`admin` / `a1`).
+- `shop-owner-up.txt` - 10 username/password pairs.
+- `shop-list.txt`, `shop-details.txt` - mall-wide catalog.
+- `emp-detailss1..10.txt`, `inv-detailss1..10.txt` - per-shop employees and inventory, three fields per record (name/age/salary, or no/name/quantity).
+- `1st-floor`, `2nd-floor`, `3rd-floor` (`.txt` / `.jpg`) - floor plan images. The floor-plan code reads these with `ImageIO.read` into a `BufferedImage` but never displays them; it just prints a confirmation line.
 
 ## Build & run
 
@@ -59,4 +59,4 @@ To run it locally you'd need to change the `new File(...)` paths to point at the
 
 ## Honest scope
 
-This is a learning project, not production software. Credentials sit in plaintext, paths are hardcoded, add/remove menu options are stubbed (the `case 1:`/`case 2:` branches in shop and employee management are empty — only "show" works), and array sizes are fixed to exactly the sample data. It's a solid exercise in OOP structure and file I/O in plain Java, and it reads that way.
+This is a learning project, not production software. Credentials sit in plaintext, paths are hardcoded, add/remove menu options are stubbed (the `case 1:`/`case 2:` branches in shop and employee management are empty - only "show" works), and array sizes are fixed to exactly the sample data. It's a solid exercise in OOP structure and file I/O in plain Java, and it reads that way.

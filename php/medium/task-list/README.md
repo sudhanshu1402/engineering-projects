@@ -4,7 +4,7 @@ A one-file PHP script that adds tasks to a list and shows them. Practice exercis
 
 ## What it does
 
-Type a task, hit Add, and it appends to a list rendered below the form. The list lives in `$_SESSION`, so it survives page reloads for as long as your session cookie lasts. There's no database and no file storage — restart the session (or clear cookies) and the list is gone.
+Type a task, hit Add, and it appends to a list rendered below the form. The list lives in `$_SESSION`, so it survives page reloads for as long as your session cookie lasts. There's no database and no file storage - restart the session (or clear cookies) and the list is gone.
 
 ## Stack
 

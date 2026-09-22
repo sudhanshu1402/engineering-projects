@@ -13,9 +13,9 @@ It's a small learning project built on the standard OpenCV color-detection tutor
 ## Stack
 
 - Python
-- [OpenCV](https://pypi.org/project/opencv-python/) (`cv2`) — image reading, window, mouse callback, drawing
-- [pandas](https://pypi.org/project/pandas/) — reads the color table
-- `argparse` — image path from the command line
+- [OpenCV](https://pypi.org/project/opencv-python/) (`cv2`) - image reading, window, mouse callback, drawing
+- [pandas](https://pypi.org/project/pandas/) - reads the color table
+- `argparse` - image path from the command line
 
 No `requirements.txt` in the repo; install the two libraries directly:
 
@@ -42,7 +42,7 @@ The `-i` / `--image` argument is required. Then:
 - **Double-click** any pixel to detect its color.
 - **Esc** to quit.
 
-Run it from inside this directory — the script opens `colors.csv` by a relative path, so it has to find it in the current working directory.
+Run it from inside this directory - the script opens `colors.csv` by a relative path, so it has to find it in the current working directory.
 
 ## Example
 
@@ -54,7 +54,7 @@ Cornflower Blue R=100 G=149 B=237
 
 ## Notes
 
-- The mouse callback stores BGR from OpenCV (`b, g, r = img[y, x]`) and correctly reorders to RGB before matching — worth noting since OpenCV loads images as BGR, not RGB.
+- The mouse callback stores BGR from OpenCV (`b, g, r = img[y, x]`) and correctly reorders to RGB before matching - worth noting since OpenCV loads images as BGR, not RGB.
 - The nearest-color loop iterates all 865 rows on every click. Fine for one image; it's O(n) per click, not indexed.
 - The `.replit` file points at `Color_Detection.py` (capitalized), but the actual file is `color_detection.py`. Use the lowercase name when running locally.
-- Needs a display — it opens a GUI window, so it won't work over a plain headless session.
+- Needs a display - it opens a GUI window, so it won't work over a plain headless session.

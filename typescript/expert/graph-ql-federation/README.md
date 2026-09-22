@@ -4,7 +4,7 @@ A minimal Apollo Federation gateway that stitches two subgraphs into one GraphQL
 
 ## What this is
 
-A single file, `gateway.ts`, that spins up an `ApolloGateway` pointed at two subgraph services — `accounts` on port 4001 and `reviews` on port 4002 — and serves the composed supergraph through an `ApolloServer`. It's a learning snippet showing the shape of a federated setup, not a full running system.
+A single file, `gateway.ts`, that spins up an `ApolloGateway` pointed at two subgraph services - `accounts` on port 4001 and `reviews` on port 4002 - and serves the composed supergraph through an `ApolloServer`. It's a learning snippet showing the shape of a federated setup, not a full running system.
 
 ```ts
 const gateway = new ApolloGateway({
@@ -19,14 +19,14 @@ The gateway queries each subgraph's SDL, composes them into a single schema, and
 
 ## Scope note
 
-This is only the gateway. The `accounts` and `reviews` subgraph servers it points at aren't part of this directory — you'd need to run federated subgraphs on 4001 and 4002 for the gateway to compose a schema. On its own it demonstrates the gateway wiring; it won't serve queries without those upstreams live.
+This is only the gateway. The `accounts` and `reviews` subgraph servers it points at aren't part of this directory - you'd need to run federated subgraphs on 4001 and 4002 for the gateway to compose a schema. On its own it demonstrates the gateway wiring; it won't serve queries without those upstreams live.
 
 Also note the code uses `serviceList` with `apollo-server`, the older Apollo Gateway/Server API. Newer Apollo (`@apollo/server` v4, gateway with managed federation or `IntrospectAndCompose`) has moved on from this pattern.
 
 ## Stack
 
-- `@apollo/gateway` — composes subgraph schemas into a supergraph
-- `apollo-server` — serves the composed schema
+- `@apollo/gateway` - composes subgraph schemas into a supergraph
+- `apollo-server` - serves the composed schema
 - TypeScript
 
 ## Run
