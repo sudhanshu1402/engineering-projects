@@ -8,7 +8,7 @@ Practice projects in Python, kept from college and early self-study. Small scrip
 
 Four folders by difficulty: `easy/`, `medium/`, `hard/`, `expert/`. Each subfolder is one self-contained project with its own README. Most were built on Replit, so many carry a `.replit` run file alongside the source.
 
-Most GUI/game projects use `pygame`, `tkinter`, or `turtle`. The two computer-vision projects use OpenCV. There's no shared dependency file — each project pulls its own libraries, listed below.
+Most GUI/game projects use `pygame`, `tkinter`, or `turtle`. The two computer-vision projects use OpenCV. There's no shared dependency file - each project pulls its own libraries, listed below.
 
 ## Projects
 
@@ -16,7 +16,7 @@ Most GUI/game projects use `pygame`, `tkinter`, or `turtle`. The two computer-vi
 
 | Project | What it does | Stack |
 |---|---|---|
-| [01-hello-world](easy/01-hello-world/) | Placeholder slot for the classic first exercise. README only, no script yet. | — |
+| [01-hello-world](easy/01-hello-world/) | Placeholder slot for the classic first exercise. README only, no script yet. | - |
 | [bmi-calculator](easy/bmi-calculator/) | Reads height and weight from input, prints BMI and a category (underweight/healthy/overweight/obese). ~15 lines. | stdlib |
 | [count-down-timer](easy/count-down-timer/) | Desktop countdown timer with a Tkinter UI that fires a system notification when time is up. | `tkinter`, `plyer` |
 | [currency](easy/currency/) | Live currency-rate viewer with plotted charts and background refresh workers. The heaviest "easy" one. | `PyQt5`, `pyqtgraph`, `requests` |
@@ -66,5 +66,5 @@ Two need extra setup:
 ## Notes
 
 - **gender-&-age-detection** expects pretrained Caffe model files (face detector, `age_net`, `gender_net`) that are **not** committed here. Download them separately or the script won't run.
-- **01-hello-world** currently holds only a README — no source file yet.
+- **01-hello-world** currently holds only a README - no source file yet.
 - These are learning exercises. No tests, no CI. They're kept public to show the progression, not as polished libraries.

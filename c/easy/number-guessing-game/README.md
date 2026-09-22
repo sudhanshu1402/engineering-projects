@@ -9,7 +9,7 @@ A tiny C command-line game: the computer picks a random number from 1 to 100 and
 - Tells you whether the target is higher or lower than your guess.
 - Counts attempts and prints the total when you guess correctly.
 
-It's a practice exercise for loops, `rand()`/`srand()`, and basic stdin handling in C. Nothing fancy — one file, about 30 lines.
+It's a practice exercise for loops, `rand()`/`srand()`, and basic stdin handling in C. Nothing fancy - one file, about 30 lines.
 
 ## Build & run
 

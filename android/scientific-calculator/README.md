@@ -11,7 +11,7 @@ Supported operations:
 - Arithmetic: `+`, `-`, `×`, `÷`
 - Powers and roots: `xⁿ` (x to the power n), `√` (square root)
 - Logarithms: `log` (base 10), `ln` (natural log)
-- Trigonometry: `sin`, `cos`, `tan` — operate on the value in **radians**, since they call `Math.sin/cos/tan` directly
+- Trigonometry: `sin`, `cos`, `tan` - operate on the value in **radians**, since they call `Math.sin/cos/tan` directly
 - `!` factorial
 - Editing: `C` (clear all), backspace (delete last character), decimal point
 
@@ -21,7 +21,7 @@ Supported operations:
 - `compileSdkVersion` 29, `minSdkVersion` 21, `targetSdkVersion` 29
 - `androidx.appcompat:appcompat:1.1.0`, `androidx.constraintlayout:constraintlayout:1.1.3`
 - UI is a plain `LinearLayout` grid of buttons; each button wires to a handler through the `android:onClick` XML attribute
-- No third-party math libraries — everything runs on `java.lang.Math`
+- No third-party math libraries - everything runs on `java.lang.Math`
 
 ## Build & run
 
@@ -57,8 +57,8 @@ This is a beginner Android project, not a polished app. A few honest caveats:
 - Trig functions treat input as radians, not degrees.
 - Division by zero produces `Infinity`/`NaN` rather than a caught error.
 - Factorial casts to `int` and doesn't guard against negatives or overflow.
-- No chained expressions — it's strictly `operand operator operand =`.
+- No chained expressions - it's strictly `operand operator operand =`.
 - `sign` is compared with `==` on the operand-empty check in `btn_equal`; it works because the same string constants are reused, but it's fragile.
-- The `app/src/test` and `app/src/androidTest` folders contain only the default generated test stubs — no real tests.
+- The `app/src/test` and `app/src/androidTest` folders contain only the default generated test stubs - no real tests.
 
 The app label reads "DataFlair Scientific Calculator" (`strings.xml`), a leftover from the tutorial it was built from.

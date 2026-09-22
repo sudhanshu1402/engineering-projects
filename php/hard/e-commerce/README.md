@@ -36,4 +36,4 @@ Product: Mouse - $20<br>
 
 ## Scope
 
-This is a learning exercise sitting in a "hard" folder, but the code is beginner-level: one class, one constructor, one loop. If you're looking for an actual e-commerce implementation, this isn't it yet — it's the starting point where you'd add a cart, inventory, and persistence.
+This is a learning exercise sitting in a "hard" folder, but the code is beginner-level: one class, one constructor, one loop. If you're looking for an actual e-commerce implementation, this isn't it yet - it's the starting point where you'd add a cart, inventory, and persistence.

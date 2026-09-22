@@ -4,7 +4,7 @@ A single-page Next.js snippet showing static-site generation with `getStaticProp
 
 ## What this is
 
-One file, one page. It renders a hardcoded product list at build time using Next.js's `getStaticProps`. Despite the name, there's no cart, no checkout, no data source, and no styling — it's a practice exercise for the SSG data-fetching pattern, not an actual store.
+One file, one page. It renders a hardcoded product list at build time using Next.js's `getStaticProps`. Despite the name, there's no cart, no checkout, no data source, and no styling - it's a practice exercise for the SSG data-fetching pattern, not an actual store.
 
 ## What the code does
 
@@ -18,7 +18,7 @@ That's the whole thing.
 
 ## Stack
 
-- Next.js (Pages Router — uses the `pages/` directory and `getStaticProps`)
+- Next.js (Pages Router - uses the `pages/` directory and `getStaticProps`)
 - TypeScript
 - React (JSX)
 
@@ -46,4 +46,4 @@ The rendered page:
 
 ## Scope
 
-Learning exercise. The point is the `getStaticProps` + typed-props pattern, not a working ecommerce app. The "hard" difficulty label overstates it — the code is a minimal SSG example.
+Learning exercise. The point is the `getStaticProps` + typed-props pattern, not a working ecommerce app. The "hard" difficulty label overstates it - the code is a minimal SSG example.

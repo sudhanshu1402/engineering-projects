@@ -1,6 +1,6 @@
 # Cartoonify Image
 
-A small Python script that turns a photo into a cartoon-style image using classic OpenCV image filters. There's no machine learning model here despite the folder name — it's a hand-built image-processing pipeline with a tiny Tkinter GUI.
+A small Python script that turns a photo into a cartoon-style image using classic OpenCV image filters. There's no machine learning model here despite the folder name - it's a hand-built image-processing pipeline with a tiny Tkinter GUI.
 
 ## What it does
 
@@ -10,7 +10,7 @@ The cartoon look comes from combining two things: bold black outlines and flat, 
 2. Make a grayscale copy.
 3. Median-blur the grayscale to remove speckle.
 4. Run adaptive thresholding on the blurred grayscale to pull out edges as a black-and-white mask.
-5. Bilateral-filter the original color image — this smooths flat areas while keeping edges crisp.
+5. Bilateral-filter the original color image - this smooths flat areas while keeping edges crisp.
 6. Combine the smoothed color image with the edge mask (`bitwise_and`) to get the cartoon.
 
 It then plots all six stages side by side in a matplotlib grid so you can see the transformation, and gives you a button to save the result.
@@ -18,12 +18,12 @@ It then plots all six stages side by side in a matplotlib grid so you can see th
 ## Stack
 
 - **Python 3**
-- **OpenCV (`cv2`)** — all the actual image processing
-- **matplotlib** — the 6-panel before/after plot
-- **Tkinter** — the small window with the two buttons
-- **Pillow, numpy** — pulled in as dependencies of the above
+- **OpenCV (`cv2`)** - all the actual image processing
+- **matplotlib** - the 6-panel before/after plot
+- **Tkinter** - the small window with the two buttons
+- **Pillow, numpy** - pulled in as dependencies of the above
 
-Note: the script also imports `easygui` and `imageio`, but they aren't actually used — leftovers from the tutorial this was built from.
+Note: the script also imports `easygui` and `imageio`, but they aren't actually used - leftovers from the tutorial this was built from.
 
 ## Run it
 
@@ -49,7 +49,7 @@ The `upload()` function does **not** open a file picker. It points at a fixed Wi
 ImagePath = "C:/Users/admin/PycharmProjects/Cartoonify Image with Machine Learning/bros.jpg"
 ```
 
-To run this on your own machine, edit that line to point at a real image — for example the bundled `bros.jpg`:
+To run this on your own machine, edit that line to point at a real image - for example the bundled `bros.jpg`:
 
 ```python
 ImagePath = "bros.jpg"

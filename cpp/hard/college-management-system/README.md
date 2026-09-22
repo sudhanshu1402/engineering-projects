@@ -15,12 +15,12 @@ Menu options in `main()`:
 - `5` Search by registration number, name, or branch
 - `0` Save to file and (loop) exit
 
-This is a learning project — a standard college-assignment-style records manager. It leans on some old-school C/C++ idioms that are worth knowing about before you run it (see Caveats).
+This is a learning project - a standard college-assignment-style records manager. It leans on some old-school C/C++ idioms that are worth knowing about before you run it (see Caveats).
 
 ## How it works
 
 - **Data model.** `class student` holds `long int reg` and fixed-size C strings `char name[80]`, `char branch[50]`. Records live in a global `vector<student> v`.
-- **Persistence.** `get_file()` and `write_file()` do raw binary I/O — `f.read`/`f.write` with `sizeof(student)` per record. The file is not text; opening `College.txt` in an editor shows binary garbage. A sample `college.txt` is included.
+- **Persistence.** `get_file()` and `write_file()` do raw binary I/O - `f.read`/`f.write` with `sizeof(student)` per record. The file is not text; opening `College.txt` in an editor shows binary garbage. A sample `college.txt` is included.
 - **Sorting.** `write_file()` runs a hand-written `bubblesort()` over `reg` before saving, so the file stays ordered by registration number.
 - **Search.** Three helpers back the search menu: `search_reg` (exact match, returns index), `search_name` and `search_branch` (collect all matching indices via `strcmp`). `student` overloads `operator==` on `reg`.
 
@@ -75,7 +75,7 @@ Honest notes if you're going to compile or reuse this:
 - **`system("CLS")` and `system("PAUSE")`** are Windows commands. On macOS/Linux they'll just error out at those points (use `clear` / a read prompt instead).
 - **`fflush(stdin)`** is undefined behavior per the standard; it happens to work on some Windows runtimes.
 - **Saving only happens on `0`.** Choosing `0` calls `write_file()`, and since `i` is now `0` the `while(i)` loop ends. If you quit any other way, unsaved changes are lost.
-- Binary dumps of a class with pointers/padding aren't portable across compilers or architectures — fine for a single-machine exercise, not for real storage.
+- Binary dumps of a class with pointers/padding aren't portable across compilers or architectures - fine for a single-machine exercise, not for real storage.
 
 ## Scope
 

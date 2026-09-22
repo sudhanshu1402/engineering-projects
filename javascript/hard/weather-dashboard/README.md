@@ -10,7 +10,7 @@ Single-file front-end demo focused on visual polish, not real data. The interfac
 - Two blurred colour orbs drifting behind the glass for an atmospheric glow
 - A search field with a "Scan" button that reveals the result with a fade-and-slide transition
 
-The weather value itself is **mocked**. `getWeather()` waits 600ms to fake a radar scan, then injects a hardcoded `{ temp: 24, condition: 'Partly Cloudy' }` for whatever city you typed. There's no API call, no fetch, no network — the placeholder text ("Enter coordinates or city...") and the mock comment in the code make the intent clear.
+The weather value itself is **mocked**. `getWeather()` waits 600ms to fake a radar scan, then injects a hardcoded `{ temp: 24, condition: 'Partly Cloudy' }` for whatever city you typed. There's no API call, no fetch, no network - the placeholder text ("Enter coordinates or city...") and the mock comment in the code make the intent clear.
 
 ## Tech
 
@@ -26,9 +26,9 @@ open index.html
 
 ## Notable bits
 
-- **Animated gradient** — 4-colour linear gradient with `background-size: 400% 400%` cycling via `@keyframes`.
-- **Replay-safe reveal** — before re-showing the result it removes the `visible` class, rewrites the DOM, then forces a reflow with `void resultDiv.offsetWidth` so the CSS transition fires again on repeat searches.
-- **Empty-input fallback** — city name defaults to "Unknown Sector" when the field is blank.
+- **Animated gradient** - 4-colour linear gradient with `background-size: 400% 400%` cycling via `@keyframes`.
+- **Replay-safe reveal** - before re-showing the result it removes the `visible` class, rewrites the DOM, then forces a reflow with `void resultDiv.offsetWidth` so the CSS transition fires again on repeat searches.
+- **Empty-input fallback** - city name defaults to "Unknown Sector" when the field is blank.
 
 ## Scope
 

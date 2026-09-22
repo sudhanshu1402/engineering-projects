@@ -6,18 +6,18 @@ Predicts a person's gender and rough age bracket from a face in an image (or a l
 
 `gad.py` runs three neural networks in sequence:
 
-1. **Face detection** — a Caffe/TensorFlow SSD locates faces and draws a green box around each one.
-2. **Gender classification** — predicts `Male` or `Female`.
-3. **Age classification** — predicts one of eight age buckets: `(0-2)`, `(4-6)`, `(8-12)`, `(15-20)`, `(25-32)`, `(38-43)`, `(48-53)`, `(60-100)`.
+1. **Face detection** - a Caffe/TensorFlow SSD locates faces and draws a green box around each one.
+2. **Gender classification** - predicts `Male` or `Female`.
+3. **Age classification** - predicts one of eight age buckets: `(0-2)`, `(4-6)`, `(8-12)`, `(15-20)`, `(25-32)`, `(38-43)`, `(48-53)`, `(60-100)`.
 
 For each detected face it prints the result to the console and overlays a `Gender, Age` label on the image, shown in an OpenCV window.
 
-This is a practice project built on well-known pre-trained models (the Levi & Hassner age/gender nets plus OpenCV's face detector). It is a wrapper around those models, not a from-scratch training exercise. Age output is a coarse bracket, not an exact number — accuracy depends heavily on lighting, angle, and image quality.
+This is a practice project built on well-known pre-trained models (the Levi & Hassner age/gender nets plus OpenCV's face detector). It is a wrapper around those models, not a from-scratch training exercise. Age output is a coarse bracket, not an exact number - accuracy depends heavily on lighting, angle, and image quality.
 
 ## Stack
 
 - Python 3
-- OpenCV (`cv2`) — the `dnn` module does all the inference; no other Python deps.
+- OpenCV (`cv2`) - the `dnn` module does all the inference; no other Python deps.
 
 ## Model files (required, not included)
 
@@ -73,5 +73,5 @@ The annotated frame opens in a window titled "Detecting age and gender". Press a
 
 ## Caveats
 
-- Age is a bracket, not a year, and both models reflect the biases of their training data — treat predictions as approximate.
+- Age is a bracket, not a year, and both models reflect the biases of their training data - treat predictions as approximate.
 - Missing model files will cause OpenCV to fail on the `readNet` calls; this is the most common startup error.

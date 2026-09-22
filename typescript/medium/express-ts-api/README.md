@@ -6,7 +6,7 @@ A minimal Express server in TypeScript with one typed route. Practice piece for 
 
 Starts an HTTP server on port 3000 with a single endpoint:
 
-- `GET /user/:id` — returns a JSON `User` object. The `id` comes from the URL, the name is hardcoded (`"John Doe"`).
+- `GET /user/:id` - returns a JSON `User` object. The `id` comes from the URL, the name is hardcoded (`"John Doe"`).
 
 The point of the exercise is the typing: `Request`/`Response` are typed from Express, and the response is shaped by a local `User` interface (`{ id: number; name: string }`).
 
@@ -47,4 +47,4 @@ curl http://localhost:3000/user/42
 
 ## Scope
 
-Toy example — a single stub route with no persistence, validation, or error handling. It's here to demonstrate Express + TypeScript setup, not to be a real API.
+Toy example - a single stub route with no persistence, validation, or error handling. It's here to demonstrate Express + TypeScript setup, not to be a real API.

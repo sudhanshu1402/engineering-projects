@@ -57,7 +57,7 @@ Alice: 555-1234
 
 - Names and phones are read with `scanf("%s", ...)`, so a value stops at the first space. "Alice Smith" would be truncated to "Alice".
 - No bounds check on `scanf` input against the 50/20 char buffers, so a very long entry can overflow. Fine for practice, not for real use.
-- No search, edit, or delete — only add and list.
+- No search, edit, or delete - only add and list.
 - In-memory only; no file persistence.
 - The `.replit` config compiles every `.c` in the folder to `main` and runs it, which is how it's set up to run on Replit.
 

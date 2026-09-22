@@ -20,16 +20,16 @@ The code is grouped by topic, roughly ordered from fundamentals to data structur
 
 The `fundamental/` folder breaks down further:
 
-- `pointer/` — pointers, references, pointer-to-array, passing by reference (8 programs)
-- `pattern/` — nested-loop shape printing: triangles, inverted, increasing/decreasing (6 programs)
-- `cpp-stl/` — one file per STL container/utility (8 programs)
-- `complexity/` — time and space complexity notes (`.txt`)
+- `pointer/` - pointers, references, pointer-to-array, passing by reference (8 programs)
+- `pattern/` - nested-loop shape printing: triangles, inverted, increasing/decreasing (6 programs)
+- `cpp-stl/` - one file per STL container/utility (8 programs)
+- `complexity/` - time and space complexity notes (`.txt`)
 
 Note: the top-level `fundamental/README.md` is a longer set of DSA notes written in TypeScript (Big-O, patterns, linked lists, trees, heaps, graphs, Dijkstra, DP). The runnable code in this repo is C++.
 
 ## Build & run
 
-No build system — each `.cpp` is compiled directly. You need a C++ compiler (`g++` or `clang++`).
+No build system - each `.cpp` is compiled directly. You need a C++ compiler (`g++` or `clang++`).
 
 ```bash
 g++ -std=c++17 searching/binary-search.cpp -o binary-search
@@ -56,4 +56,4 @@ Change the array and `key` in `main()` to try other inputs, then recompile.
 
 ## Scope
 
-Learning exercises. The programs favor readability and step-by-step comments over generality — inputs are hard-coded, there are no tests, and a few use fixed-size arrays. That's the point: they show the mechanics of each algorithm plainly.
+Learning exercises. The programs favor readability and step-by-step comments over generality - inputs are hard-coded, there are no tests, and a few use fixed-size arrays. That's the point: they show the mechanics of each algorithm plainly.

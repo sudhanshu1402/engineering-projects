@@ -36,7 +36,7 @@ You Win!
 
 ## Notes
 
-- Input is parsed with `Convert.ToInt32(Console.ReadLine())`. Non-numeric input (or Ctrl+D / empty input) will throw and crash — there's no validation. Fine for a toy; would need a `TryParse` guard for anything real.
+- Input is parsed with `Convert.ToInt32(Console.ReadLine())`. Non-numeric input (or Ctrl+D / empty input) will throw and crash - there's no validation. Fine for a toy; would need a `TryParse` guard for anything real.
 - `new Random()` seeds from the system clock, so each run gets a different target.
 
 Scope: a small learning piece, not a polished game.

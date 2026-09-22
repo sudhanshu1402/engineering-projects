@@ -14,7 +14,7 @@ A learning notebook, not a product. It walks the full supervised-learning workfl
 6. Train and compare three models: Linear Regression, Decision Tree, Random Forest.
 7. Validate with 10-fold cross-validation, tune the Random Forest with `GridSearchCV`, read off feature importances, and report final RMSE on the held-out test set.
 
-The dataset itself is not in this folder — the notebook reads it from `../input/housing.csv` (plus `../input/anscombe.csv` for one illustration), matching the Kaggle kernel layout it was written in.
+The dataset itself is not in this folder - the notebook reads it from `../input/housing.csv` (plus `../input/anscombe.csv` for one illustration), matching the Kaggle kernel layout it was written in.
 
 ## Files
 
@@ -23,7 +23,7 @@ The dataset itself is not in this folder — the notebook reads it from `../inpu
 | `housing-prices-prediction.ipynb` | The notebook, code + explanatory markdown, no saved output |
 | `housing-prices-prediction-with-output.ipynb` | Same notebook with all cell outputs and plots rendered (~1 MB) |
 
-If you just want to read it, open the `-with-output` version — the charts and results are already there, no need to run anything.
+If you just want to read it, open the `-with-output` version - the charts and results are already there, no need to run anything.
 
 ## Stack
 
@@ -36,10 +36,10 @@ If you just want to read it, open the `-with-output` version — the charts and 
 
 Heads up: this was written against an older Scikit-Learn (roughly pre-0.20) and will not run as-is on a current install. Known breakages:
 
-- `from sklearn.preprocessing import Imputer` — moved to `sklearn.impute.SimpleImputer`.
-- `from pandas.tools.plotting import scatter_matrix` — now `pandas.plotting.scatter_matrix`.
-- `sns.barplot(op_count.index, op_count.values, ...)` — positional args, needs `x=`/`y=` on modern Seaborn.
-- `sns.lmplot(..., size=4)` — `size` was renamed to `height`.
+- `from sklearn.preprocessing import Imputer` - moved to `sklearn.impute.SimpleImputer`.
+- `from pandas.tools.plotting import scatter_matrix` - now `pandas.plotting.scatter_matrix`.
+- `sns.barplot(op_count.index, op_count.values, ...)` - positional args, needs `x=`/`y=` on modern Seaborn.
+- `sns.lmplot(..., size=4)` - `size` was renamed to `height`.
 - A hand-rolled `CategoricalEncoder` class is included (copied from a Scikit-Learn PR at the time) to work around `LabelBinarizer` not fitting inside a pipeline; modern code would just use `OneHotEncoder` / `ColumnTransformer`.
 
 To run the original as-is, pin an old environment:
@@ -62,17 +62,17 @@ final_model.predict(some_data_prepared)
 
 Rough results the notebook lands on (numbers move a little each run since some estimators aren't seeded):
 
-- Linear Regression: ~68,600 training RMSE, ~69,000 CV RMSE — underfitting.
-- Decision Tree: 0 training RMSE, ~71,500 CV RMSE — textbook overfitting.
+- Linear Regression: ~68,600 training RMSE, ~69,000 CV RMSE - underfitting.
+- Decision Tree: 0 training RMSE, ~71,500 CV RMSE - textbook overfitting.
 - Random Forest: best of the three; lowest cross-validation RMSE, carried through to the final test-set evaluation.
 
-Given median house values run into the hundreds of thousands, an RMSE in the tens of thousands is mediocre — the notebook is honest about that and treats it as a starting point, not a finished model.
+Given median house values run into the hundreds of thousands, an RMSE in the tens of thousands is mediocre - the notebook is honest about that and treats it as a starting point, not a finished model.
 
 ## Worth pointing out
 
 - The stratified vs. random sampling comparison is the most useful takeaway: it shows random splits can skew a feature's distribution and why stratifying on income fixes it.
-- `bedrooms_per_room` (the engineered ratio) correlates with price far more strongly than raw room or bedroom counts — a small feature-engineering win the notebook calls out explicitly.
-- Everything lives in one pipeline, so the exact same transforms applied to training data are applied to the test set with `transform` (never `fit_transform`) — the correct way to avoid leaking test statistics.
+- `bedrooms_per_room` (the engineered ratio) correlates with price far more strongly than raw room or bedroom counts - a small feature-engineering win the notebook calls out explicitly.
+- Everything lives in one pipeline, so the exact same transforms applied to training data are applied to the test set with `transform` (never `fit_transform`) - the correct way to avoid leaking test statistics.
 
 ## Scope
 

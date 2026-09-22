@@ -4,7 +4,7 @@ A single-file PHP page that loops over a hardcoded array of posts and prints the
 
 ## What it does
 
-`index.php` defines two blog posts in a PHP array, then uses a `foreach` loop with alternative syntax (`foreach ... endforeach`) to render each one's title and content inside the page. That's the whole thing — no database, no routing, no framework.
+`index.php` defines two blog posts in a PHP array, then uses a `foreach` loop with alternative syntax (`foreach ... endforeach`) to render each one's title and content inside the page. That's the whole thing - no database, no routing, no framework.
 
 It's here to practice two basics:
 - Embedding PHP inside HTML and escaping in/out of `<?php ?>` tags.

@@ -1,16 +1,16 @@
 # Decibell
 
-A static "coming soon" landing page for a concept product called Decibell — a voice/audio sharing platform. The whole page is a fixed 1920×1080 design mockup exported from a design tool to HTML and CSS.
+A static "coming soon" landing page for a concept product called Decibell - a voice/audio sharing platform. The whole page is a fixed 1920×1080 design mockup exported from a design tool to HTML and CSS.
 
 ## What this is
 
 A single-screen landing page. Black background, a collage of sliced PNG images, and a subscribe panel. The copy sets the pitch:
 
 - Headline: *"Stand out and be heard, every voice has a value."*
-- Brand + tagline: **Decibell** — Speak · Share · Inspire
+- Brand + tagline: **Decibell** - Speak · Share · Inspire
 - A **COMING SOON!** block with an email field, a Subscribe button, and "Subscribe to find out when it's ready."
 
-None of the form controls do anything — the email box and Subscribe button are drawn with SVG rectangles and positioned text, not real `<input>`/`<button>` elements. It's a visual mockup, not a working signup form.
+None of the form controls do anything - the email box and Subscribe button are drawn with SVG rectangles and positioned text, not real `<input>`/`<button>` elements. It's a visual mockup, not a working signup form.
 
 This lives under `javascript/medium/`, but there's no hand-written application JavaScript here. The only script is boilerplate emitted by the export tool (see below).
 
@@ -28,8 +28,8 @@ This is a design-tool export, not code written by hand. The tells:
 
 | File | What it is |
 |------|-----------|
-| `decibell.html` | Self-contained version — CSS and the export's scaling script are inlined (~3,300 lines). Root element is `#Web_1920___1`. This is the one to open. |
-| `decibell.txt` | The original export as HTML. Links out to `Web_1920___1.css` and `Web_1920___1.js` and uses `component__N_.png` image names — none of which match the files on disk, so this one won't render on its own. |
+| `decibell.html` | Self-contained version - CSS and the export's scaling script are inlined (~3,300 lines). Root element is `#Web_1920___1`. This is the one to open. |
+| `decibell.txt` | The original export as HTML. Links out to `Web_1920___1.css` and `Web_1920___1.js` and uses `component__N_.png` image names - none of which match the files on disk, so this one won't render on its own. |
 | `web-1920-1.css` | Standalone stylesheet. Matches the `#Web_1920___1` layout used by `decibell.html`. |
 | `component*.png` | The sliced layer artwork, each in 1× and `@2x` variants. |
 
@@ -51,4 +51,4 @@ The HTML references images as `component__5_.png` (double underscores), but the 
 
 ## Scope
 
-Practice / portfolio piece. It's a static exported mockup — a fixed-size design turned into HTML, not a responsive or interactive front end. Good as a visual reference for the Decibell concept; not a starting point for a real signup flow (there's no form logic, no backend, no reflow below 1920px).
+Practice / portfolio piece. It's a static exported mockup - a fixed-size design turned into HTML, not a responsive or interactive front end. Good as a visual reference for the Decibell concept; not a starting point for a real signup flow (there's no form logic, no backend, no reflow below 1920px).

@@ -10,7 +10,7 @@ On start it prints a menu of 14 operations grouped into three columns:
 - Trigonometric: sin, cos, tan, and their inverses (asin, acos, atan)
 - Logarithmic: natural log, log base 10
 
-You enter the number for the operation you want, then the operand(s). Binary ops (1-5) ask for two numbers; the rest ask for one. It computes the result, prints it, and exits. There's no loop — one calculation per run.
+You enter the number for the operation you want, then the operand(s). Binary ops (1-5) ask for two numbers; the rest ask for one. It computes the result, prints it, and exits. There's no loop - one calculation per run.
 
 It's a practice project for `switch` control flow and the C `<math.h>` functions, not a general expression evaluator.
 
@@ -57,11 +57,11 @@ Log with base 10 = 3
 
 ## Things worth knowing
 
-- The trig functions (7-9) take the angle in **radians** — `sin`, `cos`, `tan` are called on the raw input. But the inverse trig functions (10-12) convert their result **to degrees** (`* 180.0 / PI`). So input is radians one way, output is degrees the other. Inconsistent, but that's what the code does.
+- The trig functions (7-9) take the angle in **radians** - `sin`, `cos`, `tan` are called on the raw input. But the inverse trig functions (10-12) convert their result **to degrees** (`* 180.0 / PI`). So input is radians one way, output is degrees the other. Inconsistent, but that's what the code does.
 - Values are stored as `float`, so results carry single-precision rounding.
 - No input validation: dividing by 0, `sqrt` of a negative, or `log` of a non-positive number will produce `inf` / `nan` rather than an error. Typing a non-menu number just prints `Wrong Input`.
 - Angle inputs to the inverse functions outside `[-1, 1]` give `nan`.
 
 ## Scope
 
-Toy learning exercise. Single-shot, no loop, no error handling — a straightforward tour of a menu-driven `switch` and the standard math functions.
+Toy learning exercise. Single-shot, no loop, no error handling - a straightforward tour of a menu-driven `switch` and the standard math functions.

@@ -16,7 +16,7 @@ This is a beginner practice exercise. It covers the basics of handling a form su
 
 Plain PHP. No framework, no dependencies, no build step. One file: `index.php`.
 
-(Note: the folder lives under a `php/easy` path, but there is no Laravel here despite what an earlier README claimed — it's raw PHP.)
+(Note: the folder lives under a `php/easy` path, but there is no Laravel here despite what an earlier README claimed - it's raw PHP.)
 
 ## Run it
 

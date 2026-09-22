@@ -1,6 +1,6 @@
 # learning-practice
 
-Scratch space for miscellaneous coding practice — the odds and ends that don't fit the language folders.
+Scratch space for miscellaneous coding practice - the odds and ends that don't fit the language folders.
 
 ## Status
 
@@ -10,4 +10,4 @@ For the projects that do exist, see the language folders in the [parent repo](..
 
 ## Scope
 
-Part of a personal learning archive, kept public for transparency. When throwaway practice code shows up here, it stays throwaway — small, unpolished, and mostly for my own reference.
+Part of a personal learning archive, kept public for transparency. When throwaway practice code shows up here, it stays throwaway - small, unpolished, and mostly for my own reference.

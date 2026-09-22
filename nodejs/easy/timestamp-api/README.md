@@ -50,6 +50,6 @@ curl http://localhost:3000/api/not-a-date
 
 - The digit check uses `!isNaN(date)`, so any purely numeric string is read as a Unix timestamp rather than a date. `1451001600000` is treated as ms since epoch, not the year.
 - Timestamps are in milliseconds, matching JavaScript's `Date.getTime()`.
-- `.replit` runs `npm install && npm start`, but there's no `start` script defined here — run `node index.js` locally.
+- `.replit` runs `npm install && npm start`, but there's no `start` script defined here - run `node index.js` locally.
 
 Learning exercise, kept deliberately small.

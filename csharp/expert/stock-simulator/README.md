@@ -31,8 +31,8 @@ The `.replit` file (`run = "dotnet run"`) wires the same command up on Replit.
 ## Stack
 
 - C# (.NET, run via `dotnet`)
-- No external dependencies — no `.csproj` committed here, just the source file and the Replit runner config.
+- No external dependencies - no `.csproj` committed here, just the source file and the Replit runner config.
 
 ## Scope
 
-Placeholder for a learning exercise. Filed under `csharp/expert` in the engineering-projects collection, but the code doesn't reflect that difficulty yet — it's a starting point, not a finished simulator.
+Placeholder for a learning exercise. Filed under `csharp/expert` in the engineering-projects collection, but the code doesn't reflect that difficulty yet - it's a starting point, not a finished simulator.

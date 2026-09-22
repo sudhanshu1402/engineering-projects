@@ -10,7 +10,7 @@ That's the whole app. The point is to show how PHP sessions gate a page: set a s
 
 ## Stack
 
-Plain PHP with the built-in `$_SESSION`, `$_POST`, and `$_GET` superglobals. No framework, no database, no Composer. (The old README said Laravel — it isn't.)
+Plain PHP with the built-in `$_SESSION`, `$_POST`, and `$_GET` superglobals. No framework, no database, no Composer. (The old README said Laravel - it isn't.)
 
 ## Run
 
@@ -31,7 +31,7 @@ Click **Logout** (or visit `?logout`) to end the session.
 
 - Credentials are hardcoded in the source (`index.php`, lines 4). There is no user store.
 - The credential check uses `==` (loose comparison) rather than `===`.
-- The password is compared in plaintext — no hashing.
+- The password is compared in plaintext - no hashing.
 - No CSRF token on the form.
 - `header("Location: ...")` on logout runs after some conditional output has already been decided, but since nothing is echoed before it on the logout path, the redirect works.
 

@@ -4,14 +4,14 @@ A playable Sudoku board in a pygame window, with a backtracking solver that anim
 
 ## What it is
 
-A single-file pygame app (`sudoku.py`). It opens a 500x500 window drawn as a 9x9 grid. You can click or arrow-key to a cell, type a digit to fill it (rejected if it breaks Sudoku rules), or hit Enter to let the solver finish the board for you. The solve isn't instant — it draws every trial value and every backtrack with short delays, so you watch the recursion crawl across the grid.
+A single-file pygame app (`sudoku.py`). It opens a 500x500 window drawn as a 9x9 grid. You can click or arrow-key to a cell, type a digit to fill it (rejected if it breaks Sudoku rules), or hit Enter to let the solver finish the board for you. The solve isn't instant - it draws every trial value and every backtrack with short delays, so you watch the recursion crawl across the grid.
 
 It's a learning-scale project: no puzzle generator, no menus, no win detection beyond "the solver returned true." One puzzle is hardcoded.
 
 ## Stack
 
 - Python
-- [pygame](https://www.pygame.org/) — window, drawing, input, timing
+- [pygame](https://www.pygame.org/) - window, drawing, input, timing
 
 That's the only dependency.
 
@@ -39,8 +39,8 @@ The `.replit` file runs `python 'Sudoku.py'` if you open it on Replit.
 ## How it works
 
 - `defaultgrid` is the 9x9 board; `0` means empty. Filled cells are drawn on yellow tiles, and every third grid line is thick to mark the 3x3 boxes.
-- `validvalue(m, k, l, value)` checks a candidate against its row, its column, and its 3x3 box — the standard Sudoku constraint.
-- `solvegame(defaultgrid, i, j)` is a recursive backtracker: it skips over pre-filled cells, tries `1`–`9` in the first empty cell, recurses on success, and undoes the guess on failure. After each guess and each undo it clears the window, redraws, and calls `pygame.time.delay(...)` — that's what makes the search visible instead of instant.
+- `validvalue(m, k, l, value)` checks a candidate against its row, its column, and its 3x3 box - the standard Sudoku constraint.
+- `solvegame(defaultgrid, i, j)` is a recursive backtracker: it skips over pre-filled cells, tries `1`–`9` in the first empty cell, recurses on success, and undoes the guess on failure. After each guess and each undo it clears the window, redraws, and calls `pygame.time.delay(...)` - that's what makes the search visible instead of instant.
 - The main `while` loop handles events, applies typed values through the same `validvalue` check, and triggers a solve when Enter sets the flag.
 
 ## Honest notes / quirks

@@ -52,7 +52,7 @@ Target: 5
 
 ## Notes
 
-- Names are read with `std::cin >> name`, so it takes a single token — "Alice Smith" would only capture "Alice".
+- Names are read with `std::cin >> name`, so it takes a single token - "Alice Smith" would only capture "Alice".
 - No persistence, no authentication, no currency formatting beyond a `$` prefix. Data resets on every run.
 - Any menu choice that isn't 1-4 falls through to Exit.
 

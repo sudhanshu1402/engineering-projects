@@ -6,8 +6,8 @@ A small console banking program in C that stores accounts in a binary file. Prac
 
 Two operations behind a text menu:
 
-- **Create** — reads an account number, name, and balance, appends the record to `bank.dat`.
-- **Display All** — reads every record back from `bank.dat` and prints them.
+- **Create** - reads an account number, name, and balance, appends the record to `bank.dat`.
+- **Display All** - reads every record back from `bank.dat` and prints them.
 
 Each account is a fixed-size `struct`:
 
@@ -64,5 +64,5 @@ This is a learning exercise, not a real ledger. Known limits worth knowing if yo
 
 - Name input uses `scanf("%s")`, so names with spaces won't parse correctly (only the first word is read).
 - `createAccount` doesn't check whether `fopen` succeeded before writing.
-- No update, delete, deposit/withdraw, or lookup by account number — just append and dump-all.
+- No update, delete, deposit/withdraw, or lookup by account number - just append and dump-all.
 - Balance is a `float`, fine for a demo but not what you'd use for real money.

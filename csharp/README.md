@@ -2,7 +2,7 @@
 
 > Part of my public learning archive. For active, production-grade work see the pinned repos on my [GitHub profile](https://github.com/sudhanshu1402).
 
-C# and .NET code from college and early self-study. These are small practice exercises, mostly console apps, kept public for transparency about how I started. Several of the harder ones are deliberate stubs — the entry point and structure are there, the full logic isn't. I've marked those honestly below.
+C# and .NET code from college and early self-study. These are small practice exercises, mostly console apps, kept public for transparency about how I started. Several of the harder ones are deliberate stubs - the entry point and structure are there, the full logic isn't. I've marked those honestly below.
 
 ## How it's organized
 
@@ -34,14 +34,14 @@ csharp/
 ### hard
 | Project | What it is | State |
 |---|---|---|
-| `chat-app` | Starts a `TcpListener` on port 8888 | Stub — listens but doesn't accept clients |
-| `inventory-system` | Defines an `Item` class and an inventory list | Stub — prints an init message, no CRUD |
+| `chat-app` | Starts a `TcpListener` on port 8888 | Stub - listens but doesn't accept clients |
+| `inventory-system` | Defines an `Item` class and an inventory list | Stub - prints an init message, no CRUD |
 
 ### expert
 | Project | What it is | State |
 |---|---|---|
-| `stock-simulator` | Console entry point for a market simulator | Stub — no simulation logic |
-| `ecommerce-backend` | ASP.NET Core `Startup` wiring controllers and routing | Stub — startup config only, no controllers |
+| `stock-simulator` | Console entry point for a market simulator | Stub - no simulation logic |
+| `ecommerce-backend` | ASP.NET Core `Startup` wiring controllers and routing | Stub - startup config only, no controllers |
 
 ## Running the console apps
 
@@ -66,7 +66,7 @@ Guess: 37
 You Win!
 ```
 
-The WPF project (`to-do-list-wpf`) needs Windows and Visual Studio to build, and only the XAML layout exists — there's no `AddTask_Click` handler behind the button yet.
+The WPF project (`to-do-list-wpf`) needs Windows and Visual Studio to build, and only the XAML layout exists - there's no `AddTask_Click` handler behind the button yet.
 
 ## Scope
 

@@ -26,7 +26,7 @@ Or just double-click it. There's nothing to build or serve.
 ## Usage
 
 1. Type into the "Define a new objective..." field.
-2. Press Enter or click **Commit** — the task is added to the top of the list.
+2. Press Enter or click **Commit** - the task is added to the top of the list.
 3. Hover a task to reveal its actions; click **Mark Done** to cross it out (click again to Undo), or **Remove** to delete it.
 
 The list ships with one example row ("Finalize System Architecture Doc") so the empty state isn't blank.
@@ -37,6 +37,6 @@ This is a learning project. A few honest limitations:
 
 - **No persistence.** Tasks live in the DOM only. Refresh the page and everything resets.
 - **Task text is injected via `innerHTML`**, so it isn't escaped. Fine as a local demo; you'd want to sanitize or use `textContent` before putting this anywhere real.
-- No editing, reordering, filtering, or counts — add, complete, remove, and that's it.
+- No editing, reordering, filtering, or counts - add, complete, remove, and that's it.
 
 It's a UI/CSS practice piece, and it does that one thing well.

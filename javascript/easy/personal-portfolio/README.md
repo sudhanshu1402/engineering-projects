@@ -4,7 +4,7 @@ A single-page personal site for a backend/infrastructure engineer. One `index.ht
 
 ## What it is
 
-A static portfolio page. Everything lives in `index.html` — markup, CSS (in a `<style>` block), and a small vanilla-JS scroll animation. It presents four sections: hero, engineering profile, a grid of "core architecture" cards, and a current-research note, plus a footer with contact links.
+A static portfolio page. Everything lives in `index.html` - markup, CSS (in a `<style>` block), and a small vanilla-JS scroll animation. It presents four sections: hero, engineering profile, a grid of "core architecture" cards, and a current-research note, plus a footer with contact links.
 
 The visual style is dark with a fixed 50px CSS grid background, an SVG noise overlay, an orange accent, and two Google Fonts (Outfit for display, JetBrains Mono for labels).
 
@@ -17,7 +17,7 @@ The visual style is dark with a fixed 50px CSS grid background, an SVG noise ove
 - Google Fonts loaded over CDN (Outfit, JetBrains Mono)
 - ~15 lines of vanilla JS for scroll-triggered reveals
 
-No `package.json` — there are no dependencies to install.
+No `package.json` - there are no dependencies to install.
 
 ## Run it
 
@@ -43,4 +43,4 @@ python3 -m http.server 8000
 
 ## Scope
 
-Practice project — a hand-written static page, no tooling. The scroll animation uses a raw `scroll` listener rather than `IntersectionObserver`, which is fine at this size. Fonts require a network connection to load.
+Practice project - a hand-written static page, no tooling. The scroll animation uses a raw `scroll` listener rather than `IntersectionObserver`, which is fine at this size. Fonts require a network connection to load.

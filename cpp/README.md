@@ -24,7 +24,7 @@ Most are menu-driven and read from stdin, so just follow the prompts.
 
 | Project | What it does |
 | --- | --- |
-| [01-hello-world](easy/01-hello-world) | Placeholder folder — README only, no source yet. |
+| [01-hello-world](easy/01-hello-world) | Placeholder folder - README only, no source yet. |
 | [simple-calculator](easy/simple-calculator) | Reads an operator and two numbers, does one arithmetic operation via a `switch`. |
 | [unit-converter](easy/unit-converter) | Converts a temperature between Celsius and Fahrenheit based on a `C`/`F` suffix. |
 | [stopwatch](easy/stopwatch) | A `Stopwatch` class using `<chrono>`; type `s`/`e`/`q` to start, stop, and print elapsed milliseconds. |
@@ -34,7 +34,7 @@ Most are menu-driven and read from stdin, so just follow the prompts.
 | Project | What it does |
 | --- | --- |
 | [student-grade-system](medium/student-grade-system) | Stores students in a `vector<Student>`, reads grades until `-1`, and reports each student's average using `std::accumulate`. |
-| [scientific-calculator](medium/scientific-calculator) | Menu of 14 operations — arithmetic, power/sqrt, trig and inverse trig, natural and base-10 log — over `<math.h>`. |
+| [scientific-calculator](medium/scientific-calculator) | Menu of 14 operations - arithmetic, power/sqrt, trig and inverse trig, natural and base-10 log - over `<math.h>`. |
 
 ### hard
 
@@ -47,7 +47,7 @@ Most are menu-driven and read from stdin, so just follow the prompts.
 
 | Project | What it does |
 | --- | --- |
-| [memory-allocator](expert/memory-allocator) | A `SimpleAllocator` over a raw `char[]` buffer with a block list and first-fit `allocate`/`deallocate`. Block splitting and free-block merging are stubbed out — it demonstrates the idea, not a working allocator. |
+| [memory-allocator](expert/memory-allocator) | A `SimpleAllocator` over a raw `char[]` buffer with a block list and first-fit `allocate`/`deallocate`. Block splitting and free-block merging are stubbed out - it demonstrates the idea, not a working allocator. |
 | [trading-simulator](expert/trading-simulator) | Toy market of three stocks with random price drift; buy shares against a cash balance and view your portfolio. |
 
 ## Scope

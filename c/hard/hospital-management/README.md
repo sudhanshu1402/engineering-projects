@@ -51,4 +51,4 @@ Records are written to `patients.txt` next to the binary. Names and diseases are
 
 ## Scope
 
-Learning exercise for C file I/O with binary structs. It's deliberately minimal — no editing, no deleting, no search, and `addPatient` doesn't check that the file opened. It covers the append-and-read-back pattern and nothing more.
+Learning exercise for C file I/O with binary structs. It's deliberately minimal - no editing, no deleting, no search, and `addPatient` doesn't check that the file opened. It covers the append-and-read-back pattern and nothing more.

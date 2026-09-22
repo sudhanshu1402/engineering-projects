@@ -10,7 +10,7 @@ The workflow:
 
 1. Load `beef.csv` and check for missing values.
 2. Fit an Ordinary Least Squares (OLS) model, `Quantity ~ Price`.
-3. Inspect the fit with statsmodels diagnostic plots — partial regression, CCPR, and regression-vs-exog grids.
+3. Inspect the fit with statsmodels diagnostic plots - partial regression, CCPR, and regression-vs-exog grids.
 4. Re-run the fit as a Recursive Least Squares (RLS) model over time to check whether the price coefficient is stable across the sample, using recursive-coefficient and CUSUM plots.
 
 ### Result from the notebook run
@@ -21,11 +21,11 @@ OLS gives:
 Quantity = 30.05 - 0.0465 * Price     R-squared = 0.901
 ```
 
-The price coefficient is -0.0465 (p < 0.001): each unit of price is associated with about 0.047 less quantity. R-squared of 0.90 means price alone explains most of the variation in quantity. The CUSUM statistic stays inside the 5% bands, so the relationship looks stable over the whole 1977–1999 period — no evidence the parameters drift.
+The price coefficient is -0.0465 (p < 0.001): each unit of price is associated with about 0.047 less quantity. R-squared of 0.90 means price alone explains most of the variation in quantity. The CUSUM statistic stays inside the 5% bands, so the relationship looks stable over the whole 1977–1999 period - no evidence the parameters drift.
 
 ## Data
 
-`beef.csv` — quarterly observations with columns `Year`, `Quarter`, `Quantity`, `Price`.
+`beef.csv` - quarterly observations with columns `Year`, `Quarter`, `Quantity`, `Price`.
 
 ```
 Year  Quarter  Quantity   Price
@@ -58,7 +58,7 @@ Then run the cells top to bottom. Make sure `beef.csv` is in the same directory 
 ## Notable details
 
 - **RLS as a stability check.** OLS gives one coefficient for the whole sample. RLS re-estimates the coefficients as each new datapoint arrives, so the recursive-coefficient plot shows whether elasticity shifted over 22 years. The final RLS estimate matches OLS exactly (`-0.0465`), as expected.
-- **CUSUM test.** The `plot_cusum` output is the formal version of "did the parameters stay stable?" — staying inside the bands means you can't reject stability at the 5% level.
+- **CUSUM test.** The `plot_cusum` output is the formal version of "did the parameters stay stable?" - staying inside the bands means you can't reject stability at the 5% level.
 - **Date handling.** `Year` and `Quarter` are combined into a proper quarterly `DatetimeIndex` (`BQuarterBegin`) before the time-series RLS step.
 
 ## Scope

@@ -4,12 +4,12 @@ A command-line number-guessing game in Rust. The classic exercise from Chapter 2
 
 ## What it does
 
-Picks a random secret number between 1 and 100, then loops asking you to guess. Each guess prints "Too small!", "Too big!", or "You win!" and exits on a correct guess. Non-numeric input is silently ignored — you just get asked again.
+Picks a random secret number between 1 and 100, then loops asking you to guess. Each guess prints "Too small!", "Too big!", or "You win!" and exits on a correct guess. Non-numeric input is silently ignored - you just get asked again.
 
 ## Stack
 
 - Rust (edition 2021)
-- [`rand`](https://crates.io/crates/rand) 0.8.5 — for the random secret number
+- [`rand`](https://crates.io/crates/rand) 0.8.5 - for the random secret number
 
 ## Build & run
 
@@ -43,7 +43,7 @@ You win!
 
 ## Implementation notes
 
-- Input parsed with `guess.trim().parse::<u32>()`; a `Err` result hits `continue`, so garbage input never crashes the game — it just loops.
+- Input parsed with `guess.trim().parse::<u32>()`; a `Err` result hits `continue`, so garbage input never crashes the game - it just loops.
 - `rand::thread_rng().gen_range(1..=100)` uses an inclusive range, so both 1 and 100 are reachable.
 - `read_line` errors are handled with `.expect(...)`, which panics on I/O failure rather than recovering.
 

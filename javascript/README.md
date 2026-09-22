@@ -24,21 +24,21 @@ Most projects run by opening `index.html` in a browser. No install, no server, n
 | Project | What it is |
 |---|---|
 | [task-manager](medium/task-manager) | In-memory to-do app: add, edit, and delete tasks. State is not persisted (no localStorage). |
-| [decibell](medium/decibell) | A static UI mockup exported from a design tool — a 3300-line `index.html` full of positioned SVG shapes and PNG assets. Layout export, not an interactive app. |
+| [decibell](medium/decibell) | A static UI mockup exported from a design tool - a 3300-line `index.html` full of positioned SVG shapes and PNG assets. Layout export, not an interactive app. |
 
 ### Hard
 
 | Project | What it is |
 |---|---|
 | [furnicto](hard/furnicto) | Multi-page furniture site (home, designs, designers, contacts, information). Uses jQuery with the Galleriffic image gallery and jCarouselLite carousel plugins. |
-| [weather-dashboard](hard/weather-dashboard) | "Atmospheric Weather" — a city search with a radar-scan animation. Note: the weather data is mocked (hardcoded values behind a `setTimeout`), not a live API. |
+| [weather-dashboard](hard/weather-dashboard) | "Atmospheric Weather" - a city search with a radar-scan animation. Note: the weather data is mocked (hardcoded values behind a `setTimeout`), not a live API. |
 
 ### Expert
 
 | Project | What it is |
 |---|---|
 | [kanban-board](expert/kanban-board) | Drag-and-drop board with To Do / In Progress / Done columns, built on native HTML5 drag events. |
-| [saa-s-dashboard](expert/saa-s-dashboard) | Placeholder — currently only a README, no source code. |
+| [saa-s-dashboard](expert/saa-s-dashboard) | Placeholder - currently only a README, no source code. |
 
 ## Running any project
 

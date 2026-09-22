@@ -10,7 +10,7 @@ One file: `startup.cs`. It defines an ASP.NET Core `Startup` class that:
 - enables the developer exception page in development
 - wires up routing and maps controller endpoints
 
-That's the whole thing. There are no controllers, no models, no data layer, no cart, no orders, no payments — despite the "ecommerce" name. It's the empty frame you'd start from before building any of that.
+That's the whole thing. There are no controllers, no models, no data layer, no cart, no orders, no payments - despite the "ecommerce" name. It's the empty frame you'd start from before building any of that.
 
 ## Stack
 
@@ -31,4 +31,4 @@ For that to work you'd first have to add a `.csproj` and a host bootstrap. As it
 
 ## Scope
 
-Practice piece filed under `csharp/expert`. The routing/controller wiring in `Startup.Configure` is real ASP.NET Core boilerplate, but the "expert" and "ecommerce" labels are aspirational — there's no domain logic behind them yet.
+Practice piece filed under `csharp/expert`. The routing/controller wiring in `Startup.Configure` is real ASP.NET Core boilerplate, but the "expert" and "ecommerce" labels are aspirational - there's no domain logic behind them yet.

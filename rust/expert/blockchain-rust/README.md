@@ -47,5 +47,5 @@ The timestamp comes from `SystemTime::now()` in milliseconds, so the genesis has
 
 ## Notes
 
-- `.replit` compiles with `rustc main.rs` directly instead of Cargo — that path ignores the `sha2` dependency and won't link, so use `cargo run`.
+- `.replit` compiles with `rustc main.rs` directly instead of Cargo - that path ignores the `sha2` dependency and won't link, so use `cargo run`.
 - Scope: practice project. To grow it into an actual chain you'd add a `Vec<Block>`, link each new block's `prev_hash` to the previous block's `hash`, and add a validation pass that recomputes hashes to detect tampering.

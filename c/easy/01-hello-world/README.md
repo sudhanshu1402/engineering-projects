@@ -4,7 +4,7 @@ The classic first C program. This is the entry slot in the `c/easy` practice set
 
 ## Status
 
-Placeholder — no source file has been added to this directory yet. It currently
+Placeholder - no source file has been added to this directory yet. It currently
 contains only this README. Once a `hello.c` lands here, the notes below apply.
 
 ## What it is meant to be
@@ -40,5 +40,5 @@ Hello, World!
 
 ## Scope
 
-Learning exercise. No dependencies, no build system, no tests — a single
+Learning exercise. No dependencies, no build system, no tests - a single
 translation unit and the standard library.

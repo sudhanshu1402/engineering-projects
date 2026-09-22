@@ -6,9 +6,9 @@ The XAML layout for a minimal to-do window: a text box, an "Add Task" button, an
 
 A single WPF window definition. It lays out three controls in a vertical `StackPanel`:
 
-- `TaskInput` — a `TextBox` for typing a task
+- `TaskInput` - a `TextBox` for typing a task
 - an "Add Task" `Button` wired to a `AddTask_Click` handler
-- `TasksList` — a `ListBox` that shows the tasks
+- `TasksList` - a `ListBox` that shows the tasks
 
 That's the whole file. This is a learning exercise in WPF XAML markup, not a finished app.
 
@@ -33,7 +33,7 @@ private void AddTask_Click(object sender, RoutedEventArgs e)
 }
 ```
 
-But no `.cs` file exists here — that snippet is the missing piece, not something in the repo.
+But no `.cs` file exists here - that snippet is the missing piece, not something in the repo.
 
 ## The markup
 

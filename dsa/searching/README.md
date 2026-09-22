@@ -4,7 +4,7 @@ Practice C++ programs for classic searching problems: linear search, binary sear
 
 ## What's here
 
-Each file is a standalone program with its own `main()` that runs a hardcoded example. There's no shared library or build system — every file compiles and runs on its own.
+Each file is a standalone program with its own `main()` that runs a hardcoded example. There's no shared library or build system - every file compiles and runs on its own.
 
 | File | Problem | Approaches shown |
 |------|---------|------------------|
@@ -47,21 +47,21 @@ Every other file uses a hardcoded array inside `main()`, so it prints its result
 The first occurrence of element 9 is located at index 6
 ```
 
-The naive scan and the binary-search version both land on index 6 — the binary version keeps moving `high` left after a match to find the leftmost hit.
+The naive scan and the binary-search version both land on index 6 - the binary version keeps moving `high` left after a match to find the leftmost hit.
 
 ## Notes
 
 - The binary-search variants only work on **sorted** arrays. `linear-search.cpp` works on any array.
-- The first/last-occurrence binary searches are the standard trick: on a match, don't stop — keep going left (for first) or right (for last) to find the boundary.
+- The first/last-occurrence binary searches are the standard trick: on a match, don't stop - keep going left (for first) or right (for last) to find the boundary.
 - `count-key.cpp` shows the neat shortcut once you have both boundaries: the count is `last - first + 1`.
 
 ## Rough edges
 
-This is learning code, and a few files are unfinished or buggy — left as-is rather than polished:
+This is learning code, and a few files are unfinished or buggy - left as-is rather than polished:
 
 - `hashing-linear-probing.cpp` doesn't compile. It's a skeleton with an empty probing loop, and `LinearProbing()` is called with no arguments. Treat it as a TODO, not a working example.
 - `binary-search.cpp`'s recursive `bSearch` passes `start` instead of `end` into the right-half call, so the right-side recursion is wrong.
 - `last-occurence.cpp`'s naive `findIndex` starts its loop at `i = N`, which reads one past the end of the array. The `main()` there also computes the binary-search result but never prints it.
 - `count-key.cpp`'s recursive version calls the iterative `countTotal` instead of recursing on itself, and has an unreachable `return` after it.
 
-If you're reading these to learn, prefer the iterative versions — they're the ones that behave correctly.
+If you're reading these to learn, prefer the iterative versions - they're the ones that behave correctly.

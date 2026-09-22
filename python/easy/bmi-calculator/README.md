@@ -34,6 +34,6 @@ healthy
 
 ## Notes
 
-- Practice exercise. No input validation — non-numeric input raises `ValueError`, and a height of 0 divides by zero.
+- Practice exercise. No input validation - non-numeric input raises `ValueError`, and a height of 0 divides by zero.
 - BMI prints unrounded.
 - The `.replit` file's run command points at an old filename (`BMI Calculator.py`); the actual script is `bmi_calculator.py`.

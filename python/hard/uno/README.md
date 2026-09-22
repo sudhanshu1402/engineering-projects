@@ -14,7 +14,7 @@ A text version of UNO for one human player versus the PC. You each start with 7 
 - "Pull" a card from the deck if you can't or don't want to play: if the pulled card is playable it's added to your hand, otherwise your turn ends.
 - Last-card guard: you can't win on an action card. If your final card is an action card, the game deals you an extra card.
 
-The PC opponent is intentionally naive — it plays the first valid card it finds, and when it plays a Wild/Draw4 it just picks the color of its first remaining card.
+The PC opponent is intentionally naive - it plays the first valid card it finds, and when it plays a Wild/Draw4 it just picks the color of its first remaining card.
 
 ## Stack
 
@@ -28,7 +28,7 @@ python uno.py
 
 Then follow the prompts:
 
-- `Hit or Pull? (h/p)` — `h` to play a card, `p` to draw from the deck.
+- `Hit or Pull? (h/p)` - `h` to play a card, `p` to draw from the deck.
 - If you chose `h`, enter the index number shown next to the card you want.
 - After a Wild or Draw4, type the new color in caps (`RED`, `GREEN`, `BLUE`, `YELLOW`).
 - After a game ends, `y` plays again, anything else quits.

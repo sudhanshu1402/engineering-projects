@@ -12,7 +12,7 @@ The point is to show the mechanics of a bump/first-fit arena: raw buffer, offset
 
 This is a demo, and the code says so in its own comments. Two things are stubbed out:
 
-- **No block splitting.** When a free block is larger than the request, the code computes the leftover block but never inserts it into the vector. So the remaining space is lost — one allocation effectively claims the whole matching block.
+- **No block splitting.** When a free block is larger than the request, the code computes the leftover block but never inserts it into the vector. So the remaining space is lost - one allocation effectively claims the whole matching block.
 - **No coalescing.** `deallocate` marks a block free but doesn't merge adjacent free blocks (the "Merge logic would go here" comment).
 
 Because of the missing split, the buffer behaves as if it holds one block at a time. Running `main` produces:
@@ -24,7 +24,7 @@ Freed memory at offset 0
 Allocated 50 bytes at offset 0
 ```
 
-The second allocation fails because the first took the only block, and the third succeeds only after the first is freed. That's the honest behavior, not a bug to be surprised by — it's what this version implements.
+The second allocation fails because the first took the only block, and the third succeeds only after the first is freed. That's the honest behavior, not a bug to be surprised by - it's what this version implements.
 
 ## Build & run
 

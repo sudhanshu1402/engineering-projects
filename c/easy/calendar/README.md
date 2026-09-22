@@ -12,10 +12,10 @@ It's a small learning exercise in C++: date math, loops, and formatted console o
 
 A few short functions carry the logic:
 
-- `leap_year(year)` — standard Gregorian rule: divisible by 4, but not 100 unless also 400.
-- `start_day(year)` — figures out the weekday of Jan 1 by counting leap days since year 1 (`(year + (year-1)/4 - (year-1)/100 + (year-1)/400) % 7`). Returns 0–6.
-- `number_days_month(m, leap)` — day count per month, February depending on `leap`.
-- `print_month(days, weekDay)` — prints the day numbers, wrapping to a new line after Saturday. It takes `weekDay` by reference and carries it forward, so each month continues from where the last one ended.
+- `leap_year(year)` - standard Gregorian rule: divisible by 4, but not 100 unless also 400.
+- `start_day(year)` - figures out the weekday of Jan 1 by counting leap days since year 1 (`(year + (year-1)/4 - (year-1)/100 + (year-1)/400) % 7`). Returns 0–6.
+- `number_days_month(m, leap)` - day count per month, February depending on `leap`.
+- `print_month(days, weekDay)` - prints the day numbers, wrapping to a new line after Saturday. It takes `weekDay` by reference and carries it forward, so each month continues from where the last one ended.
 
 The starting weekday flows month to month through the year via that reference parameter, which is the one non-obvious part of the code.
 
@@ -30,7 +30,7 @@ g++ main.cpp -o calendar
 
 `makefile.win` is a Dev-C++ generated makefile targeting MinGW on Windows (produces `Calendar.exe`); it isn't needed on Linux/macOS.
 
-Note: the included `.replit` config compiles `*.c` files, which won't pick up `main.cpp` — use the g++ command above directly.
+Note: the included `.replit` config compiles `*.c` files, which won't pick up `main.cpp` - use the g++ command above directly.
 
 ## Example
 

@@ -2,7 +2,7 @@
 
 > Part of my public learning archive. For active, production-grade work see the pinned repositories on my [GitHub profile](https://github.com/sudhanshu1402).
 
-A set of small TypeScript exercises I wrote while learning the language and its ecosystem. They start with plain functions and build up to framework and tooling patterns (Express, React, NestJS, Next.js, Apollo Federation, a toy compiler front end). Most files are deliberately short — they demonstrate one idea each, not finished applications.
+A set of small TypeScript exercises I wrote while learning the language and its ecosystem. They start with plain functions and build up to framework and tooling patterns (Express, React, NestJS, Next.js, Apollo Federation, a toy compiler front end). Most files are deliberately short - they demonstrate one idea each, not finished applications.
 
 ## Layout
 
@@ -81,4 +81,4 @@ console.log("5 + 3 =", calculate(5, 3, '+'));  // 5 + 3 = 8
 
 ## Scope
 
-These are learning stubs, not products. The harder-tier examples (compiler, GraphQL federation, the framework apps) are intentionally minimal — enough to show the shape of the pattern and get the types right, not to be complete or deployable. Kept public for transparency about how I learned the language.
+These are learning stubs, not products. The harder-tier examples (compiler, GraphQL federation, the framework apps) are intentionally minimal - enough to show the shape of the pattern and get the types right, not to be complete or deployable. Kept public for transparency about how I learned the language.

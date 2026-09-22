@@ -13,7 +13,7 @@ func main() {
 }
 ```
 
-That's the whole program. It's a placeholder for a real controller — the kind of process that watches Kubernetes resources and reconciles actual state toward desired state. The comment points at the intended dependency, `k8s.io/client-go`, but nothing uses it yet. There's no `go.mod`, no client, no reconcile loop.
+That's the whole program. It's a placeholder for a real controller - the kind of process that watches Kubernetes resources and reconciles actual state toward desired state. The comment points at the intended dependency, `k8s.io/client-go`, but nothing uses it yet. There's no `go.mod`, no client, no reconcile loop.
 
 ## Run it
 
@@ -29,4 +29,4 @@ Kubernetes Controller Stub
 
 ## Scope
 
-Placeholder only. If you're looking for a working controller, this isn't one — it marks the spot where one would go.
+Placeholder only. If you're looking for a working controller, this isn't one - it marks the spot where one would go.

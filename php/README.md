@@ -6,7 +6,7 @@ Small PHP practice scripts from college and early self-study, grouped by difficu
 
 ## What's here
 
-Each project is a single `index.php` file using plain PHP — sessions, superglobals (`$_POST`/`$_GET`/`$_SESSION`), server-side rendering with inline templates, and a bit of OOP in the harder ones. No framework, no Composer, no database. The difficulty labels track roughly how much each script attempts, not how polished it is: the `easy` and `medium` ones work end to end, while several `hard`/`expert` ones are deliberate stubs that sketch the shape of a bigger app.
+Each project is a single `index.php` file using plain PHP - sessions, superglobals (`$_POST`/`$_GET`/`$_SESSION`), server-side rendering with inline templates, and a bit of OOP in the harder ones. No framework, no Composer, no database. The difficulty labels track roughly how much each script attempts, not how polished it is: the `easy` and `medium` ones work end to end, while several `hard`/`expert` ones are deliberate stubs that sketch the shape of a bigger app.
 
 ## Projects
 

@@ -1,18 +1,18 @@
 # Real-Time Chat
 
-A minimal broadcast chat server built with Express and Socket.IO. One room, no auth, no persistence — every message a client sends is echoed to everyone connected.
+A minimal broadcast chat server built with Express and Socket.IO. One room, no auth, no persistence - every message a client sends is echoed to everyone connected.
 
 ## What it does
 
 `server.js` starts an HTTP server on port 3000. On the WebSocket side it listens for `chat message` events and re-emits them to all connected sockets with `io.emit`, so the whole room sees each message in real time. The root route (`/`) serves an `index.html` from the same directory.
 
-This is a learning exercise — essentially the canonical Socket.IO "hello world" chat, kept deliberately small.
+This is a learning exercise - essentially the canonical Socket.IO "hello world" chat, kept deliberately small.
 
 ## Stack
 
 - Node.js
-- [Express](https://expressjs.com/) — HTTP server and static file serving
-- [Socket.IO](https://socket.io/) — WebSocket transport and event handling
+- [Express](https://expressjs.com/) - HTTP server and static file serving
+- [Socket.IO](https://socket.io/) - WebSocket transport and event handling
 
 ## Run
 
@@ -23,7 +23,7 @@ node server.js
 
 Then open http://localhost:3000.
 
-## Heads up — incomplete as committed
+## Heads up - incomplete as committed
 
 The code won't run as-is without two missing pieces:
 
