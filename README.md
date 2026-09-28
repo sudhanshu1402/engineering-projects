@@ -1,8 +1,6 @@
-# Engineering Projects
-
 <div align="center">
 
-  <img src="https://readme-typing-svg.demolab.com?font=Syne&weight=800&size=34&duration=3000&pause=1000&color=2D3436&center=true&vCenter=true&width=1000&height=90&lines=ENGINEERING+PROJECTS;100+builds+across+11+languages" alt="Engineering Projects" />
+<img src="assets/hero.svg" width="100%" alt="engineering-projects as a library card catalogue: drawers for python 16, cpp 10, c 9, csharp 9, go, java, javascript, nodejs, php, rust and typescript 8 each, and dsa with 67 solutions. A learning archive filed by language and difficulty; many builds are small or unfinished." />
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-blueviolet.svg)](https://opensource.org/licenses/MIT)
   [![Projects](https://img.shields.io/badge/Projects-109-success?style=flat-square)](#jump-to-a-folder)
@@ -14,7 +12,7 @@
 
 ![Archive at a glance, four tiles: 109 project folders, 100 in language folders and 9 in topic folders; 11 language folders, 4 tiers each, easy to expert; 1,011 project files, 142 of them READMEs; 92 portfolio entries, 13 chips, 84 pointing back into this repo](https://raw.githubusercontent.com/sudhanshu1402/engineering-projects/main/assets/glance.svg)
 
-A personal archive of coding projects, sorted by language and difficulty tier. Also carries a
+A personal learning archive of coding projects, sorted by language and difficulty tier. It's practice code: many builds are small or unfinished, and each tier README says what's there. Also carries a
 single-page portfolio site (`index.html`) deployed to GitHub Pages.
 
 ## What is in here
@@ -60,6 +58,10 @@ The images are counted from `git ls-files` and `projects_data.js`. The generator
 than draw a blank frame, and CI fails on drift.
 
 Site, per-project run commands and the full layout: [docs/ARCHIVE.md](./docs/ARCHIVE.md).
+
+---
+
+<sub>More from [sudhanshu1402](https://github.com/sudhanshu1402): [keel](https://github.com/sudhanshu1402/keel) · [nocap](https://github.com/sudhanshu1402/nocap) · [receipts](https://github.com/sudhanshu1402/receipts) · [enterprise-auth-stack](https://github.com/sudhanshu1402/enterprise-auth-stack) · [distributed-queue-engine](https://github.com/sudhanshu1402/distributed-queue-engine) · [multi-region-mongo-patterns](https://github.com/sudhanshu1402/multi-region-mongo-patterns) · [otel-sdk-node](https://github.com/sudhanshu1402/otel-sdk-node) · [llm-assessment-pipeline](https://github.com/sudhanshu1402/llm-assessment-pipeline) · [system-design-portal](https://github.com/sudhanshu1402/system-design-portal). Portfolio: [sudhanshu1402.github.io](https://sudhanshu1402.github.io).</sub>
 
 ## License
 
